@@ -1,0 +1,34 @@
+# Secrets and local configuration
+.env
+.env.*
+local.settings.json
+*.publishsettings
+appsettings.local.*
+
+# Node.js
+node_modules/
+.next/
+out/
+.turbo/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+.venv/
+venv/
+**/__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Azure Functions
+bin/
+obj/
+__azurite*
+
+# macOS
+.DS_Store
+._*
+part2/raw/brfss/LLCP2024XPT.zip
+!.env.example

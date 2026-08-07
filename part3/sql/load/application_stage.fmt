@@ -1,0 +1,16 @@
+13.0
+14
+1 SQLCHAR 0 0 "," 1 CustomerIDRaw SQL_Latin1_General_CP1_CI_AS
+2 SQLCHAR 0 0 "," 2 ProductIDRaw SQL_Latin1_General_CP1_CI_AS
+3 SQLCHAR 0 0 "," 3 ApplicationDateRaw SQL_Latin1_General_CP1_CI_AS
+4 SQLCHAR 0 0 "," 4 ApplicantAgeRaw SQL_Latin1_General_CP1_CI_AS
+5 SQLCHAR 0 0 "," 5 GenderRaw SQL_Latin1_General_CP1_CI_AS
+6 SQLCHAR 0 0 "," 6 SmokingStatusRaw SQL_Latin1_General_CP1_CI_AS
+7 SQLCHAR 0 0 "," 7 DiabetesStatusRaw SQL_Latin1_General_CP1_CI_AS
+8 SQLCHAR 0 0 "," 8 BMIValueRaw SQL_Latin1_General_CP1_CI_AS
+9 SQLCHAR 0 0 "," 9 AgeBandRaw SQL_Latin1_General_CP1_CI_AS
+10 SQLCHAR 0 0 "," 10 BMIBandRaw SQL_Latin1_General_CP1_CI_AS
+11 SQLCHAR 0 0 "," 11 FaceAmountRaw SQL_Latin1_General_CP1_CI_AS
+12 SQLCHAR 0 0 "," 12 QuotedRateVersionIDRaw SQL_Latin1_General_CP1_CI_AS
+13 SQLCHAR 0 0 "," 13 QuotedPremiumRaw SQL_Latin1_General_CP1_CI_AS
+14 SQLCHAR 0 0 "\r\n" 14 StatusRaw SQL_Latin1_General_CP1_CI_AS

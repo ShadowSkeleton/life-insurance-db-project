@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C58F5CD2-3312-BCD8-B7C5-ADC10901E2C0" name="Contest">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:53:12 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ContestName" id="BDC1DE23-1AD5-B42E-F841-F245DC5D73DB">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:57:14 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="StartDate" id="50273DB9-D22A-5583-56FE-E0EF65C9892C">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:57:17 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Prize" id="BD259A55-1FB7-5511-28B5-98C3EA7748DE">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:57:21 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PrizeAmount" id="6149A9D1-D386-7D54-6754-51C9BA9A59FB">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:57:25 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EndDate" id="29AE868D-26C3-67B4-5A6A-CEE257554707">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:57:29 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Criteria" id="E016127F-B870-9139-E5E9-4551B3D59627">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:57:33 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Threshold" id="9B112256-622B-F27B-7BCD-71FB6BEA64A4">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:57:38 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5871C187-91F9-20DE-995E-A1B4CD264F47" name="Contest PK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:57:45 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BDC1DE23-1AD5-B42E-F841-F245DC5D73DB</attributeRef>
+<attributeRef>50273DB9-D22A-5583-56FE-E0EF65C9892C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

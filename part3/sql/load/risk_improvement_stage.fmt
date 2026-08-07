@@ -1,0 +1,8 @@
+13.0
+6
+1 SQLCHAR 0 0 "," 1 EnrollmentIDRaw SQL_Latin1_General_CP1_CI_AS
+2 SQLCHAR 0 0 "," 2 MeasureDateRaw SQL_Latin1_General_CP1_CI_AS
+3 SQLCHAR 0 0 "," 3 MeasureTypeRaw SQL_Latin1_General_CP1_CI_AS
+4 SQLCHAR 0 0 "," 4 MeasureValueRaw SQL_Latin1_General_CP1_CI_AS
+5 SQLCHAR 0 0 "," 5 BaselineValueRaw SQL_Latin1_General_CP1_CI_AS
+6 SQLCHAR 0 0 "\r\n" 6 ImprovementPctRaw SQL_Latin1_General_CP1_CI_AS

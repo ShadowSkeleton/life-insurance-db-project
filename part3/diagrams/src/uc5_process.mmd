@@ -1,0 +1,33 @@
+flowchart LR
+    start((Start))
+    endRenewal((Renewal recorded))
+    endReview((End))
+    subgraph Scheduler
+        identify[Identify eligible contract anniversary]
+    end
+    subgraph Renewal_Service[Renewal Service]
+        rate[Find active rate version and matching rate]
+        available{Rate available?}
+        review[Route renewal for review]
+        wellness[Read qualifying improvement before renewal date]
+        eligible{Qualifying improvement?}
+        zero[Set discount to zero]
+        cap{Discount above 15 percent?}
+        capped[Set discount to 15 percent]
+        calculate[Calculate final premium]
+    end
+    subgraph Database
+        contract[Read Contract]
+        application[Read APPLICATION profile and face amount]
+        rateTables[Read RATE_VERSION, RATE, and RISK_FACTOR]
+        improvements[Read WELLNESS_ENROLLMENT and RISK_IMPROVEMENT]
+        renewal[Write POLICY_RENEWAL with NewRateVersionID]
+    end
+    start --> identify --> contract --> application --> rateTables --> rate --> available
+    available -- No --> review --> endReview
+    available -- Yes --> improvements --> wellness --> eligible
+    eligible -- No --> zero --> calculate
+    eligible -- Yes --> cap
+    cap -- Yes --> capped --> calculate
+    cap -- No --> calculate
+    calculate --> renewal --> endRenewal

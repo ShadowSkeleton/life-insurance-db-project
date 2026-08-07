@@ -1,0 +1,31 @@
+flowchart LR
+    start((Start))
+    endQuote((Quote returned))
+    endCorrection((End))
+    endUnavailable((End))
+    endNoConvert((End))
+    subgraph Applicant
+        submit[Submit profile, face amount, and product]
+        correct[Correct profile]
+        receive[Receive quote and RateVersionID]
+        convert{Convert quote?}
+    end
+    subgraph Web_Application[Web Application]
+        validate[Validate profile]
+        complete{Profile complete?}
+        returnQuote[Calculate and return premium]
+        unavailable[Explain unavailable profile]
+    end
+    subgraph Database
+        active[Read active RATE_VERSION]
+        match[Find matching RISK_FACTOR and RATE]
+        found{Matching rate row?}
+        application[Write APPLICATION as quoted]
+    end
+    start --> submit --> validate --> complete
+    complete -- No --> correct --> endCorrection
+    complete -- Yes --> active --> match --> found
+    found -- No --> unavailable --> endUnavailable
+    found -- Yes --> application --> returnQuote --> receive --> convert
+    convert -- Yes --> endQuote
+    convert -- No --> endNoConvert

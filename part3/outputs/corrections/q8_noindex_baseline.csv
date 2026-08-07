@@ -1,0 +1,5 @@
+query_id,index_state,rows_returned,logical_reads_all_tables_touched,plan_shape
+Q8a-count,IX_Contract_ActivityStatus absent,8506,1424,Contract clustered index scan
+Q8b-count,IX_Contract_ActivityStatus absent,46679,1424,Contract clustered index scan
+Q8a-retrieval,IX_Contract_ActivityStatus absent,8506,1424,Contract clustered index scan
+Q8b-retrieval,IX_Contract_ActivityStatus absent,46679,1424,Contract clustered index scan

@@ -1,0 +1,32 @@
+flowchart TB
+    startSync((Applicant request))
+    endSync((Quote or bound policy))
+    startAsync((Timer event))
+    endAsync((Published rate version))
+    subgraph Synchronous_Transactional_Path[Synchronous transactional path]
+        quote[Web application reads active RATE_VERSION and RATE]
+        bind[Bind Contract with IssuedRateVersionID]
+        pinned[In-force Contract retains its own issue-time version]
+        quote --> bind --> pinned
+    end
+    subgraph Shared_Rate_Data[Shared rate data]
+        rates[RATE_VERSION and RATE]
+        independent[Independent transactions, no mutual blocking]
+    end
+    subgraph Asynchronous_Repricing_Path[Asynchronous repricing path]
+        lake[Blob Storage and Synapse serverless]
+        refresh[Timer-triggered Azure Function refresh]
+        stage[Read staging and score approved model]
+        publish[Write RISK_FACTOR, new RATE_VERSION, and RATE only]
+        noContractWrite[No Contract write. Existing IssuedRateVersionID stays unchanged]
+        lake --> refresh --> stage --> publish
+        publish --> noContractWrite
+    end
+    startSync --> quote
+    rates --> quote
+    bind --> endSync
+    startAsync --> refresh
+    publish --> rates
+    publish --> endAsync
+    independent -. Applies to both paths .-> rates
+    pinned -. Later publication does not change pin .-> rates

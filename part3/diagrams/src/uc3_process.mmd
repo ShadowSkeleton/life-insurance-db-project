@@ -1,0 +1,38 @@
+flowchart LR
+    start((Start))
+    endRecorded((Screening recorded))
+    endRejected((End))
+    endUnverified((End))
+    subgraph Policyholder
+        select[Select wellness program and enrollment date]
+        screening[Record biometric baseline and current measurement]
+    end
+    subgraph Participating_Gym[Participating Gym]
+        report[Report activity and enrollment identifier]
+    end
+    subgraph Web_Application[Web Application]
+        beforeRenewal{Enrollment before next renewal?}
+        screenBeforeRenewal{Screening before next renewal?}
+        verify[Check enrollment and activity verification]
+        enrolled{Active enrollment?}
+        verified{Activity verified?}
+        reject[Reject report]
+        flag[Store unverified activity]
+        unchanged[Show activity alone leaves credit unchanged]
+        calculate[Calculate measured improvement]
+    end
+    subgraph Database
+        program[Read WELLNESS_PROGRAM and Contract]
+        enrollment[Write WELLNESS_ENROLLMENT]
+        activity[Write WELLNESS_ACTIVITY]
+        improvement[Write dated RISK_IMPROVEMENT]
+    end
+    start --> select --> program --> beforeRenewal
+    beforeRenewal -- No --> reject --> endRejected
+    beforeRenewal -- Yes --> enrollment --> report --> verify --> enrolled
+    enrolled -- No --> reject --> endRejected
+    enrolled -- Yes --> verified
+    verified -- No --> flag --> endUnverified
+    verified -- Yes --> activity --> unchanged --> screening --> screenBeforeRenewal
+    screenBeforeRenewal -- No --> reject --> endRejected
+    screenBeforeRenewal -- Yes --> calculate --> improvement --> endRecorded

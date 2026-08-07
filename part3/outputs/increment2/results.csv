@@ -1,0 +1,19 @@
+query_id,table_name,logical_reads,scan_count,main_operator,estimated_rows,actual_rows
+Q1,Contract,3,0,,,
+Q1,ContractParty,2,1,Index Seek,2.0000,2
+Q2,Account,6,0,,,
+Q2,AccountMember,1025,1,,,
+Q2,BillingAccount,6,0,,,
+Q2,Contract,3,0,,,
+Q2,ContractParty,208,1,Index Scan,57.0042,57
+Q2,Customer,6,0,,,
+Q2,Invoice,69,12,,,
+Q2,Relation_3,4,2,,,
+Q2b,Invoice,41,6,Clustered Index Seek,21.1258,30
+Q3,RATE_VERSION,2,1,Clustered Index Scan,1.0000,1
+Q4,WELLNESS_ACTIVITY,7,1,Index Seek,627.4710,787
+Q5,WELLNESS_ACTIVITY,423,1,Index Scan,136578.4500,116316
+Q6,Contract,1424,1,Clustered Index Scan,12448.0000,12448
+Q7,POLICY_RENEWAL,728,1,Clustered Index Scan,7523.8000,7548
+Q8,Contract,176,2,Index Seek,55191.0000,55189
+Q9,STG_BRFSS_RECORD,1240,2,Clustered Index Scan,99394.7000,91818

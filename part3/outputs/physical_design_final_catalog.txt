@@ -1,0 +1,54 @@
+TableOrView|name|type_desc|fill_factor|DataSpace|is_primary_key|is_unique
+-----------|----|---------|-----------|---------|--------------|---------
+Contract|Contract_PK|CLUSTERED|0|PRIMARY|1|1
+Contract|Contract_ContractNumber_UN|NONCLUSTERED|0|PRIMARY|0|1
+Contract|IX_Contract_IssuedRateVersionID|NONCLUSTERED|80|PRIMARY|0|0
+Contract|IX_Contract_ActivityStatus|NONCLUSTERED|80|PRIMARY|0|0
+ContractParty|ContractParty_PK|CLUSTERED|0|PRIMARY|1|1
+ContractParty|IX_ContractParty_Customer_CustomerID|NONCLUSTERED|100|PRIMARY|0|0
+Invoice|CIX_Invoice_RunDate_InvoiceID|CLUSTERED|80|ps_P3_Invoice|0|0
+Invoice|Invoice_InvoiceNumber_UN|NONCLUSTERED|0|PRIMARY|0|1
+Invoice|IX_Invoice_BillingAccount_BillingAccountID|NONCLUSTERED|80|ps_P3_Invoice|0|0
+Invoice|Invoice_PK|NONCLUSTERED|80|PRIMARY|1|1
+POLICY_RENEWAL|POLICY_RENEWAL_PK|CLUSTERED|0|PRIMARY|1|1
+POLICY_RENEWAL|IX_POLICY_RENEWAL_RenewalDate|NONCLUSTERED|80|PRIMARY|0|0
+vWellnessActivityEnrollmentDaily|CIX_vWellnessActivityEnrollmentDaily|CLUSTERED|80|PRIMARY|0|1
+WELLNESS_ACTIVITY|CIX_WELLNESS_ACTIVITY_ActivityDate_ActivityID|CLUSTERED|80|ps_P3_WELLNESS_ACTIVITY|0|0
+WELLNESS_ACTIVITY|IX_WELLNESS_ACTIVITY_EnrollmentID_ActivityDate|NONCLUSTERED|80|ps_P3_WELLNESS_ACTIVITY|0|0
+WELLNESS_ACTIVITY|WELLNESS_ACTIVITY_PK|NONCLUSTERED|80|PRIMARY|1|1
+
+(16 rows affected)
+ObjectName|Rows|DistinctIDs
+----------|----|-----------
+WELLNESS_ACTIVITY|1000000|1000000
+Invoice|300000|300000
+
+(2 rows affected)
+ObjectName|PartitionNumber|Rows
+----------|---------------|----
+Invoice|1|659
+Invoice|2|4542
+Invoice|3|14434
+Invoice|4|35906
+Invoice|5|89369
+Invoice|6|155090
+WELLNESS_ACTIVITY|1|48
+WELLNESS_ACTIVITY|2|488
+WELLNESS_ACTIVITY|3|3573
+WELLNESS_ACTIVITY|4|21784
+WELLNESS_ACTIVITY|5|150580
+WELLNESS_ACTIVITY|6|823527
+
+(12 rows affected)
+name|physical_name
+----|-------------
+LifeInsuranceP3|/var/opt/mssql/data/LifeInsuranceP3.mdf
+LifeInsuranceP3_log|/var/opt/mssql/data/LifeInsuranceP3_log.ldf
+LifeInsuranceP3_P3_2021|/var/opt/mssql/data/LifeInsuranceP3_P3_2021.ndf
+LifeInsuranceP3_P3_2022|/var/opt/mssql/data/LifeInsuranceP3_P3_2022.ndf
+LifeInsuranceP3_P3_2023|/var/opt/mssql/data/LifeInsuranceP3_P3_2023.ndf
+LifeInsuranceP3_P3_2024|/var/opt/mssql/data/LifeInsuranceP3_P3_2024.ndf
+LifeInsuranceP3_P3_2025|/var/opt/mssql/data/LifeInsuranceP3_P3_2025.ndf
+LifeInsuranceP3_P3_2026|/var/opt/mssql/data/LifeInsuranceP3_P3_2026.ndf
+
+(8 rows affected)

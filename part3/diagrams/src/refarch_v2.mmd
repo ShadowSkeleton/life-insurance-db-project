@@ -1,0 +1,55 @@
+flowchart TB
+    subgraph External_Health_Data[External health data]
+        brfss[CDC BRFSS]
+        nhanes[CDC NHANES]
+        mortality[CDC WONDER and SSA mortality data]
+    end
+    subgraph Azure_Blob_Storage[Azure Blob Storage data lake]
+        raw[Curated external files]
+    end
+    subgraph Synapse_Serverless[Synapse serverless]
+        lakeQuery[Query curated lake files]
+    end
+    subgraph Azure_SQL_Database[Azure SQL Database deployment target]
+        records[STG_BRFSS_RECORD 50000 individual records]
+        prevalence[STG_BRFSS conditional prevalence]
+        staging[STG_NHANES and STG_MORTALITY normalized staging]
+        refresh[DATA_REFRESH_RUN]
+        factors[RISK_FACTOR]
+        rates[RATE_VERSION and RATE]
+        contract[Contract with IssuedRateVersionID]
+        wellness[WELLNESS_ENROLLMENT, WELLNESS_ACTIVITY, and RISK_IMPROVEMENT]
+        renewal[POLICY_RENEWAL with NewRateVersionID and WellnessDiscountPct]
+    end
+    subgraph Machine_Learning_Layer[Machine learning layer]
+        train[Offline training from BRFSS staging]
+        model[Approved diabetes-risk coefficients and model version]
+        score[Scheduled scoring and risk-factor derivation]
+    end
+    subgraph Application_Layer[Application layer]
+        web[Quote and bind web application]
+        online[Online profile matching and arithmetic against RATE]
+        function[Timer-triggered Azure Function refresh job]
+    end
+    subgraph Local_Measurement[Local SQL Server measurement environment]
+        local[SQL Server 2022 Docker for physical-design measurement]
+    end
+    brfss --> raw
+    nhanes --> raw
+    mortality --> raw
+    raw --> lakeQuery
+    lakeQuery --> records
+    lakeQuery --> staging
+    records --> prevalence
+    records --> train --> model --> score
+    prevalence --> score
+    staging --> score
+    function --> refresh --> score
+    score --> factors --> rates
+    refresh --> rates
+    rates --> online --> web
+    web --> contract
+    wellness --> renewal
+    rates --> renewal
+    contract --> renewal
+    function -. same deployment scripts, no production traffic .-> local

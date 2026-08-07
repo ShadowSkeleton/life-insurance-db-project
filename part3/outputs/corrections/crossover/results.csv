@@ -1,0 +1,6 @@
+target_rows,rows_returned,selectivity_percent,logical_reads_all_tables_touched,plan_operator
+50,52,0.087,170,Index Seek + Key Lookup
+250,251,0.418,779,Index Seek + Key Lookup
+1000,1010,1.683,1424,Clustered Index Scan
+3000,3002,5.003,1424,Clustered Index Scan
+8500,8504,14.173,1424,Clustered Index Scan

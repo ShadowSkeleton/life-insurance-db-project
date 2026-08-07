@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3845A2E2-F6F0-8C97-6646-1F5371F90977" name="Relation_27">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:34:32 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Account_AccountID" id="84AE829C-9C59-615F-A3BA-0B80003B407E">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:34:32 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="970D05EE-ABD0-434D-9629-EDDF4AFCE940" referredColumn="C994991A-4515-D49F-81DF-A6C3A375453E"/>
+</associations>
+</Column>
+<Column name="ManagerContract_ManagerContractID" id="E6128BB9-7EF9-886A-DD34-86F147DA7F92">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:34:32 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ADFEA1FB-A20C-9B88-A42C-0BC391E1A4AA" referredColumn="C33A6222-E161-12A1-C989-DD4986A2E91C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9DC9EE9A-5930-625B-5139-8DE8C668E994" name="Relation_27_PK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:34:32 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84AE829C-9C59-615F-A3BA-0B80003B407E"/>
+<colUsage columnID="E6128BB9-7EF9-886A-DD34-86F147DA7F92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="29AC48C5-41B2-E90B-0DA7-B5436E65AE15" name="Relation_27_Account_FK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:34:32 UTC</createdTime>
+<generatorID>8434331E-0206-2776-8C5B-87A20EB7A7C8</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84AE829C-9C59-615F-A3BA-0B80003B407E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9E9471CC-C898-E488-F244-F8DFC0895471" name="Relation_27_ManagerContract_FK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:34:32 UTC</createdTime>
+<generatorID>8434331E-0206-2776-8C5B-87A20EB7A7C8</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6128BB9-7EF9-886A-DD34-86F147DA7F92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+pyarrow
+pymssql
+python-dotenv
+jupyter
+faker
+azure-storage-blob

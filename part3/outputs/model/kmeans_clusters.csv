@@ -1,0 +1,9 @@
+cluster,cluster_name,size,size_percent,modal_age_band,modal_sex,modal_smoking_status,modal_exercise,mean_bmi,observed_diabetes_prevalence
+0,"35-39 male, never smoking, yes exercise",2648,6.19183463,35-39,male,never,yes,29.22610283,0.04247991
+1,"50-54 male, never smoking, yes exercise",9837,23.00191741,50-54,male,never,yes,28.54145050,0.13279217
+2,"60-64 female, never smoking, yes exercise",4145,9.69227891,60-64,female,never,yes,29.16716576,0.21345247
+3,"80-99 female, never smoking, no exercise",6373,14.90202497,80-99,female,never,no,30.55438995,0.26238830
+4,"75-79 female, never smoking, yes exercise",3542,8.28228032,75-79,female,never,yes,28.04928398,0.24495171
+5,"30-34 male, never smoking, yes exercise",2405,5.62362625,30-34,male,never,yes,28.80780220,0.03003384
+6,"18-24 male, never smoking, yes exercise",2835,6.62909788,18-24,male,never,yes,25.88578606,0.01174377
+7,"65-69 female, never smoking, yes exercise",10981,25.67693962,65-69,female,never,yes,27.89599991,0.13187945

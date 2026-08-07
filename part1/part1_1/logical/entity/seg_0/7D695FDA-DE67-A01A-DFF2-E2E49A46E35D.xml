@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7D695FDA-DE67-A01A-DFF2-E2E49A46E35D" name="OrgUnit">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:52:24 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="OrgUnitID" id="7A7DDFFA-1EA8-1F5D-3479-98834E284872">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:52:32 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OrgLevel" id="A2326357-B51E-9160-58D8-6BB06197967D">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:52:34 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Name" id="1BB6E648-9B9A-9497-F847-F7F5FEE5E9EB">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:52:39 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ParentOrgUnitID" id="8547A6AF-D362-5CD4-8652-F824411F2F81">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:52:43 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="StartDate" id="20838F99-4C99-EB46-8A34-9ACACC79314D">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:52:47 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EndDate" id="A60FFADA-D1CC-6762-0C14-6D0C9B5DD5CA">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:52:52 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="StateCode" id="371569A3-FAE9-96D4-7BD9-1175EFB6515D">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:52:57 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OrgUnitID1" id="7CC4DA18-56ED-01C1-EAE4-935D02AEABBC">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-09 13:26:52 UTC</createdTime>
+<generatorID>7C7845D2-7956-124A-7291-4BA620E00902</generatorID>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>7A7DDFFA-1EA8-1F5D-3479-98834E284872</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EE3E6FB6-F895-AC59-6715-7E27BBBC519B" name="OrgUnit PK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:53:07 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7A7DDFFA-1EA8-1F5D-3479-98834E284872</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

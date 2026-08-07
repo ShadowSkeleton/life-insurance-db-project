@@ -1,0 +1,4 @@
+azure-functions==1.21.3
+azure-storage-blob==12.26.0
+pymssql==2.3.13
+python-dotenv==1.0.1

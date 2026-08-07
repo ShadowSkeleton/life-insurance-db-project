@@ -1,0 +1,6 @@
+AgeBand,Gender,SmokingStatus,BMIBand,ExerciseFreq,Records,EmpiricalPrevalence,PredictedProbability
+18-24,F,current,over,no,1,0.00000000,0.01754634
+18-24,M,former,obese,no,1,0.00000000,0.04331572
+25-29,F,former,under,no,1,0.00000000,0.01003978
+25-29,M,former,under,no,1,0.00000000,0.01301180
+30-34,F,current,under,no,1,0.00000000,0.01536512

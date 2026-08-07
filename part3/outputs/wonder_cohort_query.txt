@@ -1,0 +1,39 @@
+SourceYear|ConditionFlag|SourceFile|RowsLoaded
+----------|-------------|----------|----------
+2023|ALLCAUSE|wonder_all_by_age_sex_2022_2024.tsv|22
+2023|BASELINE|ssa_period_life_table_2023.csv|26
+2023|DIABETES|wonder_diabetes_by_age_sex_2022_2024.tsv|19
+2024|ALLCAUSE|wonder_all_by_age_sex.tsv|22
+2024|DIABETES|wonder_diabetes_by_age_sex.tsv|20
+
+(5 rows affected)
+AgeBand|Gender|PooledPct|NewerPct|NewerMinusPooledPercentagePoints
+-------|------|---------|--------|--------------------------------
+15-24|F|1.1905|1.2195|.0290
+15-24|M|.7306|.6591|-.0715
+25-34|F|2.0225|2.1940|.1715
+25-34|M|1.3692|1.4844|.1152
+35-44|F|2.7641|2.7847|.0206
+35-44|M|2.5271|2.4715|-.0556
+45-54|F|3.6934|3.8264|.1330
+45-54|M|4.0293|4.1818|.1525
+55-64|F|3.8615|3.9177|.0562
+55-64|M|4.2726|4.4616|.1890
+65-74|F|3.8181|3.7949|-.0232
+65-74|M|4.1540|4.1759|.0219
+75-84|F|2.9566|2.9358|-.0208
+75-84|M|3.3561|3.4218|.0657
+85+|F|1.7901|1.7933|.0032
+85+|M|2.2328|2.2766|.0438
+
+(16 rows affected)
+MeanAbsoluteDifferencePercentagePoints|LargestAbsoluteDifferencePercentagePoints|PooledHigher|PooledLower|EqualRatios
+--------------------------------------|-----------------------------------------|------------|-----------|-----------
+.073272|.18904428|4|12|0
+
+(1 rows affected)
+AgeBand|Gender|PooledPct|NewerPct|NewerMinusPooledPercentagePoints
+-------|------|---------|--------|--------------------------------
+55-64|M|4.27257525|4.46161953|.18904428
+
+(1 rows affected)

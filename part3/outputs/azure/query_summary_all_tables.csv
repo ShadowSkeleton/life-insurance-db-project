@@ -1,0 +1,8 @@
+query_id,logical_reads_all_tables_touched,main_operator
+Q1,5,Index Seek
+Q4,7,Index Seek
+Q5,423,Index Scan
+Q8a-count,29,Index Seek
+Q8b-count,147,Index Seek
+Q8a,3090,Clustered Index Scan
+Q8b,3090,Clustered Index Scan

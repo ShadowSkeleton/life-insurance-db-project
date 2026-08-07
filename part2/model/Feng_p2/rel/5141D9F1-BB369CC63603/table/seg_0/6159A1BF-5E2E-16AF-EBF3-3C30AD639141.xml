@@ -1,0 +1,411 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6159A1BF-5E2E-16AF-EBF3-3C30AD639141" name="ContractPremium">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>A7325E6A-9E89-374F-CB0C-B1D660CFE487</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ContractNumber" id="4C130AD3-8175-10B8-60E5-069285FA56B9">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>88FF9218-4AFE-311D-8D4D-91C1CE242D6C</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7A68CCBE-8770-CE08-6929-D584B544F711</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LineOfBusiness" id="5C8B29D2-EC59-EF4E-6106-F8C40897A842">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>8E7113A8-8FFC-166A-A906-9FD9F0B01CEC</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7A68CCBE-8770-CE08-6929-D584B544F711</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SeriesName" id="485DAF35-D473-0746-3798-ADF3726E16E9">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>80EE6D41-BF79-79D5-4FFD-8FDC1D11B7B6</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6D8702EF-2970-5B86-F22E-D75AA852F511</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PlanName" id="A87561A4-C1C8-D3CE-25DF-82439BFFFCFC">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>845A4A52-350D-5583-0CB1-FD9E70C126DA</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6D8702EF-2970-5B86-F22E-D75AA852F511</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RiderName" id="62762D1E-9E8E-E6EF-B622-D302BF2785C7">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>661D5819-F6E0-F7A1-5396-EF130A16BB1F</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6D8702EF-2970-5B86-F22E-D75AA852F511</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PremiumCode" id="4C72FF9F-5603-A8E1-FE96-66AC55DDA0C1">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>5B43986C-54B6-A760-F97E-A4D71D13CCEB</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6D8702EF-2970-5B86-F22E-D75AA852F511</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AnnualizedPremium" id="BBF7E617-F3B6-EEB0-4A59-9B24CD55D767">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>A72E664B-2CE1-5C60-DC5F-13A6D2B6B95C</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E06EFBF8-5798-EDEE-B5EC-E4A128D6A645</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ProcessDate" id="E1DB03F4-33C7-887D-9C39-27E1E86101C0">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>11D31E54-B970-0F25-BE8E-A6D2ADA18B04</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AppSignDate" id="76BBAD60-3AC0-49E3-6C04-0C02E70EDCEE">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>884BC621-D3D4-71D1-DBDE-5B96A55A5212</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContractBenefit_ContractNumber" id="553E6FA4-3F26-3A90-5CB7-BAFADADB23ED">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>7DBA5227-7FAD-2F49-6EDC-3B12318CFEFC</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContractBenefit_LineOfBusiness" id="06566BCD-2009-4232-3470-ADE6513F165D">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>399A553F-6B80-5142-B9AD-BA0E5272171E</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContractBenefit_SeriesName" id="6CA21673-D427-1EE0-0533-8BEEE1E48B28">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>EE24839A-CE58-1FCE-B753-61B5E68C011B</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContractBenefit_PlanName" id="8CF9CD6E-1881-378D-C79B-784DE28C1703">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>80233F1B-B2CE-2760-45AE-F7AB50220BF0</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContractBenefit_RiderName" id="203D3B07-D0D2-8142-2127-C7EFCDD8F917">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>F9E9FCA3-2F26-CCD9-6886-8016388E3F5E</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContractBenefit_ContractPremium_ContractNumber" id="F69C4BA6-F379-6F99-F214-61B55F749CAA">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>9FA7CA2D-7763-3145-63EE-31D7453FABD3</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContractBenefit_ContractPremium_LineOfBusiness" id="9760CC4E-1AB0-2557-179C-2CDED986F602">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>34627972-500A-A627-E572-C4BC1334986F</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContractBenefit_ContractPremium_SeriesName" id="C84B7EA7-36B6-51D9-AF3A-7FF334E4C7B4">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>F3F88FB1-FC12-1C1C-6B88-2DC4B6214B66</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContractBenefit_ContractPremium_PlanName" id="29EADB6F-7EF9-2A47-3ADC-4E6F2A3C8EBA">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>63F46F57-8997-4064-FD89-CAD3CE64A863</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContractBenefit_ContractPremium_RiderName" id="206BD060-0F5F-1E19-40DD-70EB6932FAA4">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>8888E580-B364-04E5-1F6C-ACEA7BF567C6</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContractBenefit_ContractPremium_PremiumCode" id="6292B8B0-8815-A88F-E6CA-34E04398501C">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>9104126D-B263-AA26-8192-8132DE9A8136</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContractBenefit_Contract_ContractNumber" id="7B78120C-46DF-8B47-502B-678C42C7FF15">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>BB39307C-5C81-2AC5-692F-C2F4B16F687A</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContractBenefit_Contract_ContractBenefit_ContractNumber" id="58526066-3361-5302-D7E7-BF333FDBF98B">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>5B79ED08-1D08-170D-F941-FF04C53A67CF</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContractBenefit_Contract_ContractBenefit_LineOfBusiness" id="B19C3067-1BEC-A37B-B194-5D06D4229866">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>75C02EFA-C3CD-3D7B-1615-950510ECDD06</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContractBenefit_Contract_ContractBenefit_SeriesName" id="042789C2-D7EF-A116-8A3F-117C57F1982F">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>5C5774F1-B032-230B-69B2-77D1CEF044D2</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContractBenefit_Contract_ContractBenefit_PlanName" id="3C9D42A6-943F-C9C6-9B0E-0E1364106825">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>31F498FA-7B97-8BED-99B5-DAD3C5EDC02A</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContractBenefit_Contract_ContractBenefit_RiderName" id="F4BF7F6E-DD2A-4DD7-A97A-4E6CE7ED9FB5">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>251DB392-BED5-6835-313D-CF891B01839A</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContractBenefit_Contract_ContractBenefit_ContractPremium_ContractNumber" id="F229EF88-5CAA-5657-0233-4EF89954180B">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>EF0B2E9D-0D3C-930F-7582-595A6B043E45</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContractBenefit_Contract_ContractBenefit_ContractPremium_LineOfBusiness" id="981E37CE-117E-31B9-DB2B-81FE1D268F89">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>B782A69F-237C-0470-9DF6-D76F0E9B42C8</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContractBenefit_Contract_ContractBenefit_ContractPremium_SeriesName" id="5039EDF8-4FBC-5D9C-3318-DA7F426CABFB">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>D18DE3A7-920E-CF71-74D3-D021A4737479</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContractBenefit_Contract_ContractBenefit_ContractPremium_PlanName" id="C6868B3A-5441-C9F5-560E-7018CC5E554A">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>ECDF7EB6-CF50-6427-DFAC-B61D4188DD6B</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContractBenefit_Contract_ContractBenefit_ContractPremium_RiderName" id="4D57E9D5-D1DC-D315-2DE2-7F5D294CB4EA">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>926D4FD0-094F-4568-3FDC-45C635EEC14B</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContractBenefit_Contract_ContractBenefit_ContractPremium_PremiumCode" id="0FFFCEC1-ABA0-3BFF-34DB-C1E34DB13965">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>88E638CF-A41D-1C28-A8E8-3E49A9EB291F</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContractBenefit_ContractBenefitID" id="260307BA-FB91-43BB-AC0B-B4BAB8F994AA">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 19:40:56 UTC</createdTime>
+<generatorID>95CDAB19-0521-6524-3147-41BC17342AB2</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BA533E0B-7DE9-B312-50CF-ADCC7A80D88A" referredColumn="5BC5EC63-7AFD-FED4-B26E-EBB7FDF99A9C"/>
+</associations>
+</Column>
+<Column name="ContractPremiumID" id="DAED2C22-405D-FA47-2B06-0B787FB2F3ED">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 19:40:56 UTC</createdTime>
+<generatorID>FDCC6370-03B1-7360-5144-5561F06EF216</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="645BC2A4-EB6A-5E46-5BB2-028D4F8FCC49" name="ContractPremium_PK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>CC9AFA0C-45AF-2535-5A54-8BCA78212B29</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DAED2C22-405D-FA47-2B06-0B787FB2F3ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3B2F256E-6278-8AD8-22C7-56198649E87A" name="ContractPremium_ContractNumber_LineOfBusiness_SeriesName_PlanName_RiderName_PremiumCode_UN">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 19:40:56 UTC</createdTime>
+<generatorID>56998DFC-8BB6-8C53-0C0E-CC04629E53DC</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C130AD3-8175-10B8-60E5-069285FA56B9"/>
+<colUsage columnID="5C8B29D2-EC59-EF4E-6106-F8C40897A842"/>
+<colUsage columnID="485DAF35-D473-0746-3798-ADF3726E16E9"/>
+<colUsage columnID="A87561A4-C1C8-D3CE-25DF-82439BFFFCFC"/>
+<colUsage columnID="62762D1E-9E8E-E6EF-B622-D302BF2785C7"/>
+<colUsage columnID="4C72FF9F-5603-A8E1-FE96-66AC55DDA0C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="36824258-CF3C-F909-91EA-0B144F10D0BE" name="ContractPremium_ContractBenefit_FK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>1981E150-E2BF-4C74-6250-2CAB810CD50A</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="260307BA-FB91-43BB-AC0B-B4BAB8F994AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

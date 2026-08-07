@@ -1,0 +1,16 @@
+LineOfBusiness,SeriesName,PlanName,RiderName,PlanCode,RatebookLocationCode,Description,Benefit,AnnualizedPremium,ProductID
+Term Life,T100,Standard,Base,L10,RB-EAST,Level Term 10,10 year benefit,720.00,1
+Term Life,T100,Preferred,Base,L10P,RB-EAST,Level Term 10,10 year benefit,560.00,2
+Term Life,T200,Standard,Base,L20,RB-EAST,Level Term 20,20 year benefit,940.00,3
+Term Life,T200,Preferred,Base,L20P,RB-EAST,Level Term 20,20 year benefit,745.00,4
+Term Life,T300,Family,Base,FT20,RB-EAST,Family Term 20,20 year benefit,1180.00,5
+Whole Life,W100,Standard,Base,WL1,RB-EAST,Whole Life Base,Lifetime year benefit,1540.00,6
+Whole Life,W100,Preferred,Base,WL1P,RB-EAST,Whole Life Base,Lifetime year benefit,1225.00,7
+Whole Life,W200,Estate,Base,EWL,RB-EAST,Estate Whole Life,Lifetime year benefit,2200.00,8
+Whole Life,W300,Family,Base,FWL,RB-EAST,Family Whole Life,Lifetime year benefit,1860.00,9
+Whole Life,W400,Legacy,Base,LWL,RB-EAST,Legacy Whole Life,Lifetime year benefit,2750.00,10
+Universal Life,U100,Standard,Base,UL1,RB-EAST,Flexible Universal,Lifetime year benefit,1020.00,11
+Universal Life,U100,Preferred,Base,UL1P,RB-EAST,Flexible Universal,Lifetime year benefit,830.00,12
+Universal Life,U200,Estate,Base,EUL,RB-EAST,Estate Universal,Lifetime year benefit,1970.00,13
+Universal Life,U300,Family,Base,FUL,RB-EAST,Family Universal,Lifetime year benefit,1420.00,14
+Universal Life,U400,Legacy,Base,LUL,RB-EAST,Legacy Universal,Lifetime year benefit,2360.00,15

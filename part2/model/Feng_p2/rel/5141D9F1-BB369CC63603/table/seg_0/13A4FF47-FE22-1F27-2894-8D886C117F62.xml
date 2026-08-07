@@ -1,0 +1,254 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="13A4FF47-FE22-1F27-2894-8D886C117F62" name="Claim">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>CF1E863A-2A26-D848-DD1A-2E88A2FACC05</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ClaimNumber" id="F3829538-BC09-0B61-E84C-C56C728C4016">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>5B088A61-F181-7F00-04F7-9C24AD528DBF</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7A68CCBE-8770-CE08-6929-D584B544F711</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ClaimDate" id="C82EEAEF-E43E-3775-C9DA-26EA3319CC44">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>45833A95-81C3-3495-E8BA-B072EBFA8654</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SettlementDate" id="64A23FDC-8C5C-C334-5898-7E13B2FE4594">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>26AFBA63-CFB2-6E4D-2F90-CC847CB6E2B4</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WellnessEligibilityDate" id="9F8740E2-39E5-8736-69AD-0FF677734E41">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>525AB8FE-CB5A-3C41-055F-E22424F1E74A</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contract_ContractNumber" id="4D480EA5-8354-4A73-FD9F-E6C08F87C145">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>EE4DE757-4106-98B9-14F2-15B193503368</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contract_ContractBenefit_ContractNumber" id="C2D1E28E-8908-CF2A-A85F-0BDB458269E3">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>74A46010-69D2-ADAA-0DEA-AD303F90211C</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contract_ContractBenefit_LineOfBusiness" id="C59E25CE-9723-B7F2-9753-35F8A7CC2416">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>06CCAD89-C9C7-2B5E-FCE3-CDB4FF5B6BD1</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contract_ContractBenefit_SeriesName" id="22AA04A8-E331-8AA4-BDDB-70473B8882E9">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>614DE860-B058-61D2-3C57-F2F3DE5BC540</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contract_ContractBenefit_PlanName" id="FEDA1744-9CEF-C98C-B862-6304980897F0">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>780F4569-8F66-285B-3CEB-B2AA71F408E0</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contract_ContractBenefit_RiderName" id="5988B9F5-3254-F654-090E-E86ABED9B213">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>1CC02AEC-EF2C-38C4-C0E9-0DACA7551E17</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contract_ContractBenefit_ContractPremium_ContractNumber" id="A2FC58DA-6591-B44A-56F1-52887A3C8FF3">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>3D558C03-75A0-5573-CEC6-A883D79942F0</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contract_ContractBenefit_ContractPremium_LineOfBusiness" id="BC7539F9-4274-781A-65E0-796D27FC597D">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>651F579F-66A3-45B4-855B-77CB7E7CD806</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contract_ContractBenefit_ContractPremium_SeriesName" id="E3A3C1AA-FAD4-2D02-99EB-CB678341F570">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>47AD35FB-5761-2447-F64F-F17A15F6B2C7</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contract_ContractBenefit_ContractPremium_PlanName" id="186D4ED7-B114-4E99-6575-11B04BF9B209">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>CD2B1512-070B-9D30-628E-654198CCFD39</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contract_ContractBenefit_ContractPremium_RiderName" id="B51DBCDB-5854-8042-75FC-3101BA3E2FA1">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>ADF21C0E-D76A-46E0-8ACD-6CD1BCA47EC3</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contract_ContractBenefit_ContractPremium_PremiumCode" id="52D9EF1C-B4E5-206A-D346-457EC4B535C4">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>8CDE66F6-4DE2-89B9-DF6D-981F201FE6D2</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ClaimID" id="8E476142-37AA-6C71-ACB4-8AEEC175931D">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 19:40:56 UTC</createdTime>
+<generatorID>DE3CC4F6-A9D6-83F5-339E-A0A9A83A053D</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contract_ContractID" id="DC9B8385-92E7-67B8-A5FA-0E226FC1C709">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 19:40:56 UTC</createdTime>
+<generatorID>A7733B8A-1B6A-A7E6-8FA4-45192770FD5C</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="77D6281D-80B2-ACC3-055E-B04AD8C13726" referredColumn="6FB410CD-4C80-A209-7F7E-526A599ADFA2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="13CB0EE5-2CDC-D658-A7C6-36CAC342BBCD" name="Claim_PK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>B5247243-FA7B-CAED-8EC0-3CE32E1E135E</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E476142-37AA-6C71-ACB4-8AEEC175931D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5C092480-33B1-175A-B0F1-C01915E11A8D" name="Claim_ClaimNumber_UN">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 19:40:56 UTC</createdTime>
+<generatorID>99A2ECA9-4055-4462-9979-9595049A79AF</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3829538-BC09-0B61-E84C-C56C728C4016"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="88AD752C-C410-1659-1322-25AD5937484D" name="Claim_Contract_FK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>CF218270-040B-C821-BB6F-4C30CBFEAD67</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC9B8385-92E7-67B8-A5FA-0E226FC1C709"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

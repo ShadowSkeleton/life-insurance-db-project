@@ -1,0 +1,1109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BA2123A7-A8EA-F2C0-D312-25E09AC3B913" name="AccountMember">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>65DB008B-38CC-7792-0960-1641B26AFA27</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="AccountName" id="EDAACA1F-90EC-21A0-447B-1D22D175DB24">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>D3D3F988-EE43-B76A-D77E-7751813DAD29</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E5F74DC3-0BC5-42DF-D720-A7FE0F40C4B4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AccountName2" id="72579946-2A00-FFDF-BE84-F4F559B8D326">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>37203505-9277-AD45-89D5-C5C900EAC1F7</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E5F74DC3-0BC5-42DF-D720-A7FE0F40C4B4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LocationAddress1" id="FC135647-FCFC-C4FB-C600-A0DA12944880">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>C73023BD-090A-704E-60D4-02FF37EADC1C</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E5F74DC3-0BC5-42DF-D720-A7FE0F40C4B4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LocationAddress2" id="B38AA9F5-669A-EB67-A7AE-34F052261951">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>A803E0AB-28E9-2417-CF7B-2E566B65A3C5</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E5F74DC3-0BC5-42DF-D720-A7FE0F40C4B4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LocationCity" id="D89B956A-5FA1-042E-F62A-75A69224C161">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>399633DB-C497-430A-4E68-551B88142697</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B4763EB4-9EE5-48D4-BA6C-F84E539D48C6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LocationState" id="D4B00984-822C-B18E-0B5C-2697906DAF8A">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>977190A6-E21F-F476-1C53-A7C7C5D5DF6B</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B18E650D-8CDD-1C09-078D-FDA3BE106785</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LocationZip" id="128E83DC-D335-70A5-419D-CF7D3F95290B">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>EA65AAE2-9E5E-C3CF-E677-B136B5AA49DA</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>646BF3AF-1D3A-B5C5-3762-C2933B5E8C6F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CompanyCode" id="458F1C9A-2376-7738-07C8-99A036D3169E">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>F9D4FCD6-3C47-B57B-968E-F6FFC1CB1159</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6D8702EF-2970-5B86-F22E-D75AA852F511</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CustLastName" id="DB264DB2-7E05-BE88-6B97-ADCD9AF5011F">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>B3680E55-5CFD-4EEF-DB04-CA6A493A5DAB</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D449C81B-856D-6897-17D4-A4CD5A989A50</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CustFirstName" id="AA434D52-8797-7010-2F00-C32B06734C41">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>B18D69DA-FA03-AE06-5561-65E8AA60ACBD</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D449C81B-856D-6897-17D4-A4CD5A989A50</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CustMiddleInitial" id="AD8868B9-DC27-A8C8-BDAD-A16AB8A18B35">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>7C95EED0-7781-FE22-027E-C23BA2ACB38B</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B414969A-D0FD-F96F-FDC4-919BC73A6987</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CustSuffix" id="F1691CA6-9FB7-44BB-FE44-FD576FD50C6C">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>BD441EFE-6A6E-DB96-DEDE-EB42B4731A64</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>27C770C8-A753-C67A-1213-46828C6C6C31</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CustDOB" id="CF3B837B-3F55-1D0C-7199-5DB68A8D3CAE">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>C06C12CA-DBED-4EE4-E73F-97BB43391577</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="StartDate" id="88F78412-B6CE-E1DF-5876-7AE4AB42C3E2">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>AA9D982D-D7DF-D8D7-BF0F-7F9419591CD6</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EndDate" id="FDA268AB-4E40-F394-3806-8D144161A739">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>51A0E9E5-FD26-C72D-923A-0CDA271184E6</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FSAContributionAmount" id="86A7FE2B-8191-496C-496C-77A291E0FF72">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>B688C74F-7824-315D-75A5-EB42F9234144</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E06EFBF8-5798-EDEE-B5EC-E4A128D6A645</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CustBAcctDepartmentName" id="C29AB1A0-B69C-80FF-D69A-020341A76B6C">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>8A52E40C-79D3-CAB6-BFEA-C512A2B472AD</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B4763EB4-9EE5-48D4-BA6C-F84E539D48C6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_AccountName" id="4747A29F-45CB-D3AF-1C02-6A58181698A6">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>76D4FD9C-AA0E-E99F-3680-5EF1C4025D29</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_AccountName2" id="A4362DFA-D370-8869-A175-62266CA8C6FD">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>7F5ABAC1-C23B-255B-F696-A93C24732A2C</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_LocationAddress1" id="B75BD72B-606C-00DA-F056-A0346EDD16F0">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>924F7374-8E90-80DA-BF4E-AC2CCE87E5F0</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_LocationAddress2" id="AF20B98E-198E-1557-CC92-B6824FF03BBE">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>B0D3AFE6-3EDA-72CB-1A8B-E819AECF3681</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_LocationCity" id="6DEA4647-4121-D81C-09EA-AD9CC05668A5">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>986E4048-E75A-0C09-C447-5B72717597FB</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_LocationState" id="17EC5087-6A8D-0CF3-3493-3DF0D35BEFD2">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>8D4C49D0-CB48-02B4-52E1-8981B0A30E1B</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_LocationZip" id="56805851-6339-EE98-EF2A-E9FCF2A70AD0">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>D12C5734-8F14-CCA6-95C7-4A7DBFC005AC</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_CompanyCode" id="B2CC19D7-5219-DC71-2F25-144304E1A997">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>9677A3D2-BAD2-76B9-AFBF-8D646054F959</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_AccountMember_AccountName" id="E2F3EEB3-E76B-4CE4-06BA-0EE8EA633CBD">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>42926A6A-192A-8DC1-3E28-F3AF577B7BE5</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_AccountMember_AccountName2" id="44134E4B-B207-8113-4975-650431CC321D">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>5CC5255C-9FDE-D748-0D7F-CE29985F922B</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_AccountMember_LocationAddress1" id="D5F68462-3B5F-1468-C2CA-0318B4D5EB22">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>6EA0097E-1ADD-CA54-6F37-D23300E6A9D4</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_AccountMember_LocationAddress2" id="1CB0DED3-5CB0-74AF-E50E-877614F5CEC7">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>1295611F-9976-098A-9F70-61331345E2B4</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_AccountMember_LocationCity" id="297A0A71-EC41-4F54-6186-68AC8F77B84C">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>D2E69782-2C9A-4FA6-9CAC-E6018AF088A8</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_AccountMember_LocationState" id="3B7CC1E8-EA98-AD6F-CD28-BD1AECEAC415">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>BCF2D0C1-7E0D-4B87-191F-7B5B58CDD800</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_AccountMember_LocationZip" id="89242E4E-3844-1E81-5DD3-B19BF6D20EF1">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>106F5A7B-E6DC-C2BA-3B68-827D82B56407</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_AccountMember_CompanyCode" id="F7FF6D96-6DFA-3D8F-F4C8-0A9FEB666547">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>7C54E9B8-A562-7596-F8E2-9C6E1C628333</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_AccountMember_CustLastName" id="C725F9A2-417E-8AA5-2676-6AE9DDF2F20E">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>FA2B640A-24B5-5519-E7BC-74DEDC0C4315</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_AccountMember_CustFirstName" id="B635DE71-9662-8398-910D-39DAB94650C4">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>9C8D9F78-3B77-6F18-2E72-8885E04F45B0</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_AccountMember_CustMiddleInitial" id="6405D9AB-6CCA-3EC5-9FBD-C29C45BF13A9">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>AB416DD6-3B5C-A780-7110-A731CDAE4594</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_AccountMember_CustSuffix" id="4A171860-4C85-3BA3-F436-1C2FFF330B79">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>A4D6EA62-36E3-40D6-A4A4-EC6929104B45</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_AccountMember_CustDOB" id="09BAE20A-1B22-12E5-280E-C2C56D621090">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>621885E5-44F3-E2D2-E4F7-B8FC2E14B9C1</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_AccountMember_StartDate" id="6C56B988-8B46-B500-D5EC-43916D321994">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>FE56E005-21EE-187C-7A2B-EC5067B11A92</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_AccountAlias_AccountName" id="B6AA89E0-26E0-A0BF-324A-90D7FCE9AB38">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>0861A9DA-4136-EB66-AB2B-215DDFA786FE</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_AccountAlias_AccountName2" id="9E2F3FED-5820-2F6E-6660-D8136327D36C">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>5C56F5F1-3931-EA0D-CF7C-F45CCC5755A7</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_AccountAlias_LocationAddress1" id="3F1B2EA7-6F29-6284-9B6E-6AD39687DFC6">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>897209D1-2C76-54C8-7523-DBADA4BCFCA6</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_AccountAlias_LocationAddress2" id="4597C2F7-DE92-C1CC-46F3-F809FD76345D">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>EB5970AC-AA78-6DFF-AB14-A4C3C186B095</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_AccountAlias_LocationCity" id="0626BB31-35BA-0D01-0BD7-0E49A9600FD2">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>63722C7D-445E-CF5B-E5D7-D6E917B4DC6C</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_AccountAlias_LocationState" id="9E4836D1-D65C-2ACD-2932-9ABF044675B7">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>0ACC9D12-43C2-443E-E127-AEA066EFC0B8</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_AccountAlias_LocationZip" id="70F7BCB4-A3EA-0F66-D247-ACA95E725D63">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>D789D6A4-29E9-7850-9D71-95AF3D2FAEB1</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_AccountAlias_CompanyCode" id="CE084D9B-3FED-DBF5-F8EF-7CC5B9C8AAA1">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>FD946EB9-CC52-DC55-90DC-24DFCBB9432A</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_AccountAlias_AliasSource" id="F43C1685-853E-0298-9E20-7D6BC46B62D3">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>DCC91007-56F0-E5C3-8753-3E301CC4C4EB</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_AccountAlias_AliasID" id="0B8589E4-94B3-1EA3-44FB-81F793B86A8A">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>CE09F6E4-8A5E-CA5D-CBC9-33B39CBEA9A0</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Customer_CustLastName" id="BAD16E15-D2B4-2D21-063D-1750710DE17D">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>F0A0228F-BB5A-6599-CD8C-812944BAC992</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Customer_CustFirstName" id="0A10C86E-4DF9-DE6A-E782-B9595230E105">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>19E7FF54-73C7-50DA-9B24-40528A0977E1</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Customer_CustMiddleInitial" id="5FE9E85D-465C-DCC8-DC3C-D7FF19140658">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>785FF19B-A815-3D75-50F0-F468857DCA23</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Customer_CustSuffix" id="48DCC24A-BE43-E6AE-5B0A-240D02C3B1EE">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>659BA060-3F65-E22B-D783-19016B868DE9</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Customer_CustDOB" id="14DC60F4-7BF9-7C45-FA84-58D463F50361">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>6FEC4D6B-592E-C836-3D94-7C7203D6F98E</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AccountName3" id="1B2ECD68-BC33-560F-AFDA-D908994FAAFA">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>D29DFAAB-2777-316D-4660-64A42D27D047</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AccountName22" id="685F593C-492C-8E77-2220-7385800AB472">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>A22698FA-39F8-31FB-098C-692B93EFA6EA</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LocationAddress12" id="D21C5A5E-1991-A860-B208-C2BAB5839D4B">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>9DC0BA92-D505-29FF-61D1-4B2DF0941C97</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LocationAddress22" id="822205C1-47F2-5DDB-CDB4-68C76642083C">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>CF6E8F19-6440-F30E-8622-98CA001283C9</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LocationCity2" id="0FDCDBFF-60BF-BAAA-088E-68C3D65B990B">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>108CEC2E-CADB-3DC7-AC3C-C7CA39A07C0E</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LocationState2" id="106CFC34-36A5-5DCC-C053-CE4EF4A42E6E">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>9BF62A39-9A78-AC3B-08AA-F5D5CEE6FB86</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LocationZip2" id="15060D53-4212-E00E-A1A5-AEC3BA625CDE">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>85210B14-E664-776B-0952-EE0F8AF1E9CD</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CompanyCode21" id="172041F1-CB01-1C8A-E1FA-5C1184D357D8">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>DBEC1878-6701-2569-122C-9B97BBF7F275</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CustLastName11" id="497BA81E-5DB4-5861-2622-6D4FF6DA9DD3">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>05B0F2F0-A3C0-A85A-B801-9DC87A21DE18</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CustFirstName11" id="8A30C8BC-52B4-986F-3E27-9956B973E896">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>0C645478-0EB1-342F-D6C3-EA391DC06D88</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CustMiddleInitial11" id="4734B5F0-BA90-FFD1-D170-D8C803F4DEA2">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>43948BA9-72E3-2001-FA72-DF595B0DED7E</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CustSuffix11" id="6F03872C-FCC0-BE08-67BB-0EA6836EF96E">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>DB523A3D-B2A5-A854-FE8B-FE87ED2A75EC</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CustDOB11" id="4FB4081F-69EB-ADD5-0D3C-637C282DE124">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>3BD781FE-4D5D-D1E1-5FAF-DD86848DC9EF</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="StartDate11" id="70CDDED5-1608-97B2-7269-8CA9218D91A3">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>CC70374F-4CEC-2688-DE75-9E556E66A6EB</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AccountName12" id="A5226C6E-0B32-C223-591C-5E8AA17CE688">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>A7D837C5-2DA7-380C-10E4-E0302B966786</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AccountName212" id="FE6A0049-79D8-5D4F-5AAC-AD0AEC078B64">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>B34828DD-1BC9-B477-24ED-9777B79FCCB4</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LocationAddress112" id="52FA41E7-F868-67F1-A7F9-55615D9BEDDD">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>7987317A-68F1-79D7-E9F8-2202EBEB3E16</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LocationAddress212" id="5A3E7BAA-890E-BBBA-6FE4-759E29A2E940">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>7298FA94-707F-33BE-50C1-7A2A61EA97E3</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LocationCity12" id="055D2F19-5839-D7A6-ACEB-F43DBE86D8F1">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>63CC43B9-9C57-C95C-58E1-E6D03EB81807</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LocationState12" id="87C0B041-98A7-4A96-D89C-B979192BA66E">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>59FC2367-2F03-3339-A149-E6A8BAC42C52</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LocationZip12" id="67F26E3F-FD8A-5A60-0CCA-8A3990CB16F6">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>468C699C-1673-6B58-DEED-B8BF8D064ECC</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CompanyCode12" id="C1B03D29-D50B-8B4F-3E69-6B4AF628795C">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>B9881FCA-88C0-28B9-B324-812C0F74FD7F</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AccountName111" id="8BB67C76-A75E-2AD6-2E23-36820B9C0D30">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>46EEA36E-5E61-1A35-F7F4-49B55B25CF11</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AccountName2111" id="2DB22B0B-5C7C-2A5D-AFB9-FCE00C92184D">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>9ED87D60-35F2-F893-CAA9-D48782526AD0</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LocationAddress1111" id="2641B70D-640C-97EB-C1C8-02C196B2A24F">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>DFA53CED-C35C-B15F-BD2C-D64D928D64BA</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LocationAddress2111" id="A75F3A0A-AD2B-6824-DEA2-4F6782AAFC97">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>68EE66B0-DD5D-08A4-F229-CCAF78CEB171</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LocationCity111" id="836973B5-536C-B33A-705E-27F9BD8814EF">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>3A243CDA-2212-C569-21F7-E9FB62841F8C</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LocationState111" id="AC042E75-6B9A-411B-1899-C4F7611166A3">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>A27F9462-EA89-6EF8-D952-5550B544D9E9</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LocationZip111" id="51861572-ACAC-E858-3803-9F5787DA78D3">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>C85077DD-E320-CD18-5487-2644C5E90415</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CompanyCode111" id="4546C6A8-3993-F336-8FB1-2CB6C6FB5278">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>4574722C-F9CB-A341-6774-E970CB57F7C9</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CustLastName111" id="A026D57D-E391-8057-2510-1005C2FC3715">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>FF030695-202D-646A-64D2-6F84159CCC52</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CustFirstName111" id="782022A4-7ACB-E68E-CD5B-17482188E0BD">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>25476C85-EB7E-8BBB-745C-4F6F84DBA730</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CustMiddleInitial111" id="4917F3C9-6AEE-687A-85EE-193C05D94D6A">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>F49FB0B2-64FF-DB66-80A5-01210C34212E</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CustSuffix111" id="06BBB8F9-4530-7517-073C-36BBD5C70F46">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>6759FF26-2987-9D36-A2A5-C5508C396814</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CustDOB111" id="3525DAD3-3F62-CF60-BF90-8DB79270166C">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>14646EBC-C4B7-82FA-89E8-CF360E194A2B</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="StartDate111" id="CD6C671B-5F61-0771-6884-D02D8BC81BE0">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>9852F8A3-743C-793F-1B4B-81E32C2959B1</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AccountName41" id="4A0444D2-28EA-D656-019A-649F2744E4A5">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>20FD0C51-2293-2352-7073-E78EDA841E1A</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AccountName231" id="97E79AD2-DD3C-4786-F73A-39F08C4EB767">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>695AA0F8-5729-ACAA-7FA1-FB929C507E9A</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LocationAddress131" id="85D0DBA1-BBA4-C7B9-BBE4-CCBB79EFEF88">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>276539AD-62B1-7703-1228-56AE69C96710</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LocationAddress231" id="00FE14AB-1F72-F674-9D0A-CEBC842AC2F9">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>21D673BD-CB7F-7103-B036-1918685C051A</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LocationCity31" id="69ABA658-5CDE-63E8-11C4-C74F2A15C279">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>FD5171D7-0F1C-4952-A7F1-BD64186FF759</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LocationState31" id="0387E1DF-410B-FCF5-EF31-10DDCDF9EEB4">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>60C364BA-2600-CADC-4A87-B848BE72C825</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LocationZip31" id="A9EF1EF8-E742-3E67-A9A6-9FA71E8FC2CA">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>AF394D09-A6BD-9893-5925-53D59732CB47</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CompanyCode_1" id="CE988BF8-0187-7C37-7256-48631A526E43">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>52018EEF-0C7B-B167-827F-BCCF4487D4F1</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AliasSource1" id="9519802B-8B52-AF3C-81B1-A8202DA3DFDF">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>EC97315A-A08D-8207-D844-C052027649E7</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AliasID1" id="B4C17304-FC6F-3AB4-5AD2-3EFF3177FD73">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>12287E88-9656-3D6B-D923-6624C5C78151</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Customer_CustomerID" id="8A534A9A-4129-9903-33FF-B7C1235A45B8">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 19:40:56 UTC</createdTime>
+<generatorID>7644FF92-73F3-31B6-1D88-73D96C858E61</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="82AA7614-29BA-7674-CB69-08896318BCD0" referredColumn="57CB7ABB-B2D6-592B-91C2-5DA74A8F9AA7"/>
+</associations>
+</Column>
+<Column name="Account_AccountID" id="E87A091D-A344-C599-E774-3518F1199A76">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 19:40:56 UTC</createdTime>
+<generatorID>9D9003CF-54CC-CB4D-32E4-18EB16AEBC40</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E01A5603-2ACF-26D9-C8F2-07EC6B09A9B3" referredColumn="C994991A-4515-D49F-81DF-A6C3A375453E"/>
+</associations>
+</Column>
+<Column name="AccountMemberID" id="34496DB6-563F-AB40-38EF-E653443C4296">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 19:40:56 UTC</createdTime>
+<generatorID>377FC8B3-5447-519A-38CE-7C678B4B8467</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6FCAE54E-E7C3-9EF3-3AA4-F8847A0FBF2A" name="AccountMember_PK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>0F21BA1E-0A8C-61BA-ED34-5693B24A0333</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34496DB6-563F-AB40-38EF-E653443C4296"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3BFE5A2F-A055-C87C-50EE-DCC972D64FD6" name="AccountMember_Customer_FK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>BC58A4EC-985F-1BE8-8D55-DD255CCC5186</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A534A9A-4129-9903-33FF-B7C1235A45B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="14989A49-106F-7040-FA56-DF9568C0914E" name="AccountMember_Account_FK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:30:31 UTC</createdTime>
+<generatorID>D26BE03D-90C7-98F8-9839-D99C0F75F907</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E87A091D-A344-C599-E774-3518F1199A76"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

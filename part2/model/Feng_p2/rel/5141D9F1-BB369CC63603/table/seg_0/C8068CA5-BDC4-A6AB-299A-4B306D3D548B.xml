@@ -1,0 +1,231 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C8068CA5-BDC4-A6AB-299A-4B306D3D548B" name="ContractParty">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:30:31 UTC</createdTime>
+<generatorID>DE129C4F-A496-87E9-3B12-1CAFEC4445AA</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ContractNumber" id="7698C06D-11D0-922A-0CE8-714460A93566">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:30:31 UTC</createdTime>
+<generatorID>454E469A-22FB-DD8E-782B-22D164C09DEB</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7A68CCBE-8770-CE08-6929-D584B544F711</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CustLastName" id="2FEA8E13-DF5D-530A-7EFF-0B861E22F2FF">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:30:31 UTC</createdTime>
+<generatorID>62644A61-A65C-E07F-F7B9-2DAD2E28ABB1</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D449C81B-856D-6897-17D4-A4CD5A989A50</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CustFirstName" id="07875B59-EAC7-81C9-275C-3C3781C6DB9E">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:30:31 UTC</createdTime>
+<generatorID>82CA176A-BE68-170B-DE42-790D187CB4A0</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D449C81B-856D-6897-17D4-A4CD5A989A50</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CustMiddleInitial" id="2B7357FC-2BB8-9030-43C7-B421F4FB6B49">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:30:31 UTC</createdTime>
+<generatorID>921EA01A-31D5-767C-C828-CEFAC882831E</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B414969A-D0FD-F96F-FDC4-919BC73A6987</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CustSuffix" id="61F6925F-3DC1-627D-18D5-155C4D2D1B09">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:30:31 UTC</createdTime>
+<generatorID>1DBF1CFE-66EC-D61F-9A36-8BAF0D5A80F7</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>27C770C8-A753-C67A-1213-46828C6C6C31</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CustDOB" id="544E6FFB-9A57-F7CC-C0AD-09F3EAC84ACC">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:30:31 UTC</createdTime>
+<generatorID>A17EAB13-4D59-3521-31A3-35628B358E70</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Role" id="3991E869-EE9B-9DF0-2CCC-7E742CB1A5C3">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:30:31 UTC</createdTime>
+<generatorID>E87CEBB5-BEDC-A302-ECA3-1E126269AC4A</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7A68CCBE-8770-CE08-6929-D584B544F711</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BenefitReference" id="87DF3673-B293-2035-1934-DA2E26EB39F1">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:30:31 UTC</createdTime>
+<generatorID>BCCC3BAB-5732-835E-0A72-7CBCA079C49E</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7A68CCBE-8770-CE08-6929-D584B544F711</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="StartDate" id="0BBCC075-0DF0-7C49-B3C5-382608E11817">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:30:31 UTC</createdTime>
+<generatorID>29751C27-3DDB-5B23-DDBB-F868DCDAC479</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EndDate" id="960A2E17-C06F-3A12-29E4-22DB4660E16D">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:30:31 UTC</createdTime>
+<generatorID>F4E6670F-F6EC-BDBC-FA0E-9A8F9969C8C7</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Customer_CustomerID" id="BA053F83-0BC4-94F3-5F8C-CFCB839BC7B2">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:30:31 UTC</createdTime>
+<generatorID>BB44BABE-22D1-76F4-B6B8-AC50DE0F9379</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BD741E40-0FE5-B80C-113B-85CE2C75E199" referredColumn="57CB7ABB-B2D6-592B-91C2-5DA74A8F9AA7"/>
+</associations>
+</Column>
+<Column name="Contract_ContractID" id="A0A8BF61-000A-240B-BCC9-475A6E8E1C5E">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:30:31 UTC</createdTime>
+<generatorID>009B5097-A5CE-531E-8DC5-7841859219BB</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97D39A4B-3833-C35D-17F0-6440F8EBEF16" referredColumn="6FB410CD-4C80-A209-7F7E-526A599ADFA2"/>
+</associations>
+</Column>
+<Column name="ContractBenefit_ContractBenefitID" id="3DC2CEEE-DB4A-CA05-65E9-100E597515CA">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:30:31 UTC</createdTime>
+<generatorID>2E87A3B0-D469-2583-437C-C488591B2288</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D27E0ED4-D20E-3239-6936-7B2AEE5FBC10" referredColumn="5BC5EC63-7AFD-FED4-B26E-EBB7FDF99A9C"/>
+</associations>
+</Column>
+<Column name="ContractPartyID" id="6FF84AAD-37CC-37A0-77DC-2D8829F49493">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:30:31 UTC</createdTime>
+<generatorID>E30DF48C-457E-6276-09A9-213D4AA9F639</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BD612BFD-11A3-B44D-7FD4-6728DFB3BD16" name="ContractParty_PK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:30:31 UTC</createdTime>
+<generatorID>B5154ABC-C934-6319-2774-9AAD47677C91</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6FF84AAD-37CC-37A0-77DC-2D8829F49493"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EED5E351-42F3-15D2-B991-DF4DED7EE92E" name="ContractParty_ContractBenefit_FK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:30:31 UTC</createdTime>
+<generatorID>BE4CDB8D-D78D-D188-1319-2BAE9A49B3D1</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3DC2CEEE-DB4A-CA05-65E9-100E597515CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AFB5B367-620C-BECD-6E38-AE932D005BEF" name="ContractParty_Contract_FK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:30:31 UTC</createdTime>
+<generatorID>4D6BC76A-8D82-483B-33ED-30E9E642C9ED</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0A8BF61-000A-240B-BCC9-475A6E8E1C5E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DF33F2F9-6AC3-640E-EFF8-86CC9BF61604" name="ContractParty_Customer_FK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:30:31 UTC</createdTime>
+<generatorID>358C025B-9143-07B4-8CAF-DFE57B83429F</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA053F83-0BC4-94F3-5F8C-CFCB839BC7B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

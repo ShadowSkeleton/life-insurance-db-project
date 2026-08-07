@@ -1,0 +1,9 @@
+query_id,table_name,logical_reads,scan_count,main_operator
+Q1,[dbo].[ContractParty],2,1,Index Seek
+Q1,[dbo].[Contract],3,0,
+Q4,[dbo].[WELLNESS_ACTIVITY],7,1,Index Seek
+Q5,[dbo].[WELLNESS_ACTIVITY],423,1,Index Scan
+Q8a-count,[dbo].[Contract],29,1,Index Seek
+Q8b-count,[dbo].[Contract],147,1,Index Seek
+Q8a,[dbo].[Contract],3090,1,Clustered Index Scan
+Q8b,[dbo].[Contract],3090,1,Clustered Index Scan

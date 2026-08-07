@@ -1,0 +1,405 @@
+{
+  "seed": 20260727,
+  "files": {
+    "Customer": {
+      "rows": 50000,
+      "csv_bytes": 5839094,
+      "estimated_sql_data_bytes": 7298867
+    },
+    "Product": {
+      "rows": 15,
+      "csv_bytes": 1476,
+      "estimated_sql_data_bytes": 1845
+    },
+    "BillingAccount": {
+      "rows": 40000,
+      "csv_bytes": 5346281,
+      "estimated_sql_data_bytes": 6682851
+    },
+    "RATE_VERSION": {
+      "rows": 6,
+      "csv_bytes": 244,
+      "estimated_sql_data_bytes": 305
+    },
+    "Contract": {
+      "rows": 60000,
+      "csv_bytes": 10615311,
+      "estimated_sql_data_bytes": 13269138
+    },
+    "ContractParty": {
+      "rows": 90000,
+      "csv_bytes": 8356886,
+      "estimated_sql_data_bytes": 10446107
+    },
+    "Claim": {
+      "rows": 5000,
+      "csv_bytes": 256580,
+      "estimated_sql_data_bytes": 320725
+    },
+    "Invoice": {
+      "rows": 300000,
+      "csv_bytes": 26240671,
+      "estimated_sql_data_bytes": 32800838
+    },
+    "WELLNESS_PROGRAM": {
+      "rows": 5,
+      "csv_bytes": 211,
+      "estimated_sql_data_bytes": 263
+    },
+    "WELLNESS_ENROLLMENT": {
+      "rows": 24000,
+      "csv_bytes": 653157,
+      "estimated_sql_data_bytes": 816446
+    },
+    "WELLNESS_ACTIVITY": {
+      "rows": 1000000,
+      "csv_bytes": 31780568,
+      "estimated_sql_data_bytes": 39725710
+    },
+    "RISK_IMPROVEMENT": {
+      "rows": 48000,
+      "csv_bytes": 1972687,
+      "estimated_sql_data_bytes": 2465858
+    },
+    "POLICY_RENEWAL": {
+      "rows": 90000,
+      "csv_bytes": 2921487,
+      "estimated_sql_data_bytes": 3651858
+    },
+    "Account": {
+      "rows": 40000,
+      "csv_bytes": 6778376,
+      "estimated_sql_data_bytes": 8472970
+    },
+    "AccountMember": {
+      "rows": 50000,
+      "csv_bytes": 7634273,
+      "estimated_sql_data_bytes": 9542841
+    },
+    "Relation_3": {
+      "rows": 40000,
+      "csv_bytes": 497839,
+      "estimated_sql_data_bytes": 622298
+    },
+    "APPLICATION": {
+      "rows": 90000,
+      "csv_bytes": 6877221,
+      "estimated_sql_data_bytes": 8596526
+    }
+  },
+  "total_csv_bytes": 115772362,
+  "total_estimated_sql_data_bytes": 144715446,
+  "activity_count_distribution": {
+    "min": 1,
+    "median": 8.0,
+    "p90": 14,
+    "max": 2055
+  },
+  "wellness_discount": {
+    "zero_count": 82146,
+    "nonzero_min": 2.0,
+    "nonzero_median": 11.23,
+    "nonzero_max": 15.0
+  },
+  "contracts_per_rate_version": {
+    "1": 7484,
+    "2": 8437,
+    "3": 9505,
+    "4": 10526,
+    "5": 11600,
+    "6": 12448
+  },
+  "applications": {
+    "source_profile_distribution": {
+      "AgeBand": {
+        "18-24": 2815,
+        "25-29": 2176,
+        "30-34": 2367,
+        "35-39": 2617,
+        "40-44": 2851,
+        "45-49": 2698,
+        "50-54": 3015,
+        "55-59": 3332,
+        "60-64": 4040,
+        "65-69": 4492,
+        "70-74": 4118,
+        "75-79": 3425,
+        "80-99": 3831
+      },
+      "Gender": {
+        "F": 21098,
+        "M": 20679
+      },
+      "SmokingStatus": {
+        "current": 4774,
+        "former": 11952,
+        "never": 25051
+      },
+      "DiabetesStatus": {
+        "no": 35545,
+        "yes": 6232
+      },
+      "BMIBand": {
+        "normal": 12310,
+        "obese": 13996,
+        "over": 14771,
+        "under": 700
+      }
+    },
+    "application_profile_distribution": {
+      "AgeBand": {
+        "18-24": 4746,
+        "25-29": 6299,
+        "30-34": 6658,
+        "35-39": 6670,
+        "40-44": 6913,
+        "45-49": 6822,
+        "50-54": 6913,
+        "55-59": 7256,
+        "60-64": 7667,
+        "65-69": 8116,
+        "70-74": 7807,
+        "75-79": 7232,
+        "80-99": 6901
+      },
+      "Gender": {
+        "F": 44906,
+        "M": 45094
+      },
+      "SmokingStatus": {
+        "current": 10494,
+        "former": 25687,
+        "never": 53819
+      },
+      "DiabetesStatus": {
+        "no": 77320,
+        "yes": 12680
+      },
+      "BMIBand": {
+        "normal": 25941,
+        "obese": 30624,
+        "over": 31976,
+        "under": 1459
+      },
+      "Status": {
+        "bound": 60000,
+        "declined": 9000,
+        "expired": 6000,
+        "quoted": 15000
+      },
+      "FaceAmount": {
+        "100000": 16420,
+        "1000000": 7191,
+        "250000": 44751,
+        "500000": 21638
+      }
+    }
+  },
+  "profiles": {
+    "date_ranges": {
+      "Customer": {
+        "CustDOB": {
+          "min": "1940-01-01",
+          "max": "2001-12-28"
+        },
+        "StartDate": {
+          "min": "2021-01-01",
+          "max": "2026-07-01"
+        },
+        "EndDate": {
+          "min": null,
+          "max": null
+        }
+      },
+      "RATE_VERSION": {
+        "EffectiveDate": {
+          "min": "2021-01-01",
+          "max": "2026-01-01"
+        },
+        "ExpiryDate": {
+          "min": "2022-01-01",
+          "max": "2026-01-01"
+        }
+      },
+      "Contract": {
+        "PayUpDate": {
+          "min": "2031-01-01",
+          "max": "2061-07-01"
+        },
+        "EffectiveDate": {
+          "min": "2021-01-01",
+          "max": "2026-07-01"
+        },
+        "ExpiryDate": {
+          "min": "2031-01-01",
+          "max": "2046-07-01"
+        }
+      },
+      "ContractParty": {
+        "CustDOB": {
+          "min": "1940-01-01",
+          "max": "2001-12-28"
+        },
+        "StartDate": {
+          "min": "2021-01-01",
+          "max": "2026-07-01"
+        },
+        "EndDate": {
+          "min": "2031-01-01",
+          "max": "2046-07-01"
+        }
+      },
+      "Claim": {
+        "ClaimDate": {
+          "min": "2021-08-13",
+          "max": "2026-07-01"
+        },
+        "SettlementDate": {
+          "min": "2021-10-08",
+          "max": "2026-09-28"
+        },
+        "WellnessEligibilityDate": {
+          "min": "2021-09-16",
+          "max": "2026-07-01"
+        }
+      },
+      "Invoice": {
+        "PaidDate": {
+          "min": "2021-01-22",
+          "max": "2026-07-25"
+        },
+        "DueDate": {
+          "min": "2021-01-31",
+          "max": "2026-07-31"
+        },
+        "RunDate": {
+          "min": "2021-01-01",
+          "max": "2026-07-01"
+        },
+        "PaymentDate": {
+          "min": "2021-01-22",
+          "max": "2026-07-25"
+        }
+      },
+      "WELLNESS_ENROLLMENT": {
+        "EnrollDate": {
+          "min": "2021-01-01",
+          "max": "2026-07-01"
+        }
+      },
+      "WELLNESS_ACTIVITY": {
+        "ActivityDate": {
+          "min": "2021-01-01",
+          "max": "2026-07-01"
+        }
+      },
+      "RISK_IMPROVEMENT": {
+        "MeasureDate": {
+          "min": "2021-12-21",
+          "max": "2026-07-01"
+        }
+      },
+      "POLICY_RENEWAL": {
+        "RenewalDate": {
+          "min": "2022-01-01",
+          "max": "2026-07-01"
+        }
+      },
+      "APPLICATION": {
+        "ApplicationDate": {
+          "min": "2021-01-01",
+          "max": "2026-07-01"
+        }
+      }
+    },
+    "skewed_categorical_counts": {
+      "BillingAccount": {
+        "OnlineBillingFlag": {
+          "N": 10000,
+          "Y": 30000
+        },
+        "ActivityStatus": {
+          "Active": 36000,
+          "Inactive": 4000
+        }
+      },
+      "RATE_VERSION": {
+        "Status": {
+          "active": 1,
+          "superseded": 5
+        }
+      },
+      "Contract": {
+        "ActivityStatus": {
+          "Active": 46679,
+          "Lapsed": 8506,
+          "Surrender": 4815
+        }
+      },
+      "Invoice": {
+        "PaymentMethod": {
+          "ACH": 197616,
+          "Card": 81461,
+          "Check": 20923
+        },
+        "RemittanceFreq": {
+          "Annual": 38896,
+          "Monthly": 186239,
+          "Quarterly": 74865
+        }
+      },
+      "WELLNESS_ENROLLMENT": {
+        "Status": {
+          "Active": 16878,
+          "Complete": 4788,
+          "Lapsed": 2334
+        }
+      },
+      "WELLNESS_ACTIVITY": {
+        "ActivityType": {
+          "Gym Visit": 519804,
+          "Health Screen": 80066,
+          "Nutrition Log": 119688,
+          "Step Challenge": 280442
+        },
+        "VerifiedFlag": {
+          "N": 280157,
+          "Y": 719843
+        }
+      },
+      "APPLICATION": {
+        "Gender": {
+          "F": 44906,
+          "M": 45094
+        },
+        "SmokingStatus": {
+          "current": 10494,
+          "former": 25687,
+          "never": 53819
+        },
+        "DiabetesStatus": {
+          "no": 77320,
+          "yes": 12680
+        },
+        "BMIBand": {
+          "normal": 25941,
+          "obese": 30624,
+          "over": 31976,
+          "under": 1459
+        },
+        "Status": {
+          "bound": 60000,
+          "declined": 9000,
+          "expired": 6000,
+          "quoted": 15000
+        },
+        "FaceAmount": {
+          "100000.00": 16420,
+          "1000000.00": 7191,
+          "250000.00": 44751,
+          "500000.00": 21638
+        }
+      }
+    }
+  }
+}

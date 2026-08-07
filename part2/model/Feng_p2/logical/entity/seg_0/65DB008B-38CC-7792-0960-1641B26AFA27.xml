@@ -1,0 +1,282 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="65DB008B-38CC-7792-0960-1641B26AFA27" name="AccountMember">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:47:00 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="AccountName" id="D3D3F988-EE43-B76A-D77E-7751813DAD29">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:49:15 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E5F74DC3-0BC5-42DF-D720-A7FE0F40C4B4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AccountName2" id="37203505-9277-AD45-89D5-C5C900EAC1F7">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:49:17 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E5F74DC3-0BC5-42DF-D720-A7FE0F40C4B4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LocationAddress1" id="C73023BD-090A-704E-60D4-02FF37EADC1C">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:49:21 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E5F74DC3-0BC5-42DF-D720-A7FE0F40C4B4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LocationAddress2" id="A803E0AB-28E9-2417-CF7B-2E566B65A3C5">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:49:25 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E5F74DC3-0BC5-42DF-D720-A7FE0F40C4B4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LocationCity" id="399633DB-C497-430A-4E68-551B88142697">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:49:30 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B4763EB4-9EE5-48D4-BA6C-F84E539D48C6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LocationState" id="977190A6-E21F-F476-1C53-A7C7C5D5DF6B">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:49:35 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B18E650D-8CDD-1C09-078D-FDA3BE106785</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LocationZip" id="EA65AAE2-9E5E-C3CF-E677-B136B5AA49DA">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:49:39 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>646BF3AF-1D3A-B5C5-3762-C2933B5E8C6F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CompanyCode" id="F9D4FCD6-3C47-B57B-968E-F6FFC1CB1159">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:49:42 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6D8702EF-2970-5B86-F22E-D75AA852F511</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CustLastName" id="B3680E55-5CFD-4EEF-DB04-CA6A493A5DAB">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:49:47 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D449C81B-856D-6897-17D4-A4CD5A989A50</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CustFirstName" id="B18D69DA-FA03-AE06-5561-65E8AA60ACBD">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:49:52 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D449C81B-856D-6897-17D4-A4CD5A989A50</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CustMiddleInitial" id="7C95EED0-7781-FE22-027E-C23BA2ACB38B">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:50:00 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B414969A-D0FD-F96F-FDC4-919BC73A6987</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CustSuffix" id="BD441EFE-6A6E-DB96-DEDE-EB42B4731A64">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:50:06 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>27C770C8-A753-C67A-1213-46828C6C6C31</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CustDOB" id="C06C12CA-DBED-4EE4-E73F-97BB43391577">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:50:12 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="StartDate" id="AA9D982D-D7DF-D8D7-BF0F-7F9419591CD6">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:50:16 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EndDate" id="51A0E9E5-FD26-C72D-923A-0CDA271184E6">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:50:22 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FSAContributionAmount" id="B688C74F-7824-315D-75A5-EB42F9234144">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:50:29 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E06EFBF8-5798-EDEE-B5EC-E4A128D6A645</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CustBAcctDepartmentName" id="8A52E40C-79D3-CAB6-BFEA-C512A2B472AD">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:50:35 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B4763EB4-9EE5-48D4-BA6C-F84E539D48C6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CustomerID" id="7644FF92-73F3-31B6-1D88-73D96C858E61">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:49:19 UTC</createdTime>
+<generatorID>BC58A4EC-985F-1BE8-8D55-DD255CCC5186</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<referedAttribute>EC9EB535-8CB4-CACD-0EA4-7493E3F43249</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AccountID" id="9D9003CF-54CC-CB4D-32E4-18EB16AEBC40">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 18:57:40 UTC</createdTime>
+<generatorID>D26BE03D-90C7-98F8-9839-D99C0F75F907</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<referedAttribute>1B3267BB-5B2D-248B-7CA4-63FE17232D61</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AccountMemberID" id="377FC8B3-5447-519A-38CE-7C678B4B8467">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 19:39:48 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0F21BA1E-0A8C-61BA-ED34-5693B24A0333" name="AccountMember PK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:50:51 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>377FC8B3-5447-519A-38CE-7C678B4B8467</newElementsIDs>
+<usedAttributes>
+<attributeRef>377FC8B3-5447-519A-38CE-7C678B4B8467</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

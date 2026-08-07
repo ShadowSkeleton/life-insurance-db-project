@@ -1,0 +1,14 @@
+query_id,baseline_logical_reads_all_tables_touched,final_logical_reads_all_tables_touched,percent_change,final_plan_shape
+Q1,999,5,-99.50%,ContractParty Index Seek
+Q2,4649,1327,-71.46%,Multi-table traversal with ContractParty index scan and Invoice seek
+Q2b,2603,41,-98.42%,Invoice BillingAccount index seek
+Q3,2,2,0.00%,Scan
+Q4,4562,7,-99.85%,Partition-aligned WELLNESS_ACTIVITY Index Seek
+Q5,4562,423,-90.73%,Partition-aligned WELLNESS_ACTIVITY Index Scan
+Q6,1424,1424,0.00%,Contract clustered index scan
+Q7,728,728,0.00%,POLICY_RENEWAL clustered index scan
+Q8a-count,1424,29,-97.96%,ActivityStatus index seek
+Q8b-count,1424,147,-89.68%,ActivityStatus index seek
+Q8a-retrieval,1424,1424,0.00%,Contract clustered index scan
+Q8b-retrieval,1424,1424,0.00%,Contract clustered index scan
+Q9,1240,1240,0.00%,STG_BRFSS_RECORD clustered index scan

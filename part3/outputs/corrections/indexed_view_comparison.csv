@@ -1,0 +1,3 @@
+query_id,baseline_logical_reads,increment2_partitioned_base_reads,yearly_view_default_reads,yearly_view_noexpand_reads,default_plan,noexpand_plan
+Q4,4562,7,7,2,base-table Index Seek,view Clustered Index Seek
+Q5,4562,423,423,34,base-table Index Scan,view Clustered Index Seek

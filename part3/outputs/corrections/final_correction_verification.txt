@@ -1,0 +1,41 @@
+ObjectName|type_desc
+----------|---------
+vWellnessActivityEnrollmentYear|VIEW
+
+(1 rows affected)
+YearlyViewRows
+--------------
+32862
+
+(1 rows affected)
+key_ordinal|KeyColumn
+-----------|---------
+1|ActivityYear
+2|EnrollmentID
+
+(2 rows affected)
+Lapsed|Active|TotalContracts
+------|------|--------------
+8506|46679|60000
+
+(1 rows affected)
+RateVersionRows
+---------------
+6
+
+(1 rows affected)
+RiskFactorRows
+--------------
+0
+
+(1 rows affected)
+RateRows
+--------
+0
+
+(1 rows affected)
+RefreshRunRows
+--------------
+0
+
+(1 rows affected)

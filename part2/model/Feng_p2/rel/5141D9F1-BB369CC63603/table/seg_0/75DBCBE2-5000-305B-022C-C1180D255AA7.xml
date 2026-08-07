@@ -1,0 +1,213 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="75DBCBE2-5000-305B-022C-C1180D255AA7" name="BillingAccount">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>2CB9A55C-55F9-7925-002A-07E58FDF2927</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BAcctName" id="D0C2C32F-323A-8D81-EE63-A41C3898C687">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>59654E10-4AAD-ABDC-62C0-6C402876A111</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E5F74DC3-0BC5-42DF-D720-A7FE0F40C4B4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BAcctName2" id="525465CE-AF34-F851-6CD8-9EDC81CE6025">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>1CCD8F1D-839F-B728-D059-7F29D8CF7CC6</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E5F74DC3-0BC5-42DF-D720-A7FE0F40C4B4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BillingAddress1" id="6CE12847-04DC-0CB9-DDE8-C51C7D84DA57">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>A7C48E45-D022-BE36-A034-269D8FD7354C</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E5F74DC3-0BC5-42DF-D720-A7FE0F40C4B4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BillingAddress2" id="A835485E-0E73-C4D9-2323-9AF5A5E6321D">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>52409B45-1BBF-DB49-DF9A-8CE19B5EC2DB</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E5F74DC3-0BC5-42DF-D720-A7FE0F40C4B4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BillingCity" id="EA61D5EB-EC08-1B8D-E970-F1EEA3086D60">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>4B9B6F26-83DF-DBDF-B400-53EF4EE60DF1</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B4763EB4-9EE5-48D4-BA6C-F84E539D48C6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BillingState" id="FC4EC1DF-BE05-C4C1-ACA5-985897DB7CDB">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>24A9588F-F4FD-94D8-B693-CDAC6FC233A0</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B18E650D-8CDD-1C09-078D-FDA3BE106785</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BillingZip" id="F6B5805F-312C-E961-C7BE-BA0A04628F8F">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>BA47D1DE-A3BE-B6A5-96FA-2B31B34CB7E3</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>646BF3AF-1D3A-B5C5-3762-C2933B5E8C6F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GroupNumber" id="8B7BCB2E-44C9-B196-878F-63012748B38C">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>A4BFA738-8C13-1A74-462D-B73B465EBE5A</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7A68CCBE-8770-CE08-6929-D584B544F711</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TaxIDNumber" id="A7C7F24C-A2DB-15E6-600A-1D42F0286A81">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>4E3EEFE2-6CCC-EE6A-B9A9-A18E29F05AE4</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D03E6587-9DE3-AFBE-ABBB-47984B371E0A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GeoCode" id="33A0F43C-8E92-3CDD-1689-622535B8FC31">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>2F8D30B2-98BB-607D-A19D-FEB0E6B50E5B</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6D8702EF-2970-5B86-F22E-D75AA852F511</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OnlineBillingFlag" id="142BB0FA-71DC-09FC-ACC4-662C9C00E3ED">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>B2DD36CF-5AA9-01FB-3DF2-AB1469DFA8BA</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>AF9CB1AA-8488-9C09-F2BE-929058F35F88</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ActivityStatus" id="B8B48FF7-7293-D34A-298C-BB902ADC3E14">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>99F8B90D-A05C-2749-F59D-72716734A4CF</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6D8702EF-2970-5B86-F22E-D75AA852F511</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BillingPhone" id="E222B80E-1A44-5213-2203-310DBA5166C2">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>2534B661-8AE1-265A-5A6F-F3BB6084CBF8</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0FE5BEA5-E6E1-A40B-C82F-EB5FAD93BE57</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="InvoiceNumber" id="C7733EC6-0BE1-233F-3473-CE9E4D9DAAF1">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>5F52427D-8191-C445-8195-3521BAC2A399</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BillingAccountID" id="D58094C1-1203-CC62-A218-474F4697830A">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 19:40:56 UTC</createdTime>
+<generatorID>2F23E7D8-307D-8D70-B077-6568A1E335B1</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2227E456-3679-6618-703E-13D40A3CE8BD" name="BillingAccount_PK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-17 20:58:10 UTC</createdTime>
+<generatorID>B17C602F-BAB4-1C3A-90D9-B4D93ACED40A</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D58094C1-1203-CC62-A218-474F4697830A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9FBB9E61-1F86-D529-0477-263FF1293E63" name="BillingAccount_BAcctName_BAcctName2_BillingAddress1_BillingAddress2_BillingCity_BillingState_BillingZip_UN">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 19:40:56 UTC</createdTime>
+<generatorID>AD6F403F-F8F0-3F6E-32C8-6233D7F42547</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D0C2C32F-323A-8D81-EE63-A41C3898C687"/>
+<colUsage columnID="525465CE-AF34-F851-6CD8-9EDC81CE6025"/>
+<colUsage columnID="6CE12847-04DC-0CB9-DDE8-C51C7D84DA57"/>
+<colUsage columnID="A835485E-0E73-C4D9-2323-9AF5A5E6321D"/>
+<colUsage columnID="EA61D5EB-EC08-1B8D-E970-F1EEA3086D60"/>
+<colUsage columnID="FC4EC1DF-BE05-C4C1-ACA5-985897DB7CDB"/>
+<colUsage columnID="F6B5805F-312C-E961-C7BE-BA0A04628F8F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

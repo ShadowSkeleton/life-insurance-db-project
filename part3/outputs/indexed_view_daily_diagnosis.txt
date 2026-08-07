@@ -1,0 +1,17 @@
+IndexedViewRows
+---------------
+245170
+
+(1 rows affected)
+key_ordinal|KeyColumn
+-----------|---------
+1|EnrollmentID
+2|ActivityDate
+
+(2 rows affected)
+ObjectName|IndexName|DataSpace|PartitionScheme
+----------|---------|---------|---------------
+vWellnessActivityEnrollmentDaily|CIX_vWellnessActivityEnrollmentDaily|PRIMARY|NULL
+WELLNESS_ACTIVITY|CIX_WELLNESS_ACTIVITY_ActivityDate_ActivityID|ps_P3_WELLNESS_ACTIVITY|ps_P3_WELLNESS_ACTIVITY
+
+(2 rows affected)

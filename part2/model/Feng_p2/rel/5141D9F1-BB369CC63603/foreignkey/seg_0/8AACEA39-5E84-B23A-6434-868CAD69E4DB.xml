@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8AACEA39-5E84-B23A-6434-868CAD69E4DB" containerWithKeyObject="BF81E3D2-4F22-80A9-2557-0D4DE60EE785" localFKIndex="8BB217EC-44C6-DD0E-04E4-941579F22EEB" name="ManagerContract_WritingNumber_FK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:30:31 UTC</createdTime>
+<generatorID>4B243B18-DA3A-3440-1B75-9444CB4724F3</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<referredTableLongName>WritingNumber</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E3B67EC2-5C01-6707-6420-21F48222977C</referredTableID>
+<keyObject>C20054C1-FEDA-3F54-759B-2A13F388F20B</keyObject>
+<referredKeyID>C20054C1-FEDA-3F54-759B-2A13F388F20B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>WritingNumberID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,39 @@
+flowchart LR
+    start((Start))
+    endBound((Policy bound))
+    endRequote((End))
+    endValidation((End))
+    endBilling((End))
+    subgraph Applicant
+        accept[Accept quote and provide effective date]
+        acceptRevised{Accept revised premium?}
+        correct[Correct identity or party data]
+    end
+    subgraph Web_Application[Web Application]
+        determine[Determine rate version for effective date]
+        changed{Rate version changed since quote?}
+        requote[Recalculate quote]
+        validate[Validate identity and party data]
+        valid{Valid?}
+        confirm[Confirm binding]
+    end
+    subgraph Database
+        active[Read active RATE_VERSION and matching RATE]
+        application[Read APPLICATION profile and quote]
+        customer[Identify or create Customer]
+        contract[Create Contract with IssuedRateVersionID and ApplicationID]
+        bound[Update APPLICATION status to bound]
+        party[Create ContractParty]
+        billing[Establish AccountMember to Account to Relation_3 to BillingAccount path]
+        billingReady{Billing path established?}
+    end
+    start --> accept --> determine --> active --> changed
+    changed -- Yes --> requote --> acceptRevised
+    acceptRevised -- No --> endRequote
+    acceptRevised -- Yes --> validate
+    changed -- No --> validate
+    validate --> valid
+    valid -- No --> correct --> endValidation
+    valid -- Yes --> application --> customer --> contract --> bound --> party --> billing --> billingReady
+    billingReady -- No --> endBilling
+    billingReady -- Yes --> confirm --> endBound

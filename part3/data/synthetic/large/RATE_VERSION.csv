@@ -1,0 +1,7 @@
+EffectiveDate,ExpiryDate,Status,CreatedByRunID
+2021-01-01,2022-01-01,superseded,
+2022-01-01,2023-01-01,superseded,
+2023-01-01,2024-01-01,superseded,
+2024-01-01,2025-01-01,superseded,
+2025-01-01,2026-01-01,superseded,
+2026-01-01,,active,

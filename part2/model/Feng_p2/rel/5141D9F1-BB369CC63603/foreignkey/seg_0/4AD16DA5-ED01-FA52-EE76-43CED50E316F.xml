@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4AD16DA5-ED01-FA52-EE76-43CED50E316F" containerWithKeyObject="B9798703-521C-C68A-B562-9129DD080757" localFKIndex="DF9490E4-7334-06D3-FB5C-E434D3FE17A3" name="Relation_3_BillingAccount_FK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:34:32 UTC</createdTime>
+<generatorID>70D3B361-41F1-9DBC-5F3C-B8A268B5A95E</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<referredTableLongName>BillingAccount</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>75DBCBE2-5000-305B-022C-C1180D255AA7</referredTableID>
+<keyObject>2227E456-3679-6618-703E-13D40A3CE8BD</keyObject>
+<referredKeyID>2227E456-3679-6618-703E-13D40A3CE8BD</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>BillingAccountID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

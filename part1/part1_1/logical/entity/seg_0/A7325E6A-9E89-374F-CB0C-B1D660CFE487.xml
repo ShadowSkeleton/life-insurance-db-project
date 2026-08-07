@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A7325E6A-9E89-374F-CB0C-B1D660CFE487" name="ContractPremium">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:28:40 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ContractNumber" id="88FF9218-4AFE-311D-8D4D-91C1CE242D6C">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:29:55 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LineOfBusiness" id="8E7113A8-8FFC-166A-A906-9FD9F0B01CEC">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:29:58 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SeriesName" id="80EE6D41-BF79-79D5-4FFD-8FDC1D11B7B6">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:30:01 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PlanName" id="845A4A52-350D-5583-0CB1-FD9E70C126DA">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:30:05 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RiderName" id="661D5819-F6E0-F7A1-5396-EF130A16BB1F">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:30:09 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PremiumCode" id="5B43986C-54B6-A760-F97E-A4D71D13CCEB">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:30:14 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AnnualizedPremium" id="A72E664B-2CE1-5C60-DC5F-13A6D2B6B95C">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:30:20 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ProcessDate" id="11D31E54-B970-0F25-BE8E-A6D2ADA18B04">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:30:24 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AppSignDate" id="884BC621-D3D4-71D1-DBDE-5B96A55A5212">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:30:29 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CC9AFA0C-45AF-2535-5A54-8BCA78212B29" name="ContractPremium PK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:30:38 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>88FF9218-4AFE-311D-8D4D-91C1CE242D6C</attributeRef>
+<attributeRef>8E7113A8-8FFC-166A-A906-9FD9F0B01CEC</attributeRef>
+<attributeRef>80EE6D41-BF79-79D5-4FFD-8FDC1D11B7B6</attributeRef>
+<attributeRef>845A4A52-350D-5583-0CB1-FD9E70C126DA</attributeRef>
+<attributeRef>661D5819-F6E0-F7A1-5396-EF130A16BB1F</attributeRef>
+<attributeRef>5B43986C-54B6-A760-F97E-A4D71D13CCEB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,37 @@
+flowchart LR
+    start((Start))
+    endSuccess((Refresh completed))
+    endSourceFailure((End))
+    endModelFailure((End))
+    endPublishFailure((End))
+    subgraph Controlled_Operations[Controlled Operations]
+        parameters[Select authorized mortality cohort and loading factor]
+    end
+    subgraph Scheduler
+        trigger[Trigger scheduled refresh]
+    end
+    subgraph Refresh_Job[Scheduled Refresh Job]
+        run[Create running DATA_REFRESH_RUN]
+        sources{Required sources available?}
+        failSource[Record failed run]
+        publish[Create RATE_VERSION and RATE rows]
+        published{Publication complete?}
+        failPublish[Record failed run]
+        complete[Record NewRateVersionID and success]
+    end
+    subgraph Database
+        staging[Read STG_BRFSS_RECORD, STG_BRFSS, STG_NHANES, and STG_MORTALITY]
+        risks[Write RISK_FACTOR rows]
+    end
+    subgraph Model_Scoring[Model Scoring]
+        score[Apply approved diabetes-risk coefficients]
+        plausible{Output plausible?}
+        failModel[Return validation failure]
+    end
+    start --> parameters --> trigger --> run --> sources
+    sources -- No --> failSource --> endSourceFailure
+    sources -- Yes --> staging --> score --> plausible
+    plausible -- No --> failModel --> failSource
+    plausible -- Yes --> risks --> publish --> published
+    published -- No --> failPublish --> endPublishFailure
+    published -- Yes --> complete --> endSuccess

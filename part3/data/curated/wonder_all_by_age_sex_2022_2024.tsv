@@ -1,0 +1,101 @@
+"Notes"	"Ten-Year Age Groups"	"Ten-Year Age Groups Code"	"Sex"	"Sex Code"	Deaths	Population	Crude Rate	Crude Rate Lower 95% Confidence Interval	Crude Rate Upper 95% Confidence Interval
+	"< 1 year"	"1"	"Female"	"F"	27369	5353282	511.3	505.2	517.3
+	"< 1 year"	"1"	"Male"	"M"	33379	5594083	596.7	590.3	603.1
+"Total"	"< 1 year"	"1"			60748	10947365	554.9	550.5	559.3
+	"1-4 years"	"1-4"	"Female"	"F"	5190	21860008	23.7	23.1	24.4
+	"1-4 years"	"1-4"	"Male"	"M"	6868	22841454	30.1	29.4	30.8
+"Total"	"1-4 years"	"1-4"			12058	44701462	27.0	26.5	27.5
+	"5-14 years"	"5-14"	"Female"	"F"	7678	60057954	12.8	12.5	13.1
+	"5-14 years"	"5-14"	"Male"	"M"	10506	62927227	16.7	16.4	17.0
+"Total"	"5-14 years"	"5-14"			18184	122985181	14.8	14.6	15.0
+	"15-24 years"	"15-24"	"Female"	"F"	26663	65004923	41.0	40.5	41.5
+	"15-24 years"	"15-24"	"Male"	"M"	72233	68021061	106.2	105.4	107.0
+"Total"	"15-24 years"	"15-24"			98896	133025984	74.3	73.9	74.8
+	"25-34 years"	"25-34"	"Female"	"F"	58650	67730480	86.6	85.9	87.3
+	"25-34 years"	"25-34"	"Male"	"M"	140995	69767200	202.1	201.0	203.1
+"Total"	"25-34 years"	"25-34"			199645	137497680	145.2	144.6	145.8
+	"35-44 years"	"35-44"	"Female"	"F"	106978	66186909	161.6	160.7	162.6
+	"35-44 years"	"35-44"	"Male"	"M"	207393	67438373	307.5	306.2	308.9
+"Total"	"35-44 years"	"35-44"			314371	133625282	235.3	234.4	236.1
+	"45-54 years"	"45-54"	"Female"	"F"	189457	60916598	311.0	309.6	312.4
+	"45-54 years"	"45-54"	"Male"	"M"	318370	60789184	523.7	521.9	525.5
+"Total"	"45-54 years"	"45-54"			507827	121705782	417.3	416.1	418.4
+	"55-64 years"	"55-64"	"Female"	"F"	450987	64010817	704.5	702.5	706.6
+	"55-64 years"	"55-64"	"Male"	"M"	701284	61590756	1138.6	1136.0	1141.3
+"Total"	"55-64 years"	"55-64"			1152271	125601573	917.4	915.7	919.1
+	"65-74 years"	"65-74"	"Female"	"F"	817019	54973264	1486.2	1483.0	1489.4
+	"65-74 years"	"65-74"	"Male"	"M"	1107658	48945421	2263.0	2258.8	2267.3
+"Total"	"65-74 years"	"65-74"			1924677	103918685	1852.1	1849.5	1854.7
+	"75-84 years"	"75-84"	"Female"	"F"	1182203	30714180	3849.0	3842.1	3856.0
+	"75-84 years"	"75-84"	"Male"	"M"	1263832	24474275	5163.9	5154.9	5172.9
+"Total"	"75-84 years"	"75-84"			2446035	55188455	4432.1	4426.6	4437.7
+	"85+ years"	"85+"	"Female"	"F"	1635458	12134190	13478.1	13457.4	13498.8
+	"85+ years"	"85+"	"Male"	"M"	1073077	6981801	15369.6	15340.5	15398.7
+"Total"	"85+ years"	"85+"			2708535	19115991	14168.9	14152.1	14185.8
+	"Not Stated"	"NS"	"Female"	"F"	60	Not Applicable	Not Applicable	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Male"	"M"	180	Not Applicable	Not Applicable	Not Applicable	Not Applicable
+"Total"	"Not Stated"	"NS"			240	Not Applicable	Not Applicable	Not Applicable	Not Applicable
+"Total"					9443487	1008313440	936.6	936.0	937.2
+"---"
+"Dataset: Underlying Cause of Death, 2018-2024, Single Race"
+"Query Parameters:"
+"Title: All-cause mortality by age and sex 2022-2024"
+"Year/Month: 2022; 2023; 2024"
+"Group By: Ten-Year Age Groups; Sex"
+"Show Totals: True"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd-expanded.html for more information."
+"---"
+"Query Date: Jul 28, 2026 8:12:59 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 2018-2024 on CDC WONDER Online Database, released in 2026. Data are from the Multiple Cause of Death Files,"
+"2018-2024, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10-expanded.html on Jul 28, 2026 8:12:59 PM"
+"---"
+Caveats:
+"1. Deaths of persons with Age ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among age groups,"
+"so are not included in age-specific counts, age-specific rates or in any age-adjusted rates. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd-expanded.html#Not Stated."
+"2. The method used to calculate 95% confidence intervals is documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/ucd-expanded.html#Confidence-Intervals."
+"3. The population figures for year 2024 are single-race estimates of the July 1 resident population, from the Vintage 2024"
+"postcensal series released by the Census Bureau on June 27, 2024. The 2024 series is based on the Modified Blended Base produced"
+"by the US Census Bureau in lieu of the April 1, 2020 decennial population count. The Modified Blended Base consists of the blend"
+"of Vintage 2020 postcensal population estimates for April 1, 2020, 2020 Demographic Analysis Estimates, and 2020 Census data"
+"from the internal Census Edited File (CEF). The population figures for year 2023 are single-race estimates of the July 1"
+"resident population, from the Vintage 2023 postcensal series released by the Census Bureau on June 27, 2024. The 2023 series is"
+"based on the Modified Blended Base produced by the US Census Bureau in lieu of the April 1, 2020 decennial population count. The"
+"Modified Blended Base consists of the blend of Vintage 2020 postcensal population estimates for April 1, 2020, 2020 Demographic"
+"Analysis Estimates, and 2020 Census data from the internal Census Edited File (CEF). The population figures for years 2022 are"
+"single-race estimates of the July 1 resident population, from the Vintage 2022 postcensal series released by the Census Bureau"
+"on June 22, 2023. The 2022 series is based on the Modified Blended Base produced by the US Census Bureau in lieu of the April 1,"
+"2020 decennial population count. The Modified Blended Base consists of the blend of Vintage 2020 postcensal population estimates"
+"for April 1, 2020, 2020 Demographic Analysis Estimates, and 2020 Census data from the internal Census Edited File (CEF). The"
+"population figures for years 2021 are single-race estimates of the July 1 resident population, based on the Blended Base"
+"produced by the US Census Bureau in lieu of the April 1, 2020 decennial population count, from the Vintage 2021 postcensal"
+"series released by the Census Bureau on June 30, 2022. The population figures for year 2020 are single-race estimates of the"
+"July 1 resident population, from the Vintage 2020 postcensal series based on April 2010 Census, released by the Census Bureau on"
+"July 27, 2021. The population figures for year 2019 are single-race estimates of the July 1 resident population, from the"
+"Vintage 2019 postcensal series based on April 2010 Census, released by the Census Bureau on June 25, 2020. The population"
+"figures for year 2018 are single-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series based"
+"on April 2010 Census, released by the Census Bureau on June 20, 2019. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd-expanded.html#Population Data."
+"4. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd-expanded.html#Age"
+"Group."
+"5. Connecticut population estimates for 2022 and later years are reported for 9 planning regions as county equivalent areas,"
+"instead of the former 8 legacy counties in the Vintage 2022 postcensal series released by the Census Bureau on June 22, 2023,"
+"and in the Vintage 2023 postcensal series released by the Census Bureau on June 27, 2024. Populations estimates for the former"
+"counties are not available for 2022 and later years. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd-expanded.html#Connecticut-2022."
+"6. After the creation of the final 2023 dataset, North Carolina updated the cause of death information for over 900 death"
+"certificates to include a cause of death code indicating drug overdose (ICD-10 underlying cause-of-death codes: X40-X44,"
+"X60-X64, X85, and Y10-Y14). Jurisdictions can continue to update death certificates after the closing of the mortality file. As"
+"a result, users should consider that the actual death count for drug overdose deaths for North Carolina in 2023 is over 4,400"
+"deaths, with a crude rate of approximately 41.0 per 100,000 population, and an age-adjusted rate of approximately 42.1 per"
+"100,000 population. These deaths will not be updated on the final mortality datasets."

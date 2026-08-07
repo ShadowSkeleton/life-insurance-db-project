@@ -1,0 +1,6 @@
+13.0
+4
+1 SQLCHAR 0 0 "," 1 ContractIDRaw SQL_Latin1_General_CP1_CI_AS
+2 SQLCHAR 0 0 "," 2 WellnessProgramIDRaw SQL_Latin1_General_CP1_CI_AS
+3 SQLCHAR 0 0 "," 3 EnrollDateRaw SQL_Latin1_General_CP1_CI_AS
+4 SQLCHAR 0 0 "\r\n" 4 StatusRaw SQL_Latin1_General_CP1_CI_AS

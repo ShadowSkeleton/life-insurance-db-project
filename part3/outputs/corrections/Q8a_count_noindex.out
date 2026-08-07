@@ -1,0 +1,6 @@
+ContractCount
+-------------
+8506
+Microsoft SQL Server 2005 XML Showplan
+--------------------------------------
+<ShowPlanXML xmlns="http://schemas.microsoft.com/sqlserver/2004/07/showplan" Version="1.564" Build="16.0.4265.3"><BatchSequence><Batch><Statements><StmtSimple StatementText="SELECT COUNT_BIG(*) [ContractCount] FROM [dbo].[Contract] WHERE [ActivityStatus]=@

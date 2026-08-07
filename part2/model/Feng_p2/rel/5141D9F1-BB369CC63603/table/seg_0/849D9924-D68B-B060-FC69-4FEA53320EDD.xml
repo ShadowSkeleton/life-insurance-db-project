@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="849D9924-D68B-B060-FC69-4FEA53320EDD" name="Relation_31">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:34:32 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Associate_AssociateID" id="387CBE0D-AC23-189D-4333-D516B15412B3">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:34:32 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="78B431C9-ED61-0BAF-9699-5E3D3CA3A077" referredColumn="06E7FFA9-30AC-EF85-405E-248BBDA5EEC4"/>
+</associations>
+</Column>
+<Column name="Contest_ContestID" id="4A5687B5-972F-4346-E747-F065120E4963">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:34:32 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="185CE12F-2C4C-9ED6-AC9E-65C8E6C5989C" referredColumn="CEC7DE46-D78C-1932-A3A6-10225D3F0978"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DDE0E344-81CB-25AF-894D-6A99CFE5A8E8" name="Relation_31_PK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:34:32 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="387CBE0D-AC23-189D-4333-D516B15412B3"/>
+<colUsage columnID="4A5687B5-972F-4346-E747-F065120E4963"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3B346EB0-5A79-C1D8-F68E-03C40B539866" name="Relation_31_Associate_FK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:34:32 UTC</createdTime>
+<generatorID>B9CB80B4-CAD0-6D82-7F36-BD44F16F4C4F</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="387CBE0D-AC23-189D-4333-D516B15412B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="19183193-29C9-221A-A5CB-55D1CEF5D53F" name="Relation_31_Contest_FK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:34:32 UTC</createdTime>
+<generatorID>B9CB80B4-CAD0-6D82-7F36-BD44F16F4C4F</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A5687B5-972F-4346-E747-F065120E4963"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

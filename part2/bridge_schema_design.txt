@@ -1,0 +1,193 @@
+BRIDGE / HYBRID SCHEMA DESIGN
+=============================
+Purpose: inter-relate the structured insurance schema (18 base tables) with
+the external health data lake, and satisfy Prof Franchitti's 3 requirements:
+  (1) async rate revision from datasets
+  (2) existing policies frozen, new applicants get current rates
+  (3) renewals re-priced with wellness offsets
+
+All new tables use single-column surrogate INTEGER PKs, consistent with the
+optimized base schema. Add these in SQL Developer Data Modeler as new
+entities, then relate them as noted.
+
+DIKW mapping (cite in report):
+  Data        -> Layer A staging tables (raw lake mirror)
+  Information -> Layer B risk-factor tables (bands -> multipliers)
+  Knowledge   -> Layer C rate tables (effective-dated rates)
+
+
+================================================================
+LAYER A: DATA LAKE STAGING (raw external data mirrored into RDBMS)
+================================================================
+These mirror the curated slices of the Blob Storage datasets so the RDBMS
+can reference them. One table per source. Kept deliberately thin (only the
+fields pricing needs), the full raw files stay in the lake.
+
+STG_BRFSS
+  StgBRFSSID        INTEGER  PK (surrogate)
+  SourceYear        INTEGER          -- survey year
+  AgeBand           VARCHAR(10)      -- e.g. '45-49'
+  Gender            VARCHAR(1)
+  SmokingStatus     VARCHAR(10)      -- current/former/never
+  DiabetesStatus    VARCHAR(10)      -- yes/no/prediabetes
+  BMIBand           VARCHAR(10)      -- e.g. '30-34.9'
+  ExerciseFreq      VARCHAR(10)      -- changeable factor
+  PrevalenceRate    NUMERIC(6,4)     -- share with the condition
+  LoadDate          DATE
+  SourceFile        VARCHAR(255)     -- lineage back to the lake blob
+
+STG_NHANES
+  StgNHANESID       INTEGER  PK
+  SourceCycle       VARCHAR(10)      -- e.g. '2017-2018'
+  AgeBand           VARCHAR(10)
+  Gender            VARCHAR(1)
+  DiabetesBiomarker VARCHAR(20)      -- e.g. A1C band
+  BMIMeasured       NUMERIC(5,2)
+  LoadDate          DATE
+  SourceFile        VARCHAR(255)
+
+STG_MORTALITY   (CDC WONDER + SSA life tables)
+  StgMortalityID    INTEGER  PK
+  SourceYear        INTEGER
+  AgeBand           VARCHAR(10)
+  Gender            VARCHAR(1)
+  ConditionFlag     VARCHAR(10)      -- diabetic vs general population
+  MortalityRate     NUMERIC(8,6)     -- deaths per 1000 / qx from life table
+  LifeExpectancy    NUMERIC(5,2)
+  LoadDate          DATE
+  SourceFile        VARCHAR(255)
+
+
+================================================================
+LAYER B: RISK FACTOR (Information: bands -> mortality multiplier)
+================================================================
+Derived from Layer A. This is where external data becomes a pricing signal.
+Populated by the async job (Layer D) from the staging tables.
+
+RISK_FACTOR
+  RiskFactorID        INTEGER  PK
+  AgeBand             VARCHAR(10)
+  Gender              VARCHAR(1)
+  SmokingStatus       VARCHAR(10)
+  DiabetesStatus      VARCHAR(10)
+  BMIBand             VARCHAR(10)
+  MortalityMultiplier NUMERIC(6,3)   -- 1.00 = baseline; >1 = higher risk
+  DerivedFromRunID    INTEGER  FK -> DATA_REFRESH_RUN.RunID
+  -- UNIQUE (AgeBand, Gender, SmokingStatus, DiabetesStatus, BMIBand, DerivedFromRunID)
+
+
+================================================================
+LAYER C: RATE (Knowledge: effective-dated rates)  -- satisfies req #2
+================================================================
+RATE_VERSION
+  RateVersionID     INTEGER  PK
+  EffectiveDate     DATE             -- when this rate book goes live
+  ExpiryDate        DATE             -- null = current
+  Status            VARCHAR(10)      -- active/superseded/draft
+  CreatedByRunID    INTEGER  FK -> DATA_REFRESH_RUN.RunID
+  -- only one active version at a time for a given product line
+
+RATE
+  RateID            INTEGER  PK
+  RateVersionID     INTEGER  FK -> RATE_VERSION.RateVersionID
+  RiskFactorID      INTEGER  FK -> RISK_FACTOR.RiskFactorID
+  ProductID         INTEGER  FK -> Product.ProductID   (link to base schema)
+  BaseRate          NUMERIC(12,2)    -- premium before wellness offset
+  -- the actual number an applicant is quoted for their risk band
+
+
+================================================================
+LAYER D: ASYNC MECHANISM  -- satisfies req #1
+================================================================
+Records each scheduled refresh that reads the lake and revises rates.
+This IS the async mechanism the prof asked for, made concrete as data.
+
+DATA_REFRESH_RUN
+  RunID             INTEGER  PK
+  RunType           VARCHAR(20)      -- scheduled/manual
+  StartedAt         DATE
+  CompletedAt       DATE
+  Status            VARCHAR(10)      -- success/failed/running
+  SourceDatasets    VARCHAR(255)     -- which lake datasets were read
+  NewRateVersionID  INTEGER  FK -> RATE_VERSION.RateVersionID
+  Notes             VARCHAR(255)
+  -- one run reads staging, rebuilds RISK_FACTOR, creates a new RATE_VERSION.
+  -- async = decoupled from live policy transactions.
+
+
+================================================================
+POLICY LINK  -- satisfies req #2 (freeze existing) and #3 (renewals)
+================================================================
+Your base schema's Contract table represents the policy. Add one column and
+two new tables to tie policies to rate versions and wellness.
+
+Contract  (ADD one column to existing table)
+  + IssuedRateVersionID  INTEGER  FK -> RATE_VERSION.RateVersionID
+  -- freezes the policy to the rate book in effect when issued.
+  -- existing policyholders keep their IssuedRateVersionID untouched when a
+  -- new version is published; new applicants get the current active version.
+
+POLICY_RENEWAL   -- satisfies req #3
+  RenewalID           INTEGER  PK
+  ContractID          INTEGER  FK -> Contract.ContractID
+  RenewalDate         DATE
+  NewRateVersionID    INTEGER  FK -> RATE_VERSION.RateVersionID  -- re-priced
+  WellnessDiscountPct NUMERIC(5,2)   -- offset from wellness participation
+  FinalPremium        NUMERIC(12,2)  -- new rate minus wellness offset
+  -- renewals ARE affected by new rates, unlike existing mid-term policies.
+
+
+================================================================
+LAYER E: WELLNESS LOOPBACK  -- satisfies req #3
+================================================================
+Participation events + measured improvement over time + the discount link.
+
+WELLNESS_PROGRAM
+  WellnessProgramID  INTEGER  PK
+  ProgramName        VARCHAR(60)
+  PartnerGym         VARCHAR(60)
+  DiscountMaxPct     NUMERIC(5,2)
+
+WELLNESS_ENROLLMENT
+  EnrollmentID       INTEGER  PK
+  ContractID         INTEGER  FK -> Contract.ContractID
+  WellnessProgramID  INTEGER  FK -> WELLNESS_PROGRAM.WellnessProgramID
+  EnrollDate         DATE
+  Status             VARCHAR(10)
+
+WELLNESS_ACTIVITY   -- gym participation events reported back
+  ActivityID         INTEGER  PK
+  EnrollmentID       INTEGER  FK -> WELLNESS_ENROLLMENT.EnrollmentID
+  ActivityDate       DATE
+  ActivityType       VARCHAR(20)     -- gym visit, class, etc.
+  VerifiedFlag       CHAR(1)
+
+RISK_IMPROVEMENT   -- measured changeable-factor improvement over time
+  ImprovementID      INTEGER  PK
+  EnrollmentID       INTEGER  FK -> WELLNESS_ENROLLMENT.EnrollmentID
+  MeasureDate        DATE
+  MeasureType        VARCHAR(20)     -- BMI, smoking status, exercise freq
+  MeasureValue       NUMERIC(8,2)
+  BaselineValue      NUMERIC(8,2)
+  ImprovementPct     NUMERIC(5,2)    -- feeds the renewal discount
+  -- ties back to the same changeable factors in RISK_FACTOR, closing the loop.
+
+
+================================================================
+HOW THE THREE REQUIREMENTS ARE MET (report summary)
+================================================================
+Req 1 (async revision): DATA_REFRESH_RUN reads STG_* lake tables, rebuilds
+  RISK_FACTOR, and issues a new RATE_VERSION. Decoupled from live txns.
+Req 2 (freeze existing): Contract.IssuedRateVersionID pins each policy to
+  its issue-time rate book. New applicants quote against the active version.
+Req 3 (renewals + wellness): POLICY_RENEWAL re-prices against the current
+  version and subtracts WellnessDiscountPct derived from RISK_IMPROVEMENT /
+  WELLNESS_ACTIVITY.
+
+FLOW (data lake -> quote):
+  Blob lake (BRFSS/NHANES/WONDER/SSA)
+    -> STG_* (Layer A, Data)
+    -> RISK_FACTOR (Layer B, Information)
+    -> RATE_VERSION + RATE (Layer C, Knowledge)
+    -> quote for applicant / renewal premium
+  DATA_REFRESH_RUN orchestrates it asynchronously.

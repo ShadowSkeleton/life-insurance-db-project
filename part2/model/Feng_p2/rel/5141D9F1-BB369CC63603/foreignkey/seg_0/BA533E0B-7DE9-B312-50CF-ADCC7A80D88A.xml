@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BA533E0B-7DE9-B312-50CF-ADCC7A80D88A" containerWithKeyObject="6159A1BF-5E2E-16AF-EBF3-3C30AD639141" localFKIndex="36824258-CF3C-F909-91EA-0B144F10D0BE" name="ContractPremium_ContractBenefit_FK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 15:21:44 UTC</createdTime>
+<generatorID>1981E150-E2BF-4C74-6250-2CAB810CD50A</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<referredTableLongName>ContractBenefit</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3A33BB72-07BC-107E-C40D-ECC6CA1BB2DF</referredTableID>
+<keyObject>91E25C09-0DD1-2A02-3FF1-D0CECB0843B7</keyObject>
+<referredKeyID>91E25C09-0DD1-2A02-3FF1-D0CECB0843B7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ContractNumber,LineOfBusiness,SeriesName,PlanName,RiderName,ContractPremium_ContractNumber,ContractPremium_LineOfBusiness,ContractPremium_SeriesName,ContractPremium_PlanName,ContractPremium_RiderName,ContractPremium_PremiumCode,Contract_ContractNumber,Contract_ContractBenefit_ContractNumber,Contract_ContractBenefit_LineOfBusiness,Contract_ContractBenefit_SeriesName,Contract_ContractBenefit_PlanName,Contract_ContractBenefit_RiderName,Contract_ContractBenefit_ContractPremium_ContractNumber,Contract_ContractBenefit_ContractPremium_LineOfBusiness,Contract_ContractBenefit_ContractPremium_SeriesName,Contract_ContractBenefit_ContractPremium_PlanName,Contract_ContractBenefit_ContractPremium_RiderName,Contract_ContractBenefit_ContractPremium_PremiumCode</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

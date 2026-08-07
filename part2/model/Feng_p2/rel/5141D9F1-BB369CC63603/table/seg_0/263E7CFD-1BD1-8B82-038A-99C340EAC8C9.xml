@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="263E7CFD-1BD1-8B82-038A-99C340EAC8C9" name="Relation_32">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:34:32 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Customer_CustomerID" id="DC48DF7B-D2D0-9207-262C-F4CF5A48ADD5">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:34:32 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6FB8CE5C-6772-4797-407A-B8369BD20957" referredColumn="57CB7ABB-B2D6-592B-91C2-5DA74A8F9AA7"/>
+</associations>
+</Column>
+<Column name="Associate_AssociateID" id="02825B7C-8890-61F9-9711-11D59EE62574">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:34:32 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2A4AAD57-A221-5307-8699-F1AF8FC6080E" referredColumn="06E7FFA9-30AC-EF85-405E-248BBDA5EEC4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5045713C-A8A7-4CAC-6E67-346791F70491" name="Relation_32_PK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:34:32 UTC</createdTime>
+<ownerDesignName>backup</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC48DF7B-D2D0-9207-262C-F4CF5A48ADD5"/>
+<colUsage columnID="02825B7C-8890-61F9-9711-11D59EE62574"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="66A6C2F3-46CC-DB1A-AE77-097F8DB02321" name="Relation_32_Customer_FK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:34:32 UTC</createdTime>
+<generatorID>616A0010-AD0C-1834-E9A1-DD502FAB4246</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC48DF7B-D2D0-9207-262C-F4CF5A48ADD5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="62FCC78A-373F-1F63-DDC5-06793ECD8175" name="Relation_32_Associate_FK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-20 20:34:32 UTC</createdTime>
+<generatorID>616A0010-AD0C-1834-E9A1-DD502FAB4246</generatorID>
+<ownerDesignName>backup</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="02825B7C-8890-61F9-9711-11D59EE62574"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

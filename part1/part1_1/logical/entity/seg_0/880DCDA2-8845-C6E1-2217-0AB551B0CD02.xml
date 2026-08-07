@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="880DCDA2-8845-C6E1-2217-0AB551B0CD02" name="Invoice">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:07:20 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="InvoiceNumber" id="685E6124-5BF6-4742-0164-03051A7C22A3">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:09:07 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PaidDate" id="DB1603D1-C2C0-57A2-2A9C-DADCFF1BF3FD">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:09:10 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DueDate" id="C8D948A6-B735-E385-9A53-0102508837BA">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:09:14 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RunDate" id="238B89AE-4853-A103-4D6F-E19E738FE295">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:09:24 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PremiumSubTotal" id="B12DDA02-ABF2-8F4C-0C7D-781679745113">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:09:30 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PaymentMethod" id="3BCBB603-D228-F688-DD4C-DB8ACD227E50">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:09:34 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PaymentDate" id="76406CE0-22B7-E713-EFFD-C64E06B1C135">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:09:39 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RemittanceFreq" id="E223BD6C-7369-8701-B0A8-2B8950A8E38A">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:09:44 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="31B89C99-89B7-C963-8F73-8F2767FAAC05" name="Invoice PK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:09:56 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>685E6124-5BF6-4742-0164-03051A7C22A3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

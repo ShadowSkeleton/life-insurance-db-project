@@ -1,0 +1,27 @@
+# Jingrui Feng (jf4446) - database systems project part 3 - synthetic volume load order
+
+# Synthetic Volume Load Order and Identity Requirements
+
+Load every target into an empty table. Base-table keys are plain integer primary keys carried in the CSV, so `SET IDENTITY_INSERT` does not apply to them. Bridge-table CSVs omit their identity column. For the local bulk-load implementation, a format file bulk-loads each CSV into a text staging table, whose `LoadRow` identity captures file order; the target then uses `SET IDENTITY_INSERT ON` to persist that verified 1..N key. This is necessary because a set-based `INSERT ... SELECT` does not guarantee identity assignment in source order. Before loading a dependent child, run the corresponding parent verification query; each identity range must begin at 1 and match the row count exactly.
+
+| Order | Table | `SET IDENTITY_INSERT` | Dependency / required verification before children |
+|---:|---|---|---|
+| 1 | Customer | No — `CustomerID` is a supplied plain integer key. | `SELECT COUNT(*) AS rows, MIN(CustomerID) AS min_id, MAX(CustomerID) AS max_id FROM Customer;` Expect 50,000, 1, 50,000 before ContractParty. |
+| 2 | Product | No — `ProductID` is a supplied plain integer key. | `SELECT COUNT(*) AS rows, MIN(ProductID) AS min_id, MAX(ProductID) AS max_id FROM Product;` Expect 15, 1, 15 before Contract. |
+| 3 | BillingAccount | No — `BillingAccountID` is a supplied plain integer key. | `SELECT COUNT(*) AS rows, MIN(BillingAccountID) AS min_id, MAX(BillingAccountID) AS max_id FROM BillingAccount;` Expect 40,000, 1, 40,000 before Invoice. |
+| 4 | Account | No — `AccountID` is a supplied plain integer key. | `SELECT COUNT(*) AS rows, MIN(AccountID) AS min_id, MAX(AccountID) AS max_id FROM Account;` Expect 40,000, 1, 40,000 before AccountMember and Relation_3. |
+| 5 | AccountMember | No — `AccountMemberID` is a supplied plain integer key. | `SELECT COUNT(*) AS rows, MIN(AccountMemberID) AS min_id, MAX(AccountMemberID) AS max_id FROM AccountMember;` Expect 50,000, 1, 50,000. |
+| 6 | Relation_3 | No — the composite primary key is supplied by the CSV. | `SELECT COUNT(*) AS rows, MIN(Account_AccountID) AS min_account, MAX(Account_AccountID) AS max_account FROM Relation_3;` Expect 40,000, 1, 40,000. |
+| 7 | RATE_VERSION | Yes — explicitly supply staging `LoadRow` after bulk staging the CSV. | `SELECT COUNT(*) AS rows, MIN(RateVersionID) AS min_id, MAX(RateVersionID) AS max_id FROM RATE_VERSION;` Expect 6, 1, 6 before Contract and POLICY_RENEWAL. Contract.csv hardcodes `IssuedRateVersionID` values 1–6. |
+| 8 | Contract | No — `ContractID` is a supplied plain integer key. | `SELECT COUNT(*) AS rows, MIN(ContractID) AS min_id, MAX(ContractID) AS max_id FROM Contract;` Expect 60,000, 1, 60,000 before Claim, ContractParty, WELLNESS_ENROLLMENT, and POLICY_RENEWAL. |
+| 9 | Claim | No — `ClaimID` is a supplied plain integer key. | `SELECT COUNT(*) AS rows, MIN(ClaimID) AS min_id, MAX(ClaimID) AS max_id FROM Claim;` Expect 5,000, 1, 5,000. |
+| 10 | ContractParty | No — `ContractPartyID` is a supplied plain integer key. | `SELECT COUNT(*) AS rows, MIN(ContractPartyID) AS min_id, MAX(ContractPartyID) AS max_id FROM ContractParty;` Expect 90,000, 1, 90,000. |
+| 11 | Invoice | No — `InvoiceID` is a supplied plain integer key. | `SELECT COUNT(*) AS rows, MIN(InvoiceID) AS min_id, MAX(InvoiceID) AS max_id FROM Invoice;` Expect 300,000, 1, 300,000. |
+| 12 | WELLNESS_PROGRAM | Yes — explicitly supply staging `LoadRow` after bulk staging the CSV. | `SELECT COUNT(*) AS rows, MIN(WellnessProgramID) AS min_id, MAX(WellnessProgramID) AS max_id FROM WELLNESS_PROGRAM;` Expect 5, 1, 5 before WELLNESS_ENROLLMENT. |
+| 13 | WELLNESS_ENROLLMENT | Yes — explicitly supply staging `LoadRow` after bulk staging the CSV. | `SELECT COUNT(*) AS rows, MIN(EnrollmentID) AS min_id, MAX(EnrollmentID) AS max_id FROM WELLNESS_ENROLLMENT;` Expect 24,000, 1, 24,000 before WELLNESS_ACTIVITY and RISK_IMPROVEMENT. The 1,000,000 WELLNESS_ACTIVITY rows depend on these identities landing exactly 1–24,000. |
+| 14 | WELLNESS_ACTIVITY | Yes — explicitly supply staging `LoadRow` after bulk staging the CSV. | `SELECT COUNT(*) AS rows, MIN(ActivityID) AS min_id, MAX(ActivityID) AS max_id FROM WELLNESS_ACTIVITY;` Expect 1,000,000, 1, 1,000,000. |
+| 15 | RISK_IMPROVEMENT | Yes — explicitly supply staging `LoadRow` after bulk staging the CSV. | `SELECT COUNT(*) AS rows, MIN(ImprovementID) AS min_id, MAX(ImprovementID) AS max_id FROM RISK_IMPROVEMENT;` Expect 48,000, 1, 48,000 before POLICY_RENEWAL, whose discounts were derived from these rows. |
+| 16 | POLICY_RENEWAL | Yes — explicitly supply staging `LoadRow` after bulk staging the CSV. | `SELECT COUNT(*) AS rows, MIN(RenewalID) AS min_id, MAX(RenewalID) AS max_id FROM POLICY_RENEWAL;` Expect 90,000, 1, 90,000. |
+| 17 | APPLICATION | Yes — explicitly supply staging `LoadRow` after bulk staging the CSV. | `SELECT COUNT(*) AS rows, MIN(ApplicationID) AS min_id, MAX(ApplicationID) AS max_id FROM APPLICATION;` Expect 90,000, 1, 90,000 before backfilling `Contract.ApplicationID` for the first 60,000 bound rows. |
+
+If any identity check does not match, stop before loading the dependent table. The local loader uses `SET IDENTITY_INSERT` only after the staging-table `LoadRow` has demonstrated the 1..N file order and then reseeds the target; it does not guess or repair an identity range.

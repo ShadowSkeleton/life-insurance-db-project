@@ -1,0 +1,19 @@
+-- Jingrui Feng (jf4446) - database systems project part 3 - baseline capture protocol
+-- Baseline capture protocol for LifeInsuranceP3.
+-- Run before creating any discretionary index, partition function/scheme, or
+-- indexed view.  The companion python/etl/capture_baseline.py extracts each
+-- marked query from workload_queries.sql, runs it twice with these session
+-- settings, discards the first execution, and writes the second execution's
+-- plan and logical-read results to outputs/baseline/.
+--
+-- Equivalent sqlcmd batch for an individual query (the helper performs this
+-- once per Q block so individual plans can be saved):
+--   SET NOCOUNT ON;
+--   SET STATISTICS IO ON;
+--   SET STATISTICS XML ON;
+--   <query from workload_queries.sql>;
+--
+-- Statistics IO is captured from sqlcmd diagnostics and XML from its result
+-- stream.  Do not clear buffer cache between the two executions.  Elapsed time
+-- in ShowPlanXML is retained only as engine metadata and is not reported as a
+-- performance measurement because this local SQL Server runs under emulation.

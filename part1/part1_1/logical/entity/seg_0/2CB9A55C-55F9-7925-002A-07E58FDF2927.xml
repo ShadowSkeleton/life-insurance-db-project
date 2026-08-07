@@ -1,0 +1,188 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2CB9A55C-55F9-7925-002A-07E58FDF2927" name="BillingAccount">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:43:55 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="BAcctName" id="59654E10-4AAD-ABDC-62C0-6C402876A111">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:44:21 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BAcctName2" id="1CCD8F1D-839F-B728-D059-7F29D8CF7CC6">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:44:24 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BillingAddress1" id="A7C48E45-D022-BE36-A034-269D8FD7354C">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:44:26 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BillingAddress2" id="52409B45-1BBF-DB49-DF9A-8CE19B5EC2DB">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:44:31 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BillingCity" id="4B9B6F26-83DF-DBDF-B400-53EF4EE60DF1">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:44:35 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BillingState" id="24A9588F-F4FD-94D8-B693-CDAC6FC233A0">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:44:40 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BillingZip" id="BA47D1DE-A3BE-B6A5-96FA-2B31B34CB7E3">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:44:44 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GroupNumber" id="A4BFA738-8C13-1A74-462D-B73B465EBE5A">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:44:48 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TaxIDNumber" id="4E3EEFE2-6CCC-EE6A-B9A9-A18E29F05AE4">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:44:54 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GeoCode" id="2F8D30B2-98BB-607D-A19D-FEB0E6B50E5B">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:44:59 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OnlineBillingFlag " id="B2DD36CF-5AA9-01FB-3DF2-AB1469DFA8BA">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:45:06 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ActivityStatus" id="99F8B90D-A05C-2749-F59D-72716734A4CF">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:45:11 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BillingPhone" id="2534B661-8AE1-265A-5A6F-F3BB6084CBF8">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:45:16 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="InvoiceNumber" id="5F52427D-8191-C445-8195-3521BAC2A399">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-09 13:00:56 UTC</createdTime>
+<generatorID>66E24BA4-C618-4952-86DB-2A462C4303F6</generatorID>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<referedAttribute>685E6124-5BF6-4742-0164-03051A7C22A3</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B17C602F-BAB4-1C3A-90D9-B4D93ACED40A" name="BillingAccount PK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 20:46:18 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>59654E10-4AAD-ABDC-62C0-6C402876A111</attributeRef>
+<attributeRef>1CCD8F1D-839F-B728-D059-7F29D8CF7CC6</attributeRef>
+<attributeRef>A7C48E45-D022-BE36-A034-269D8FD7354C</attributeRef>
+<attributeRef>52409B45-1BBF-DB49-DF9A-8CE19B5EC2DB</attributeRef>
+<attributeRef>4B9B6F26-83DF-DBDF-B400-53EF4EE60DF1</attributeRef>
+<attributeRef>24A9588F-F4FD-94D8-B693-CDAC6FC233A0</attributeRef>
+<attributeRef>BA47D1DE-A3BE-B6A5-96FA-2B31B34CB7E3</attributeRef>
+<attributeRef>5F52427D-8191-C445-8195-3521BAC2A399</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

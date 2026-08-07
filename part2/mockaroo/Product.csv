@@ -1,0 +1,16 @@
+ProductID,LineOfBusiness,SeriesName,PlanName,RiderName,PlanCode,RatebookLocationCode,Description,Benefit,AnnualizedPremium
+1,Term Life,S100,Standard,GIO,P5106,RB-NE,Permanent life with cash value,Level premium guarantee,2072.53
+2,Term Life,S100,Preferred,ADB,P7485,RB-SE,Flexible premium life coverage,Level premium guarantee,768.78
+3,Term Life,S200,Standard,CHILD,P4578,RB-MW,Flexible premium life coverage,Death benefit paid to beneficiary,5419.7
+4,Term Life,S200,Select,ADB,P7689,RB-WE,Flexible premium life coverage,Level premium guarantee,1102.4
+5,Term Life,S300,Standard,GIO,P0107,RB-NE,Flexible premium life coverage,Death benefit paid to beneficiary,4433.59
+6,Whole Life,S100,Standard,WOP,P0316,RB-SE,Level term life coverage,Cash value accumulation,726.89
+7,Whole Life,S100,Select,WOP,P6903,RB-MW,Flexible premium life coverage,Death benefit paid to beneficiary,4181.23
+8,Whole Life,S200,Preferred,GIO,P9373,RB-WE,Permanent life with cash value,Level premium guarantee,4815.97
+9,Whole Life,S200,Select,CHILD,P3281,RB-NE,Permanent life with cash value,Cash value accumulation,1930.12
+10,Whole Life,S300,Standard,GIO,P8451,RB-SE,Level term life coverage,Cash value accumulation,2421.65
+11,Universal Life,S100,Standard,CHILD,P3965,RB-MW,Permanent life with cash value,Cash value accumulation,5854.32
+12,Universal Life,S100,Preferred,ADB,P2213,RB-WE,Permanent life with cash value,Death benefit paid to beneficiary,3120.11
+13,Universal Life,S200,Standard,ADB,P4537,RB-NE,Flexible premium life coverage,Level premium guarantee,1664.99
+14,Universal Life,S200,Select,WOP,P8216,RB-SE,Level term life coverage,Level premium guarantee,2392.59
+15,Universal Life,S300,Preferred,WOP,P6451,RB-MW,Flexible premium life coverage,Level premium guarantee,5841.37

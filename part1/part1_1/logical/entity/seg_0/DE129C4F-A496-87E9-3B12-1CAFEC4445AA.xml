@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DE129C4F-A496-87E9-3B12-1CAFEC4445AA" name="ContractParty">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:31:29 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ContractNumber" id="454E469A-22FB-DD8E-782B-22D164C09DEB">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:38:23 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CustLastName" id="62644A61-A65C-E07F-F7B9-2DAD2E28ABB1">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:38:25 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CustFirstName" id="82CA176A-BE68-170B-DE42-790D187CB4A0">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:38:30 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CustMiddleInitial" id="921EA01A-31D5-767C-C828-CEFAC882831E">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:38:34 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CustSuffix" id="1DBF1CFE-66EC-D61F-9A36-8BAF0D5A80F7">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:38:38 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CustDOB" id="A17EAB13-4D59-3521-31A3-35628B358E70">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:38:43 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Role" id="E87CEBB5-BEDC-A302-ECA3-1E126269AC4A">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:38:48 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BenefitReference" id="BCCC3BAB-5732-835E-0A72-7CBCA079C49E">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:38:53 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="StartDate" id="29751C27-3DDB-5B23-DDBB-F868DCDAC479">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:38:57 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EndDate" id="F4E6670F-F6EC-BDBC-FA0E-9A8F9969C8C7">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:39:01 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B5154ABC-C934-6319-2774-9AAD47677C91" name="ContractParty PK">
+<createdBy>jingrui_feng</createdBy>
+<createdTime>2026-07-08 21:39:09 UTC</createdTime>
+<ownerDesignName>part1_1</ownerDesignName>
+<engineerTo>
+<item key="5141D9F1-AB46-46A3-87E3-BB369CC63603" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>454E469A-22FB-DD8E-782B-22D164C09DEB</attributeRef>
+<attributeRef>62644A61-A65C-E07F-F7B9-2DAD2E28ABB1</attributeRef>
+<attributeRef>82CA176A-BE68-170B-DE42-790D187CB4A0</attributeRef>
+<attributeRef>921EA01A-31D5-767C-C828-CEFAC882831E</attributeRef>
+<attributeRef>1DBF1CFE-66EC-D61F-9A36-8BAF0D5A80F7</attributeRef>
+<attributeRef>A17EAB13-4D59-3521-31A3-35628B358E70</attributeRef>
+<attributeRef>E87CEBB5-BEDC-A302-ECA3-1E126269AC4A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
