@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color: #263244; background: #F3F7FA; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #F3F7FA; font-family: "Source Sans 3", "Segoe UI", sans-serif; }
+button, input, select { font: inherit; }
+.nums { font-family: "JetBrains Mono", "SFMono-Regular", monospace; font-variant-numeric: tabular-nums; }
+.fade-in { animation: fade-in 180ms ease-out both; }
+@keyframes fade-in { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 1ms !important; transition-duration: 1ms !important; scroll-behavior: auto !important; } }

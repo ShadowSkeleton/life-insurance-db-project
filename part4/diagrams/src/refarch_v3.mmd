@@ -1,0 +1,71 @@
+flowchart TB
+    subgraph Deployed_Architecture[Deployed architecture]
+        direction TB
+
+        subgraph External_Health_Data[External health data]
+            brfss[CDC BRFSS]
+            ssa[SSA period life table]
+            wonder[CDC WONDER]
+        end
+
+        subgraph Azure_Blob_Storage[Azure Blob Storage data lake]
+            lake[Curated source files and approved model export]
+        end
+
+        subgraph Asynchronous_Side[Asynchronous retraining and repricing]
+            direction LR
+            function[Azure Function monthly rate refresh]
+            subgraph Retraining_Module[Part 4 retraining module]
+                hash[Hash BRFSS curated source]
+                compare[Compare hash with DATA_SOURCE_STATE]
+                changed{Source bytes changed?}
+                retrain[Retrain model only on difference]
+                gate{Validation gate passes?}
+                release[Release new model export]
+                retain[Retain previous model and active rate book]
+                reload[Reload staging before rate computation]
+            end
+            compute[Compute RISK_FACTOR and publish rate version]
+        end
+
+        subgraph Azure_SQL_Database[Azure SQL Database]
+            direction TB
+            state[DATA_SOURCE_STATE: observed source hash, size, time, and run]
+            staging[Staging: STG_BRFSS_RECORD, STG_BRFSS, and STG_MORTALITY]
+            rateBook[Publication lineage: DATA_REFRESH_RUN, RISK_FACTOR, current active RATE_VERSION and RATE]
+            contract[Contract pinned to IssuedRateVersionID]
+            wellness[Wellness enrollment, activity, and measured improvement]
+            renewal[POLICY_RENEWAL stores the current active RATE_VERSION in NewRateVersionID and stores WellnessDiscountPct]
+        end
+
+        subgraph Application_Layer[Next.js application]
+            quote[Quote and bind routes use current rates]
+            wellnessRoute[Wellness routes]
+            renewalRoute[Renewal route uses current rate and wellness credit]
+            admin[Admin reprice view: change, gate, and lineage]
+        end
+    end
+
+    brfss --> lake
+    ssa --> lake
+    wonder --> lake
+    function --> hash
+    lake --> hash --> compare --> changed
+    state --> compare
+    changed -- Difference --> retrain --> gate
+    gate -- Pass --> release --> reload --> staging
+    gate -- Fail --> retain
+    changed -- No change --> compute
+    function --> compute
+    staging --> compute --> rateBook
+    compute --> state
+
+    rateBook --> quote
+    rateBook --> renewalRoute
+    rateBook --> admin
+    quote --> contract
+    wellnessRoute --> wellness
+    wellness --> renewalRoute
+    contract --> renewalRoute
+    renewalRoute --> renewal
+    renewal -->|NewRateVersionID| rateBook

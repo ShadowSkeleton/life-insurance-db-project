@@ -32,3 +32,6 @@ __azurite*
 ._*
 part2/raw/brfss/LLCP2024XPT.zip
 !.env.example
+
+tsconfig.tsbuildinfo
+next-env.d.ts

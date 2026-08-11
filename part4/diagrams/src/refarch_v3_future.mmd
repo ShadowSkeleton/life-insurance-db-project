@@ -1,0 +1,6 @@
+flowchart LR
+    subgraph Designed_But_Not_Deployed[Designed but not deployed]
+        direction LR
+        gym[Gym check-ins] --> events[Azure Event Hubs] --> stream[Azure Stream Analytics] --> activity[WELLNESS_ACTIVITY]
+        adls[ADLS Gen2 lake] --> synapse[Synapse serverless external tables]
+    end

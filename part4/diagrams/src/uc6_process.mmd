@@ -1,0 +1,41 @@
+flowchart LR
+    start((Start))
+    endPublished((Rate version published))
+    endSourceFailure((End))
+    endGateFailure((Previous model retained))
+    endRefreshFailure((End))
+    subgraph Scheduler
+        trigger[Trigger repricing refresh]
+    end
+    subgraph Retraining_Module[Change Detection and Retraining Module]
+        download[Download curated BRFSS sample]
+        available{Curated source available?}
+        hash[Compute SHA-256 hash and byte size]
+        compare{Hash differs from latest state?}
+        retrain[Rebuild training frame and refit model]
+        validate{Relative validation gate passes?}
+        retain[Retain previous model and return gate failure]
+        failSource[Return source-download failure]
+        upload[Upload profile export, metrics, and baseline]
+    end
+    subgraph Blob_Lake[Blob Lake]
+        source[Read curated BRFSS source]
+        model[Write Part 4 model artifacts]
+    end
+    subgraph Database
+        state[Read latest DATA_SOURCE_STATE]
+        reload[Reload STG_BRFSS_RECORD from revised curated source]
+        refresh[Read staging, SSA, WONDER, and profile export]
+        publish[Write DATA_REFRESH_RUN, DATA_SOURCE_STATE, RISK_FACTOR, RATE_VERSION, and RATE in one transaction]
+        rollback[Roll back refresh transaction and record failed run]
+    end
+    start --> trigger --> download --> source --> available
+    available -- No --> failSource --> endSourceFailure
+    available -- Yes --> hash --> state --> compare
+    compare -- No --> refresh
+    compare -- Yes --> retrain --> validate
+    validate -- No --> retain --> endGateFailure
+    validate -- Yes --> upload --> model --> reload --> refresh
+    refresh --> publish
+    publish -- Success --> endPublished
+    publish -- Failure --> rollback --> endRefreshFailure

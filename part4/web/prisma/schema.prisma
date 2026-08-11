@@ -1,0 +1,710 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma-client"
+}
+
+datasource db {
+  provider = "sqlserver"
+}
+
+model Account {
+  AccountName                                         String          @db.VarChar(60)
+  AccountName2                                        String          @db.VarChar(60)
+  LocationAddress1                                    String          @db.VarChar(60)
+  LocationAddress2                                    String          @db.VarChar(60)
+  LocationCity                                        String          @db.VarChar(40)
+  LocationState                                       String          @db.VarChar(2)
+  LocationZip                                         String          @db.VarChar(10)
+  CompanyCode                                         String          @db.VarChar(10)
+  TaxIDNumber                                         String?         @db.VarChar(15)
+  NumberOfEmployees                                   Int?
+  ActivityStatus                                      String?         @db.VarChar(10)
+  GroupNumber                                         String?         @db.VarChar(20)
+  LegacyFlexID                                        String?         @db.VarChar(20)
+  PlanYearStartDate                                   DateTime?       @db.Date
+  PlanYearEndDate                                     DateTime?       @db.Date
+  StandardIndustryCode                                String?         @db.VarChar(10)
+  HSAFlag                                             String?         @db.Char(1)
+  HRAFlag                                             String?         @db.Char(1)
+  AnnualizedPremium                                   Decimal?        @db.Decimal(12, 2)
+  AccountID                                           Int             @id(map: "Account_PK")
+  AccountAlias                                        AccountAlias[]
+  AccountMember                                       AccountMember[]
+  Relation_27                                         Relation_27[]
+  Relation_3                                          Relation_3[]
+  Relation_39_Relation_39_Account_AccountIDToAccount  Relation_39[]   @relation("Relation_39_Account_AccountIDToAccount")
+  Relation_39_Relation_39_Account_AccountID1ToAccount Relation_39[]   @relation("Relation_39_Account_AccountID1ToAccount")
+  Relation_5                                          Relation_5[]
+
+  @@unique([AccountName, AccountName2, LocationAddress1, LocationAddress2, LocationCity, LocationState, LocationZip, CompanyCode], map: "Account_AccountName_AccountName2_LocationAddress1_LocationAddress2_LocationCity_LocationState_LocationZip_CompanyCode_UN")
+}
+
+model AccountAlias {
+  AccountName       String  @db.VarChar(60)
+  AccountName2      String  @db.VarChar(60)
+  LocationAddress1  String  @db.VarChar(60)
+  LocationAddress2  String  @db.VarChar(60)
+  LocationCity      String  @db.VarChar(40)
+  LocationState     String  @db.VarChar(2)
+  LocationZip       String  @db.VarChar(10)
+  CompanyCode       String  @db.VarChar(10)
+  AliasSource       String  @db.VarChar(20)
+  AliasID           String  @db.VarChar(20)
+  AliasName         String? @db.VarChar(60)
+  AliasAddress1     String? @db.VarChar(60)
+  AliasAddress2     String? @db.VarChar(60)
+  AliasCity         String? @db.VarChar(40)
+  AliasState        String? @db.VarChar(2)
+  AliasZip          String? @db.VarChar(10)
+  AliasPhone        String? @db.VarChar(15)
+  AliasEMailAddress String? @db.VarChar(60)
+  AliasFax          String? @db.VarChar(15)
+  Account_AccountID Int
+  AccountAliasID    Int     @id(map: "AccountAlias_PK")
+  Account           Account @relation(fields: [Account_AccountID], references: [AccountID], onUpdate: NoAction, map: "AccountAlias_Account_FK")
+
+  @@unique([AliasSource, AliasID], map: "AccountAlias_AliasSource_AliasID_UN")
+}
+
+model AccountMember {
+  AccountName             String    @db.VarChar(60)
+  AccountName2            String    @db.VarChar(60)
+  LocationAddress1        String    @db.VarChar(60)
+  LocationAddress2        String    @db.VarChar(60)
+  LocationCity            String    @db.VarChar(40)
+  LocationState           String    @db.VarChar(2)
+  LocationZip             String    @db.VarChar(10)
+  CompanyCode             String    @db.VarChar(10)
+  CustLastName            String    @db.VarChar(40)
+  CustFirstName           String    @db.VarChar(40)
+  CustMiddleInitial       String    @db.VarChar(2)
+  CustSuffix              String    @db.VarChar(10)
+  CustDOB                 DateTime  @db.Date
+  StartDate               DateTime  @db.Date
+  EndDate                 DateTime? @db.Date
+  FSAContributionAmount   Decimal?  @db.Decimal(12, 2)
+  CustBAcctDepartmentName String?   @db.VarChar(40)
+  Customer_CustomerID     Int
+  Account_AccountID       Int
+  AccountMemberID         Int       @id(map: "AccountMember_PK")
+  Account                 Account   @relation(fields: [Account_AccountID], references: [AccountID], onUpdate: NoAction, map: "AccountMember_Account_FK")
+  Customer                Customer  @relation(fields: [Customer_CustomerID], references: [CustomerID], onUpdate: NoAction, map: "AccountMember_Customer_FK")
+}
+
+model Administrator {
+  AdminID            String       @id(map: "Administrator_PK") @db.VarChar(15)
+  AdminLastName      String?      @db.VarChar(40)
+  AdminFirstName     String?      @db.VarChar(40)
+  AdminMiddleInitial String?      @db.VarChar(2)
+  AdminSuffix        String?      @db.VarChar(10)
+  AdminAddress1      String?      @db.VarChar(60)
+  AdminAddress2      String?      @db.VarChar(60)
+  AdminCity          String?      @db.VarChar(40)
+  AdminState         String?      @db.VarChar(2)
+  AdminZip           String?      @db.VarChar(10)
+  Phone              String?      @db.VarChar(15)
+  FaxNumber          String?      @db.VarChar(15)
+  Gender             String?      @db.VarChar(1)
+  EMailAddress       String?      @db.VarChar(60)
+  Relation_5         Relation_5[]
+}
+
+model APPLICATION {
+  ApplicationID       Int           @id(map: "APPLICATION_PK") @default(autoincrement())
+  Customer_CustomerID Int
+  ProductID           Int
+  ApplicationDate     DateTime      @db.Date
+  ApplicantAge        Int
+  Gender              String        @db.VarChar(1)
+  SmokingStatus       String        @db.VarChar(10)
+  DiabetesStatus      String        @db.VarChar(10)
+  BMIValue            Decimal       @db.Decimal(5, 2)
+  AgeBand             String        @db.VarChar(10)
+  BMIBand             String        @db.VarChar(10)
+  FaceAmount          Decimal       @db.Decimal(12, 2)
+  QuotedRateVersionID Int?
+  QuotedPremium       Decimal?      @db.Decimal(12, 2)
+  Status              String        @db.VarChar(10)
+  Customer            Customer      @relation(fields: [Customer_CustomerID], references: [CustomerID], onUpdate: NoAction, map: "APPLICATION_CUSTOMER_FK")
+  Product             Product       @relation(fields: [ProductID], references: [ProductID], onUpdate: NoAction, map: "APPLICATION_PRODUCT_FK")
+  RATE_VERSION        RATE_VERSION? @relation(fields: [QuotedRateVersionID], references: [RateVersionID], onDelete: NoAction, onUpdate: NoAction, map: "APPLICATION_RATEVERSION_FK")
+  Contract            Contract[]
+}
+
+model Associate {
+  AssocLastName         String          @db.VarChar(40)
+  AssocFirstName        String          @db.VarChar(40)
+  AssocMiddleInitial    String          @db.VarChar(2)
+  AssocSuffix           String          @db.VarChar(10)
+  AssocDOB              DateTime        @db.Date
+  TenureDate            DateTime?       @db.Date
+  ConsolAssocID         String?         @db.VarChar(15)
+  CorpEMailAddress      String?         @db.VarChar(60)
+  AssocPhone            String?         @db.VarChar(15)
+  AssocAddress1         String?         @db.VarChar(60)
+  AssocAddress2         String?         @db.VarChar(60)
+  AssocCity             String?         @db.VarChar(40)
+  AssocState            String?         @db.VarChar(2)
+  AssocZip              String?         @db.VarChar(10)
+  DBAName               String?         @db.VarChar(60)
+  AssocLastName1        String?         @db.VarChar(40)
+  AssocFirstName1       String?         @db.VarChar(40)
+  AssocMiddleInitial1   String?         @db.VarChar(2)
+  AssocSuffix1          String?         @db.VarChar(10)
+  AssocDOB1             DateTime?       @db.Date
+  AssociateID           Int             @id(map: "Associate_PK")
+  Associate_AssociateID Int
+  Associate             Associate       @relation("AssociateToAssociate", fields: [Associate_AssociateID], references: [AssociateID], onUpdate: NoAction, map: "Associate_Associate_FK")
+  other_Associate       Associate[]     @relation("AssociateToAssociate")
+  Relation_30           Relation_30[]
+  Relation_31           Relation_31[]
+  Relation_32           Relation_32[]
+  WritingNumber         WritingNumber[]
+
+  @@unique([AssocLastName, AssocFirstName, AssocMiddleInitial, AssocSuffix, AssocDOB], map: "Associate_AssocLastName_AssocFirstName_AssocMiddleInitial_AssocSuffix_AssocDOB_UN")
+}
+
+model BillingAccount {
+  BAcctName         String       @db.VarChar(60)
+  BAcctName2        String       @db.VarChar(60)
+  BillingAddress1   String       @db.VarChar(60)
+  BillingAddress2   String       @db.VarChar(60)
+  BillingCity       String       @db.VarChar(40)
+  BillingState      String       @db.VarChar(2)
+  BillingZip        String       @db.VarChar(10)
+  GroupNumber       String?      @db.VarChar(20)
+  TaxIDNumber       String?      @db.VarChar(15)
+  GeoCode           String?      @db.VarChar(10)
+  OnlineBillingFlag String?      @db.Char(1)
+  ActivityStatus    String?      @db.VarChar(10)
+  BillingPhone      String?      @db.VarChar(15)
+  BillingAccountID  Int          @id(map: "BillingAccount_PK")
+  Invoice           Invoice[]
+  Relation_3        Relation_3[]
+
+  @@unique([BAcctName, BAcctName2, BillingAddress1, BillingAddress2, BillingCity, BillingState, BillingZip], map: "BillingAccount_BAcctName_BAcctName2_BillingAddress1_BillingAddress2_BillingCity_BillingState_BillingZip_UN")
+}
+
+model Claim {
+  ClaimNumber             String        @unique(map: "Claim_ClaimNumber_UN") @db.VarChar(20)
+  ClaimDate               DateTime?     @db.Date
+  SettlementDate          DateTime?     @db.Date
+  WellnessEligibilityDate DateTime?     @db.Date
+  ClaimID                 Int           @id(map: "Claim_PK")
+  Contract_ContractID     Int?
+  Contract                Contract?     @relation(fields: [Contract_ContractID], references: [ContractID], onDelete: NoAction, onUpdate: NoAction, map: "Claim_Contract_FK")
+  Relation_24             Relation_24[]
+  Relation_26             Relation_26[]
+}
+
+model Contest {
+  ContestName String        @db.VarChar(40)
+  StartDate   DateTime      @db.Date
+  Prize       String?       @db.VarChar(60)
+  PrizeAmount Decimal?      @db.Decimal(12, 2)
+  EndDate     DateTime?     @db.Date
+  Criteria    String?       @db.VarChar(255)
+  Threshold   Decimal?      @db.Decimal(12, 2)
+  ContestID   Int           @id(map: "Contest_PK")
+  Relation_31 Relation_31[]
+
+  @@unique([ContestName, StartDate], map: "Contest_ContestName_StartDate_UN")
+}
+
+model Contract {
+  ContractNumber       String                @unique(map: "Contract_ContractNumber_UN") @db.VarChar(20)
+  LineOfBusiness       String?               @db.VarChar(20)
+  SeriesName           String?               @db.VarChar(10)
+  PlanName             String?               @db.VarChar(10)
+  ActivityStatus       String?               @db.VarChar(10)
+  CoverageType         String?               @db.VarChar(20)
+  BillingMethod        String?               @db.VarChar(20)
+  ModalPremium         Decimal?              @db.Decimal(12, 2)
+  InForceFlag          String?               @db.Char(1)
+  PayUpDate            DateTime?             @db.Date
+  Duration             Int?
+  Language             String?               @db.VarChar(20)
+  CreditCardNo         String?               @db.VarChar(20)
+  CardType             String?               @db.VarChar(10)
+  BankingTransitNumber String?               @db.VarChar(9)
+  BankingAccountType   String?               @db.VarChar(10)
+  BankingAccountNumber String?               @db.VarChar(20)
+  ContractID           Int                   @id(map: "Contract_PK")
+  Product_ProductID    Int?
+  IssuedRateVersionID  Int?
+  EffectiveDate        DateTime?             @db.Date
+  ExpiryDate           DateTime?             @db.Date
+  ApplicationID        Int?
+  Claim                Claim[]
+  APPLICATION          APPLICATION?          @relation(fields: [ApplicationID], references: [ApplicationID], onDelete: NoAction, onUpdate: NoAction, map: "CONTRACT_APPLICATION_FK")
+  Product              Product?              @relation(fields: [Product_ProductID], references: [ProductID], onDelete: NoAction, onUpdate: NoAction, map: "Contract_Product_FK")
+  RATE_VERSION         RATE_VERSION?         @relation(fields: [IssuedRateVersionID], references: [RateVersionID], onDelete: NoAction, onUpdate: NoAction, map: "CONTRACT_RATEVERSION_FK")
+  ContractBenefit      ContractBenefit[]
+  ContractParty        ContractParty[]
+  POLICY_RENEWAL       POLICY_RENEWAL[]
+  WELLNESS_ENROLLMENT  WELLNESS_ENROLLMENT[]
+
+  @@index([ActivityStatus], map: "IX_Contract_ActivityStatus")
+  @@index([IssuedRateVersionID], map: "IX_Contract_IssuedRateVersionID")
+}
+
+model ContractBenefit {
+  ContractNumber          String            @db.VarChar(20)
+  LineOfBusiness          String            @db.VarChar(20)
+  SeriesName              String            @db.VarChar(10)
+  PlanName                String            @db.VarChar(10)
+  RiderName               String            @db.VarChar(10)
+  PolicyCountContribution Decimal?          @db.Decimal(12, 2)
+  Contract_ContractID     Int
+  ContractBenefitID       Int               @id(map: "ContractBenefit_PK")
+  Contract                Contract          @relation(fields: [Contract_ContractID], references: [ContractID], onUpdate: NoAction, map: "ContractBenefit_Contract_FK")
+  ContractParty           ContractParty[]
+  ContractPremium         ContractPremium[]
+  Relation_26             Relation_26[]
+
+  @@unique([ContractNumber, LineOfBusiness, SeriesName, PlanName, RiderName], map: "ContractBenefit_ContractNumber_LineOfBusiness_SeriesName_PlanName_RiderName_UN")
+}
+
+model ContractParty {
+  ContractNumber                    String           @db.VarChar(20)
+  CustLastName                      String           @db.VarChar(40)
+  CustFirstName                     String           @db.VarChar(40)
+  CustMiddleInitial                 String           @db.VarChar(2)
+  CustSuffix                        String           @db.VarChar(10)
+  CustDOB                           DateTime         @db.Date
+  Role                              String           @db.VarChar(20)
+  BenefitReference                  String?          @db.VarChar(20)
+  StartDate                         DateTime?        @db.Date
+  EndDate                           DateTime?        @db.Date
+  Customer_CustomerID               Int?
+  Contract_ContractID               Int?
+  ContractBenefit_ContractBenefitID Int?
+  ContractPartyID                   Int              @id(map: "ContractParty_PK")
+  Contract                          Contract?        @relation(fields: [Contract_ContractID], references: [ContractID], onDelete: NoAction, onUpdate: NoAction, map: "ContractParty_Contract_FK")
+  ContractBenefit                   ContractBenefit? @relation(fields: [ContractBenefit_ContractBenefitID], references: [ContractBenefitID], onDelete: NoAction, onUpdate: NoAction, map: "ContractParty_ContractBenefit_FK")
+  Customer                          Customer?        @relation(fields: [Customer_CustomerID], references: [CustomerID], onDelete: NoAction, onUpdate: NoAction, map: "ContractParty_Customer_FK")
+
+  @@index([Customer_CustomerID], map: "IX_ContractParty_Customer_CustomerID")
+}
+
+model ContractPremium {
+  ContractNumber                    String          @db.VarChar(20)
+  LineOfBusiness                    String          @db.VarChar(20)
+  SeriesName                        String          @db.VarChar(10)
+  PlanName                          String          @db.VarChar(10)
+  RiderName                         String          @db.VarChar(10)
+  PremiumCode                       String          @db.VarChar(10)
+  AnnualizedPremium                 Decimal?        @db.Decimal(12, 2)
+  ProcessDate                       DateTime?       @db.Date
+  AppSignDate                       DateTime?       @db.Date
+  ContractBenefit_ContractBenefitID Int
+  ContractPremiumID                 Int             @id(map: "ContractPremium_PK")
+  ContractBenefit                   ContractBenefit @relation(fields: [ContractBenefit_ContractBenefitID], references: [ContractBenefitID], onUpdate: NoAction, map: "ContractPremium_ContractBenefit_FK")
+  Relation_28                       Relation_28[]
+  Relation_29                       Relation_29[]
+
+  @@unique([ContractNumber, LineOfBusiness, SeriesName, PlanName, RiderName, PremiumCode], map: "ContractPremium_ContractNumber_LineOfBusiness_SeriesName_PlanName_RiderName_PremiumCode_UN")
+}
+
+model Customer {
+  CustLastName      String          @db.VarChar(40)
+  CustFirstName     String          @db.VarChar(40)
+  CustMiddleInitial String          @db.VarChar(2)
+  CustSuffix        String          @db.VarChar(10)
+  CustDOB           DateTime        @db.Date
+  CustSalutation    String?         @db.VarChar(10)
+  CusteMailAddress  String?         @db.VarChar(60)
+  Gender            String?         @db.VarChar(1)
+  SSN_TIN           String?         @db.VarChar(11)
+  SSNType           String?         @db.VarChar(10)
+  CustomerLegacyID  String?         @db.VarChar(20)
+  WithholdingCode   String?         @db.VarChar(10)
+  PreferredLanguage String?         @db.VarChar(20)
+  StartDate         DateTime?       @db.Date
+  EndDate           DateTime?       @db.Date
+  CustomerID        Int             @id(map: "Customer_PK")
+  AccountMember     AccountMember[]
+  APPLICATION       APPLICATION[]
+  ContractParty     ContractParty[]
+  Relation_24       Relation_24[]
+  Relation_32       Relation_32[]
+
+  @@unique([CustLastName, CustFirstName, CustMiddleInitial, CustSuffix, CustDOB], map: "Customer_CustLastName_CustFirstName_CustMiddleInitial_CustSuffix_CustDOB_UN")
+}
+
+model DATA_REFRESH_RUN {
+  RunID                                                        Int                 @id(map: "DATA_REFRESH_RUN_PK") @default(autoincrement())
+  RunType                                                      String              @db.VarChar(20)
+  StartedAt                                                    DateTime            @db.Date
+  CompletedAt                                                  DateTime?           @db.Date
+  Status                                                       String              @db.VarChar(10)
+  SourceDatasets                                               String?             @db.VarChar(255)
+  NewRateVersionID                                             Int?
+  Notes                                                        String?             @db.VarChar(255)
+  RATE_VERSION_DATA_REFRESH_RUN_NewRateVersionIDToRATE_VERSION RATE_VERSION?       @relation("DATA_REFRESH_RUN_NewRateVersionIDToRATE_VERSION", fields: [NewRateVersionID], references: [RateVersionID], onDelete: NoAction, onUpdate: NoAction, map: "DRR_RATEVERSION_FK")
+  DATA_SOURCE_STATE                                            DATA_SOURCE_STATE[]
+  RATE_VERSION_RATE_VERSION_CreatedByRunIDToDATA_REFRESH_RUN   RATE_VERSION[]      @relation("RATE_VERSION_CreatedByRunIDToDATA_REFRESH_RUN")
+  RISK_FACTOR                                                  RISK_FACTOR[]
+}
+
+model DATA_SOURCE_STATE {
+  SourceStateID    Int              @id(map: "DATA_SOURCE_STATE_PK") @default(autoincrement())
+  SourcePath       String           @db.VarChar(255)
+  ContentHash      String           @db.Char(64)
+  ByteSize         BigInt
+  ObservedAt       DateTime
+  ObservedByRunID  Int
+  DATA_REFRESH_RUN DATA_REFRESH_RUN @relation(fields: [ObservedByRunID], references: [RunID], onUpdate: NoAction, map: "DATA_SOURCE_STATE_RUN_FK")
+}
+
+model Invoice {
+  InvoiceNumber                   String         @unique(map: "Invoice_InvoiceNumber_UN") @db.VarChar(20)
+  PaidDate                        DateTime?      @db.Date
+  DueDate                         DateTime?      @db.Date
+  RunDate                         DateTime?      @db.Date
+  PremiumSubTotal                 Decimal?       @db.Decimal(12, 2)
+  PaymentMethod                   String?        @db.VarChar(10)
+  PaymentDate                     DateTime?      @db.Date
+  RemittanceFreq                  String?        @db.VarChar(10)
+  BillingAccount_BillingAccountID Int
+  InvoiceID                       Int            @id(clustered: false, map: "Invoice_PK")
+  BillingAccount                  BillingAccount @relation(fields: [BillingAccount_BillingAccountID], references: [BillingAccountID], onUpdate: NoAction, map: "Invoice_BillingAccount_FK")
+
+  @@index([RunDate, InvoiceID], map: "CIX_Invoice_RunDate_InvoiceID", clustered: true)
+  @@index([BillingAccount_BillingAccountID], map: "IX_Invoice_BillingAccount_BillingAccountID")
+}
+
+model ManagerContract {
+  SitCode                           String            @db.VarChar(10)
+  CompanyCode                       String            @db.VarChar(10)
+  WritingNumber                     String            @db.VarChar(15)
+  Level                             String            @db.VarChar(10)
+  IssueDate                         DateTime          @db.Date
+  ContractType                      String?           @db.VarChar(20)
+  CommissionCode                    String?           @db.VarChar(10)
+  Role                              String?           @db.VarChar(20)
+  ParentSitCode                     String?           @db.VarChar(10)
+  StartDate                         DateTime?         @db.Date
+  EndDate                           DateTime?         @db.Date
+  AssocLastName                     String?           @db.VarChar(40)
+  AssocFirstName                    String?           @db.VarChar(40)
+  AssocMiddleInitial                String?           @db.VarChar(2)
+  AssocSuffix                       String?           @db.VarChar(10)
+  AssocDOB                          DateTime?         @db.Date
+  ManagerContractID                 Int               @id(map: "ManagerContract_PK")
+  WritingNumber_WritingNumberID     Int
+  ManagerContract_ManagerContractID Int
+  AssociateID                       Int
+  ManagerContract                   ManagerContract   @relation("ManagerContractToManagerContract", fields: [ManagerContract_ManagerContractID], references: [ManagerContractID], onUpdate: NoAction, map: "ManagerContract_ManagerContract_FK")
+  other_ManagerContract             ManagerContract[] @relation("ManagerContractToManagerContract")
+  writingNumberRef                  WritingNumber     @relation(fields: [WritingNumber_WritingNumberID], references: [WritingNumberID], onUpdate: NoAction, map: "ManagerContract_WritingNumber_FK")
+  Relation_27                       Relation_27[]
+  Relation_28                       Relation_28[]
+
+  @@unique([SitCode, CompanyCode, WritingNumber, Level, IssueDate], map: "ManagerContract_SitCode_CompanyCode_WritingNumber_Level_IssueDate_UN")
+}
+
+model OrgUnit {
+  OrgUnitID         String        @id(map: "OrgUnit_PK") @db.VarChar(15)
+  OrgLevel          Int?
+  Name              String?       @db.VarChar(60)
+  ParentOrgUnitID   String?       @db.VarChar(15)
+  StartDate         DateTime?     @db.Date
+  EndDate           DateTime?     @db.Date
+  StateCode         String?       @db.VarChar(2)
+  OrgUnit_OrgUnitID String        @db.VarChar(15)
+  OrgUnit           OrgUnit       @relation("OrgUnitToOrgUnit", fields: [OrgUnit_OrgUnitID], references: [OrgUnitID], onUpdate: NoAction, map: "OrgUnit_OrgUnit_FK")
+  other_OrgUnit     OrgUnit[]     @relation("OrgUnitToOrgUnit")
+  Relation_29       Relation_29[]
+  Relation_30       Relation_30[]
+}
+
+model POLICY_RENEWAL {
+  RenewalID           Int          @id(map: "POLICY_RENEWAL_PK") @default(autoincrement())
+  ContractID          Int
+  RenewalDate         DateTime     @db.Date
+  NewRateVersionID    Int
+  WellnessDiscountPct Decimal?     @db.Decimal(5, 2)
+  FinalPremium        Decimal?     @db.Decimal(12, 2)
+  Contract            Contract     @relation(fields: [ContractID], references: [ContractID], onUpdate: NoAction, map: "PRENEW_CONTRACT_FK")
+  RATE_VERSION        RATE_VERSION @relation(fields: [NewRateVersionID], references: [RateVersionID], onUpdate: NoAction, map: "PRENEW_RATEVERSION_FK")
+
+  @@unique([ContractID, RenewalDate], map: "UQ_POLICY_RENEWAL_ContractID_RenewalDate")
+  @@index([RenewalDate], map: "IX_POLICY_RENEWAL_RenewalDate")
+}
+
+model Product {
+  LineOfBusiness       String        @db.VarChar(20)
+  SeriesName           String        @db.VarChar(10)
+  PlanName             String        @db.VarChar(10)
+  RiderName            String?       @db.VarChar(10)
+  PlanCode             String?       @db.VarChar(10)
+  RatebookLocationCode String?       @db.VarChar(10)
+  Description          String?       @db.VarChar(255)
+  Benefit              String?       @db.VarChar(60)
+  AnnualizedPremium    Decimal?      @db.Decimal(12, 2)
+  ProductID            Int           @id(map: "Product_PK")
+  APPLICATION          APPLICATION[]
+  Contract             Contract[]
+  RATE                 RATE[]
+
+  @@unique([LineOfBusiness, SeriesName, PlanName], map: "Product_LineOfBusiness_SeriesName_PlanName_UN")
+}
+
+model RATE {
+  RateID        Int          @id(map: "RATE_PK") @default(autoincrement())
+  RateVersionID Int
+  RiskFactorID  Int
+  ProductID     Int
+  BaseRate      Decimal      @db.Decimal(12, 2)
+  Product       Product      @relation(fields: [ProductID], references: [ProductID], onUpdate: NoAction, map: "RATE_PRODUCT_FK")
+  RISK_FACTOR   RISK_FACTOR  @relation(fields: [RiskFactorID], references: [RiskFactorID], onUpdate: NoAction, map: "RATE_RISKFACTOR_FK")
+  RATE_VERSION  RATE_VERSION @relation(fields: [RateVersionID], references: [RateVersionID], onUpdate: NoAction, map: "RATE_VERSION_FK")
+}
+
+model RATE_VERSION {
+  RateVersionID                                                    Int                @id(map: "RATE_VERSION_PK") @default(autoincrement())
+  EffectiveDate                                                    DateTime           @db.Date
+  ExpiryDate                                                       DateTime?          @db.Date
+  Status                                                           String             @db.VarChar(10)
+  CreatedByRunID                                                   Int?
+  APPLICATION                                                      APPLICATION[]
+  Contract                                                         Contract[]
+  DATA_REFRESH_RUN_DATA_REFRESH_RUN_NewRateVersionIDToRATE_VERSION DATA_REFRESH_RUN[] @relation("DATA_REFRESH_RUN_NewRateVersionIDToRATE_VERSION")
+  POLICY_RENEWAL                                                   POLICY_RENEWAL[]
+  RATE                                                             RATE[]
+  DATA_REFRESH_RUN_RATE_VERSION_CreatedByRunIDToDATA_REFRESH_RUN   DATA_REFRESH_RUN?  @relation("RATE_VERSION_CreatedByRunIDToDATA_REFRESH_RUN", fields: [CreatedByRunID], references: [RunID], onDelete: NoAction, onUpdate: NoAction, map: "RATE_VERSION_RUN_FK")
+}
+
+model Relation_24 {
+  Claim_ClaimID       Int
+  Customer_CustomerID Int
+  Claim               Claim    @relation(fields: [Claim_ClaimID], references: [ClaimID], onUpdate: NoAction, map: "Relation_24_Claim_FK")
+  Customer            Customer @relation(fields: [Customer_CustomerID], references: [CustomerID], onUpdate: NoAction, map: "Relation_24_Customer_FK")
+
+  @@id([Claim_ClaimID, Customer_CustomerID], map: "Relation_24_PK")
+}
+
+model Relation_26 {
+  Claim_ClaimID                     Int
+  ContractBenefit_ContractBenefitID Int
+  Claim                             Claim           @relation(fields: [Claim_ClaimID], references: [ClaimID], onUpdate: NoAction, map: "Relation_26_Claim_FK")
+  ContractBenefit                   ContractBenefit @relation(fields: [ContractBenefit_ContractBenefitID], references: [ContractBenefitID], onUpdate: NoAction, map: "Relation_26_ContractBenefit_FK")
+
+  @@id([Claim_ClaimID, ContractBenefit_ContractBenefitID], map: "Relation_26_PK")
+}
+
+model Relation_27 {
+  Account_AccountID                 Int
+  ManagerContract_ManagerContractID Int
+  Account                           Account         @relation(fields: [Account_AccountID], references: [AccountID], onUpdate: NoAction, map: "Relation_27_Account_FK")
+  ManagerContract                   ManagerContract @relation(fields: [ManagerContract_ManagerContractID], references: [ManagerContractID], onUpdate: NoAction, map: "Relation_27_ManagerContract_FK")
+
+  @@id([Account_AccountID, ManagerContract_ManagerContractID], map: "Relation_27_PK")
+}
+
+model Relation_28 {
+  ContractPremium_ContractPremiumID Int
+  ManagerContract_ManagerContractID Int
+  ContractPremium                   ContractPremium @relation(fields: [ContractPremium_ContractPremiumID], references: [ContractPremiumID], onUpdate: NoAction, map: "Relation_28_ContractPremium_FK")
+  ManagerContract                   ManagerContract @relation(fields: [ManagerContract_ManagerContractID], references: [ManagerContractID], onUpdate: NoAction, map: "Relation_28_ManagerContract_FK")
+
+  @@id([ContractPremium_ContractPremiumID, ManagerContract_ManagerContractID], map: "Relation_28_PK")
+}
+
+model Relation_29 {
+  ContractPremium_ContractPremiumID Int
+  OrgUnit_OrgUnitID                 String          @db.VarChar(15)
+  ContractPremium                   ContractPremium @relation(fields: [ContractPremium_ContractPremiumID], references: [ContractPremiumID], onUpdate: NoAction, map: "Relation_29_ContractPremium_FK")
+  OrgUnit                           OrgUnit         @relation(fields: [OrgUnit_OrgUnitID], references: [OrgUnitID], onUpdate: NoAction, map: "Relation_29_OrgUnit_FK")
+
+  @@id([ContractPremium_ContractPremiumID, OrgUnit_OrgUnitID], map: "Relation_29_PK")
+}
+
+model Relation_3 {
+  Account_AccountID               Int
+  BillingAccount_BillingAccountID Int
+  Account                         Account        @relation(fields: [Account_AccountID], references: [AccountID], onUpdate: NoAction, map: "Relation_3_Account_FK")
+  BillingAccount                  BillingAccount @relation(fields: [BillingAccount_BillingAccountID], references: [BillingAccountID], onUpdate: NoAction, map: "Relation_3_BillingAccount_FK")
+
+  @@id([Account_AccountID, BillingAccount_BillingAccountID], map: "Relation_3_PK")
+}
+
+model Relation_30 {
+  Associate_AssociateID Int
+  OrgUnit_OrgUnitID     String    @db.VarChar(15)
+  Associate             Associate @relation(fields: [Associate_AssociateID], references: [AssociateID], onUpdate: NoAction, map: "Relation_30_Associate_FK")
+  OrgUnit               OrgUnit   @relation(fields: [OrgUnit_OrgUnitID], references: [OrgUnitID], onUpdate: NoAction, map: "Relation_30_OrgUnit_FK")
+
+  @@id([Associate_AssociateID, OrgUnit_OrgUnitID], map: "Relation_30_PK")
+}
+
+model Relation_31 {
+  Associate_AssociateID Int
+  Contest_ContestID     Int
+  Associate             Associate @relation(fields: [Associate_AssociateID], references: [AssociateID], onUpdate: NoAction, map: "Relation_31_Associate_FK")
+  Contest               Contest   @relation(fields: [Contest_ContestID], references: [ContestID], onUpdate: NoAction, map: "Relation_31_Contest_FK")
+
+  @@id([Associate_AssociateID, Contest_ContestID], map: "Relation_31_PK")
+}
+
+model Relation_32 {
+  Customer_CustomerID   Int
+  Associate_AssociateID Int
+  Associate             Associate @relation(fields: [Associate_AssociateID], references: [AssociateID], onUpdate: NoAction, map: "Relation_32_Associate_FK")
+  Customer              Customer  @relation(fields: [Customer_CustomerID], references: [CustomerID], onUpdate: NoAction, map: "Relation_32_Customer_FK")
+
+  @@id([Customer_CustomerID, Associate_AssociateID], map: "Relation_32_PK")
+}
+
+model Relation_39 {
+  Account_AccountID                               Int
+  Account_AccountID1                              Int
+  Account_Relation_39_Account_AccountIDToAccount  Account @relation("Relation_39_Account_AccountIDToAccount", fields: [Account_AccountID], references: [AccountID], onUpdate: NoAction, map: "Relation_39_Account_FK")
+  Account_Relation_39_Account_AccountID1ToAccount Account @relation("Relation_39_Account_AccountID1ToAccount", fields: [Account_AccountID1], references: [AccountID], onUpdate: NoAction, map: "Relation_39_Account_FKv1")
+
+  @@id([Account_AccountID, Account_AccountID1], map: "Relation_39_PK")
+}
+
+model Relation_5 {
+  Account_AccountID     Int
+  Administrator_AdminID String        @db.VarChar(15)
+  Account               Account       @relation(fields: [Account_AccountID], references: [AccountID], onUpdate: NoAction, map: "Relation_5_Account_FK")
+  Administrator         Administrator @relation(fields: [Administrator_AdminID], references: [AdminID], onUpdate: NoAction, map: "Relation_5_Administrator_FK")
+
+  @@id([Account_AccountID, Administrator_AdminID], map: "Relation_5_PK")
+}
+
+model RISK_FACTOR {
+  RiskFactorID        Int              @id(map: "RISK_FACTOR_PK") @default(autoincrement())
+  AgeBand             String           @db.VarChar(10)
+  Gender              String           @db.VarChar(1)
+  SmokingStatus       String?          @db.VarChar(10)
+  DiabetesStatus      String?          @db.VarChar(10)
+  BMIBand             String?          @db.VarChar(10)
+  MortalityMultiplier Decimal          @db.Decimal(6, 3)
+  DerivedFromRunID    Int
+  RATE                RATE[]
+  DATA_REFRESH_RUN    DATA_REFRESH_RUN @relation(fields: [DerivedFromRunID], references: [RunID], onUpdate: NoAction, map: "RISK_FACTOR_RUN_FK")
+
+  @@unique([AgeBand, Gender, SmokingStatus, DiabetesStatus, BMIBand, DerivedFromRunID], map: "RISK_FACTOR_UN")
+}
+
+model RISK_IMPROVEMENT {
+  ImprovementID       Int                 @id(map: "RISK_IMPROVEMENT_PK") @default(autoincrement())
+  EnrollmentID        Int
+  MeasureDate         DateTime            @db.Date
+  MeasureType         String              @db.VarChar(20)
+  MeasureValue        Decimal?            @db.Decimal(8, 2)
+  BaselineValue       Decimal?            @db.Decimal(8, 2)
+  ImprovementPct      Decimal?            @db.Decimal(5, 2)
+  WELLNESS_ENROLLMENT WELLNESS_ENROLLMENT @relation(fields: [EnrollmentID], references: [EnrollmentID], onUpdate: NoAction, map: "RIMP_ENROLL_FK")
+}
+
+model STG_BRFSS {
+  StgBRFSSID     Int      @id(map: "STG_BRFSS_PK") @default(autoincrement())
+  SourceYear     Int
+  AgeBand        String   @db.VarChar(10)
+  Gender         String   @db.VarChar(1)
+  SmokingStatus  String?  @db.VarChar(10)
+  DiabetesStatus String?  @db.VarChar(10)
+  BMIBand        String?  @db.VarChar(10)
+  ExerciseFreq   String?  @db.VarChar(10)
+  PrevalenceRate Decimal? @db.Decimal(6, 4)
+  LoadDate       DateTime @db.Date
+  SourceFile     String?  @db.VarChar(255)
+}
+
+model STG_BRFSS_RECORD {
+  StgBRFSSRecordID Int      @id(map: "STG_BRFSS_RECORD_PK") @default(autoincrement())
+  SourceYear       Int
+  AgeBand          String?  @db.VarChar(10)
+  Gender           String?  @db.VarChar(1)
+  SmokingStatus    String?  @db.VarChar(10)
+  DiabetesStatus   String?  @db.VarChar(10)
+  BMIBand          String?  @db.VarChar(10)
+  ExerciseFreq     String?  @db.VarChar(10)
+  BMIValue         Decimal? @db.Decimal(5, 2)
+  LoadDate         DateTime @db.Date
+  SourceFile       String   @db.VarChar(255)
+}
+
+model STG_MORTALITY {
+  StgMortalityID Int      @id(map: "STG_MORTALITY_PK") @default(autoincrement())
+  SourceYear     Int
+  AgeBand        String   @db.VarChar(10)
+  Gender         String   @db.VarChar(1)
+  ConditionFlag  String?  @db.VarChar(10)
+  MortalityRate  Decimal? @db.Decimal(8, 6)
+  LifeExpectancy Decimal? @db.Decimal(5, 2)
+  LoadDate       DateTime @db.Date
+  SourceFile     String?  @db.VarChar(255)
+}
+
+model STG_NHANES {
+  StgNHANESID       Int      @id(map: "STG_NHANES_PK") @default(autoincrement())
+  SourceCycle       String   @db.VarChar(10)
+  AgeBand           String   @db.VarChar(10)
+  Gender            String   @db.VarChar(1)
+  DiabetesBiomarker String?  @db.VarChar(20)
+  BMIMeasured       Decimal? @db.Decimal(5, 2)
+  LoadDate          DateTime @db.Date
+  SourceFile        String?  @db.VarChar(255)
+}
+
+model WellnessActivity {
+  ActivityID          Int                 @id(clustered: false, map: "WELLNESS_ACTIVITY_PK") @default(autoincrement())
+  EnrollmentID        Int
+  ActivityDate        DateTime            @db.Date
+  ActivityType        String?             @db.VarChar(20)
+  VerifiedFlag        String?             @db.Char(1)
+  WELLNESS_ENROLLMENT WELLNESS_ENROLLMENT @relation(fields: [EnrollmentID], references: [EnrollmentID], onUpdate: NoAction, map: "WACT_ENROLL_FK")
+
+  @@index([ActivityDate, ActivityID], map: "CIX_WELLNESS_ACTIVITY_ActivityDate_ActivityID", clustered: true)
+  @@index([EnrollmentID, ActivityDate], map: "IX_WELLNESS_ACTIVITY_EnrollmentID_ActivityDate")
+  @@map("WELLNESS_ACTIVITY")
+}
+
+model WELLNESS_ENROLLMENT {
+  EnrollmentID      Int                 @id(map: "WELLNESS_ENROLLMENT_PK") @default(autoincrement())
+  ContractID        Int
+  WellnessProgramID Int
+  EnrollDate        DateTime            @db.Date
+  Status            String              @db.VarChar(10)
+  RISK_IMPROVEMENT  RISK_IMPROVEMENT[]
+  WELLNESS_ACTIVITY WellnessActivity[]
+  Contract          Contract            @relation(fields: [ContractID], references: [ContractID], onUpdate: NoAction, map: "WENROLL_CONTRACT_FK")
+  WELLNESS_PROGRAM  WELLNESS_PROGRAM    @relation(fields: [WellnessProgramID], references: [WellnessProgramID], onUpdate: NoAction, map: "WENROLL_PROGRAM_FK")
+}
+
+model WELLNESS_PROGRAM {
+  WellnessProgramID   Int                   @id(map: "WELLNESS_PROGRAM_PK") @default(autoincrement())
+  ProgramName         String                @db.VarChar(60)
+  PartnerGym          String?               @db.VarChar(60)
+  DiscountMaxPct      Decimal?              @db.Decimal(5, 2)
+  WELLNESS_ENROLLMENT WELLNESS_ENROLLMENT[]
+}
+
+model WritingNumber {
+  CompanyCode           String            @db.VarChar(10)
+  WritingNumber         String            @db.VarChar(15)
+  AssocLastName         String?           @db.VarChar(40)
+  AssocFirstName        String?           @db.VarChar(40)
+  AssocMiddleInitial    String?           @db.VarChar(2)
+  AssocSuffix           String?           @db.VarChar(10)
+  AssocDOB              DateTime?         @db.Date
+  IssueDate             DateTime?         @db.Date
+  Status                String?           @db.VarChar(10)
+  VestedFlag            String?           @db.Char(1)
+  TerminationDate       DateTime?         @db.Date
+  LicenseState          String?           @db.VarChar(2)
+  LicenseNumber         String?           @db.VarChar(20)
+  LineOfBusiness        String?           @db.VarChar(20)
+  AssociateID           Int
+  WritingNumberID       Int               @id(map: "WritingNumber_PK")
+  Associate_AssociateID Int
+  ManagerContract       ManagerContract[]
+  Associate             Associate         @relation(fields: [Associate_AssociateID], references: [AssociateID], onUpdate: NoAction, map: "WritingNumber_Associate_FK")
+
+  @@unique([CompanyCode, WritingNumber], map: "WritingNumber_CompanyCode_WritingNumber_UN")
+}

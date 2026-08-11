@@ -1,0 +1,5236 @@
+{
+  "seed": 20260730,
+  "run_id": 1009,
+  "rate_version_id": 1011,
+  "effective_date": "2026-08-09",
+  "wonder_cohort_source_year": 2023,
+  "ssa_baseline_source_year": 2023,
+  "loading_factor": 1.5,
+  "undiagnosed_fraction": 0.2,
+  "exercise_weights": {
+    "no": 0.22979696653559104,
+    "yes": 0.770203033464409
+  },
+  "derived": {
+    "60-64|F": {
+      "m": 0.008208,
+      "p": 0.19183511692429647,
+      "f": 0.03917672107877928,
+      "rr": 1.212547723030002,
+      "mn": 0.007886437473385379,
+      "md": 0.009562681801171924
+    },
+    "75-79|F": {
+      "m": 0.029835,
+      "p": 0.20202911336568152,
+      "f": 0.029358274876591324,
+      "rr": 1.1497123467641641,
+      "mn": 0.028959095869056897,
+      "md": 0.033294630071781815
+    },
+    "18-24|F": {
+      "m": 0.000477,
+      "p": 0.010768126346015794,
+      "f": 0.012195121951219513,
+      "rr": 2.146502057613169,
+      "mn": 0.0004711829268292683,
+      "md": 0.0010113951219512195
+    },
+    "25-29|F": {
+      "m": 0.000696,
+      "p": 0.019867549668874173,
+      "f": 0.021939953810623556,
+      "rr": 2.129083038173947,
+      "mn": 0.000680729792147806,
+      "md": 0.0014493302540415705
+    },
+    "40-44|F": {
+      "m": 0.001851,
+      "p": 0.0624263839811543,
+      "f": 0.027846534653465347,
+      "rr": 1.458847267093427,
+      "mn": 0.0017994560643564356,
+      "md": 0.0026251315617410796
+    },
+    "55-59|F": {
+      "m": 0.005389,
+      "p": 0.1624219125420471,
+      "f": 0.03917672107877928,
+      "rr": 1.2510382784028478,
+      "mn": 0.005177876650106459,
+      "md": 0.006477721890131488
+    },
+    "65-69|F": {
+      "m": 0.011751,
+      "p": 0.19305856832971802,
+      "f": 0.03794913201453371,
+      "rr": 1.204321811332142,
+      "mn": 0.011305059749697215,
+      "md": 0.013614930034973442
+    },
+    "35-39|M": {
+      "m": 0.002771,
+      "p": 0.04472630173564753,
+      "f": 0.024715447154471545,
+      "rr": 1.5665968258076075,
+      "mn": 0.0027025134959349595,
+      "md": 0.004233749064433928
+    },
+    "70-74|F": {
+      "m": 0.017873,
+      "p": 0.20120572720422006,
+      "f": 0.03794913201453371,
+      "rr": 1.1960484769614985,
+      "mn": 0.01719473516350424,
+      "md": 0.02056573680406557
+    },
+    "60-64|M": {
+      "m": 0.013236,
+      "p": 0.22202001819836215,
+      "f": 0.044616195327595295,
+      "rr": 1.210340316897694,
+      "mn": 0.012645460038643948,
+      "md": 0.015305310110489441
+    },
+    "30-34|F": {
+      "m": 0.001017,
+      "p": 0.03450704225352113,
+      "f": 0.021939953810623556,
+      "rr": 1.65007348866347,
+      "mn": 0.0009946870669745957,
+      "md": 0.001641306758731206
+    },
+    "75-79|M": {
+      "m": 0.041223,
+      "p": 0.27787307032590053,
+      "f": 0.03421832336025097,
+      "rr": 1.1275067877470026,
+      "mn": 0.039812418056120374,
+      "md": 0.04488877159489705
+    },
+    "45-49|F": {
+      "m": 0.002463,
+      "p": 0.11130638547158758,
+      "f": 0.038263665594855306,
+      "rr": 1.3574460222773583,
+      "mn": 0.0023687565916398713,
+      "md": 0.0032154592130648166
+    },
+    "25-29|M": {
+      "m": 0.001781,
+      "p": 0.015064562410329985,
+      "f": 0.014844136566056407,
+      "rr": 2.000215254358901,
+      "mn": 0.0017545625927758535,
+      "md": 0.0035095028627977662
+    },
+    "18-24|M": {
+      "m": 0.001287,
+      "p": 0.013648293963254593,
+      "f": 0.006591337099811676,
+      "rr": 1.486146554866934,
+      "mn": 0.0012785169491525423,
+      "md": 0.0019000635593220338
+    },
+    "40-44|M": {
+      "m": 0.003432,
+      "p": 0.07199511897498474,
+      "f": 0.024715447154471545,
+      "rr": 1.3519930372270983,
+      "mn": 0.0033471765853658538,
+      "md": 0.004525359437784209
+    },
+    "50-54|F": {
+      "m": 0.003576,
+      "p": 0.151237890204521,
+      "f": 0.038263665594855306,
+      "rr": 1.2630691600305066,
+      "mn": 0.0034391691318327974,
+      "md": 0.004343908466546899
+    },
+    "55-59|M": {
+      "m": 0.008949,
+      "p": 0.18634583100167879,
+      "f": 0.044616195327595295,
+      "rr": 1.2506080266698028,
+      "mn": 0.00854972966801335,
+      "md": 0.010692360548674442
+    },
+    "65-69|M": {
+      "m": 0.018777,
+      "p": 0.2261264985531211,
+      "f": 0.041758727353071144,
+      "rr": 1.1927173983144905,
+      "mn": 0.017992896376491384,
+      "md": 0.021460440554311025
+    },
+    "80-99|F": {
+      "m": 0.093825,
+      "p": 0.1752927842840952,
+      "f": 0.017932794681742976,
+      "rr": 1.104170015365153,
+      "mn": 0.09214245553898547,
+      "md": 0.10174093654826451
+    },
+    "70-74|M": {
+      "m": 0.026642,
+      "p": 0.24709167054443928,
+      "f": 0.041758727353071144,
+      "rr": 1.1763657609141678,
+      "mn": 0.02552946398585948,
+      "md": 0.03003198732745643
+    },
+    "30-34|M": {
+      "m": 0.002298,
+      "p": 0.02604523646333105,
+      "f": 0.014844136566056407,
+      "rr": 1.578524412487774,
+      "mn": 0.0022638881741712026,
+      "md": 0.0035736027500716163
+    },
+    "45-49|M": {
+      "m": 0.004302,
+      "p": 0.11004126547455295,
+      "f": 0.04181783463815161,
+      "rr": 1.39660472299721,
+      "mn": 0.004122099675386672,
+      "md": 0.005756943875310292
+    },
+    "50-54|M": {
+      "m": 0.005968,
+      "p": 0.14749262536873156,
+      "f": 0.04181783463815161,
+      "rr": 1.2958987644479874,
+      "mn": 0.0057184311628795115,
+      "md": 0.007410507878556426
+    },
+    "80-99|M": {
+      "m": 0.109587,
+      "p": 0.22553897180762852,
+      "f": 0.022765719342077866,
+      "rr": 1.103290668451512,
+      "mn": 0.10709217311445972,
+      "md": 0.11815379526137731
+    },
+    "35-39|F": {
+      "m": 0.001358,
+      "p": 0.0367601246105919,
+      "f": 0.027846534653465347,
+      "rr": 1.7792186775129735,
+      "mn": 0.0013201844059405941,
+      "md": 0.0023488967528108745
+    }
+  },
+  "risk_rows": [
+    {
+      "AgeBand": "18-24",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "5.852"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.730"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "4.877"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.276"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "5.121"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.392"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "6.584"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.083"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "3.308"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.543"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.756"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.287"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.894"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.352"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.721"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.743"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.544"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.187"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.120"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "0.989"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.226"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.040"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "2.862"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.340"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "4.075"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.744"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "3.396"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.287"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "3.565"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.403"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "4.584"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.093"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.303"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.551"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.919"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.293"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.015"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.358"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "2.591"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.748"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.772"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.193"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.476"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "0.994"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.550"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.044"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.993"
+    },
+    {
+      "AgeBand": "18-24",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.344"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "5.747"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.703"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "4.789"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.255"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "5.029"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.370"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "6.466"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.055"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "3.248"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.528"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.707"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.274"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.842"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.339"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.655"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.727"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.499"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.175"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.082"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "0.980"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.186"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.030"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "2.811"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.328"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "5.439"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.724"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "4.532"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.272"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "4.759"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.388"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "6.118"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.080"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "3.074"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.539"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.562"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.284"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.690"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.350"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.458"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.741"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.365"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.184"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.971"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "0.987"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.069"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.038"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "2.660"
+    },
+    {
+      "AgeBand": "25-29",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.338"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "4.454"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.703"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "3.712"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.254"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "3.897"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.369"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "5.011"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.054"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.518"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.528"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.098"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.274"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.203"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.339"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "2.832"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.726"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.937"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.175"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.614"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "0.980"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.695"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.030"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "2.179"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.327"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "4.292"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.723"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "3.577"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.271"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "3.756"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.387"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "4.829"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.078"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.426"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.539"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.022"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.284"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.123"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.349"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "2.729"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.740"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.866"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.184"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.555"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "0.987"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.633"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.037"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "2.099"
+    },
+    {
+      "AgeBand": "30-34",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.337"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "4.774"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.689"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "3.978"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.243"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "4.177"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.359"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "5.371"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.045"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.698"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.520"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.249"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.268"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.361"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.333"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.036"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.721"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.076"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.169"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.730"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "0.975"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.816"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.025"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "2.335"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.323"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "4.217"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.697"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "3.514"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.250"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "3.690"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.366"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "4.744"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.053"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.383"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.525"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.986"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.272"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.086"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.337"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "2.681"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.725"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.833"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.172"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.528"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "0.978"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.604"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.028"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "2.063"
+    },
+    {
+      "AgeBand": "35-39",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.326"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "3.914"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.689"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "3.262"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.243"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "3.425"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.359"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "4.404"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.044"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.212"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.520"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.844"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.268"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.936"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.333"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "2.489"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.721"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.702"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.169"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.418"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "0.975"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.489"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.025"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.915"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.322"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "3.639"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.697"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "3.033"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.250"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "3.184"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.366"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "4.094"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.052"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.057"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.525"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.714"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.272"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.800"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.337"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "2.314"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.725"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.582"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.173"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.319"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "0.978"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.385"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.028"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.780"
+    },
+    {
+      "AgeBand": "40-44",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.326"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "3.603"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.660"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "3.003"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.219"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "3.153"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.333"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "4.054"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.011"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.037"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.504"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.697"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.254"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.782"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.319"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "2.291"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.702"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.567"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.156"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.306"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "0.965"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.371"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.014"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.762"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.308"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "3.693"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.653"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "3.078"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.214"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "3.232"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.329"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "4.155"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.009"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.088"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.499"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.740"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.251"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.827"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.316"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "2.349"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.701"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.606"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.153"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.338"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "0.962"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.405"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.012"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.807"
+    },
+    {
+      "AgeBand": "45-49",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.307"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "3.353"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.662"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.794"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.222"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.934"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.337"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.772"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.017"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.895"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.505"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.579"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.256"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.658"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.321"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "2.132"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.706"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.458"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.157"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.215"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "0.965"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.275"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.015"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.640"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.311"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "3.427"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.655"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.856"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.217"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.999"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.333"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.856"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.017"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.937"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.501"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.614"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.253"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.695"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.319"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "2.179"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.705"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.490"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.154"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.242"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "0.963"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.304"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.014"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.676"
+    },
+    {
+      "AgeBand": "50-54",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.310"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "3.318"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.661"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.765"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.221"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.903"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.336"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.732"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.018"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.875"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.504"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.563"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.255"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.641"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.321"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "2.110"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.706"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.442"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.157"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.202"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "0.965"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.262"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.015"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.623"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.311"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "3.298"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.648"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.748"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.211"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.885"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.327"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.710"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.008"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.864"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.497"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.553"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.250"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.631"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.315"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "2.097"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.700"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.434"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.151"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.195"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "0.961"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.255"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.011"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.613"
+    },
+    {
+      "AgeBand": "55-59",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.306"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "3.216"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.661"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.680"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.221"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.814"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.337"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.617"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.019"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.817"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.504"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.515"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.256"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.590"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.321"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "2.045"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.706"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.398"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.157"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.165"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "0.965"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.223"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.016"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.573"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.311"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "3.191"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.649"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.660"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.211"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.793"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.327"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.590"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.008"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.804"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.497"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.503"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.250"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.578"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.315"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "2.029"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.700"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.388"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.151"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.156"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "0.961"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.214"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.011"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.561"
+    },
+    {
+      "AgeBand": "60-64",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.306"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "3.198"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.665"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.665"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.224"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.798"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.340"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.598"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.023"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.807"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.506"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.506"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.257"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.582"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.323"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "2.033"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.709"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.390"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.158"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.159"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "0.967"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.217"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.017"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.564"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.313"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "3.154"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.656"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.629"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.217"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.760"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.333"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.549"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.015"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.783"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.501"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.486"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.253"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.560"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.319"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "2.006"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.704"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.371"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.154"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.143"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "0.964"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.200"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.014"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.543"
+    },
+    {
+      "AgeBand": "65-69",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.310"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "3.176"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.665"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.647"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.225"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.779"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.341"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.573"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.024"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.795"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.507"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.496"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.258"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.571"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.323"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "2.019"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.709"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.381"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.158"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.151"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "0.967"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.208"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.017"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.553"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.313"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "3.111"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.656"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.593"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.217"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.722"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.333"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.500"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.014"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.758"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.501"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.465"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.253"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.539"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.319"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.978"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.703"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.353"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.154"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.127"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "0.964"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.184"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.014"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.522"
+    },
+    {
+      "AgeBand": "70-74",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.309"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "3.080"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.688"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.567"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.243"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.695"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.359"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.465"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.044"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.741"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.519"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.451"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.268"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.523"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.333"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.959"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.721"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.339"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.168"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.116"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "0.975"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.172"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.025"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.507"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.323"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "3.005"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.675"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.505"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.232"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.630"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.348"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.381"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.029"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.699"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.512"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.416"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.262"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.486"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.327"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.911"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.712"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.307"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.163"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.089"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "0.970"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.143"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.020"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.470"
+    },
+    {
+      "AgeBand": "75-79",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.316"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.993"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.716"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.494"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.265"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.619"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.381"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.367"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "F",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.069"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.692"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.535"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.410"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.280"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.480"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.346"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.903"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "F",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.735"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.301"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.181"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.084"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "0.985"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.139"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.035"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.464"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "F",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.334"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.976"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "2.704"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.480"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "2.256"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.604"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "2.371"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.348"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "M",
+      "SmokingStatus": "current",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "3.057"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.682"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.528"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.402"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.275"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.472"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.340"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.892"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "M",
+      "SmokingStatus": "former",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.728"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.294"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "under",
+      "MortalityMultiplier": "1.175"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "1.078"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "normal",
+      "MortalityMultiplier": "0.980"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.132"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "over",
+      "MortalityMultiplier": "1.031"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "yes",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.456"
+    },
+    {
+      "AgeBand": "80-99",
+      "Gender": "M",
+      "SmokingStatus": "never",
+      "DiabetesStatus": "no",
+      "BMIBand": "obese",
+      "MortalityMultiplier": "1.328"
+    }
+  ],
+  "rate_rows": 9360,
+  "product_factors": {
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.15,
+    "4": 1.15,
+    "5": 1.15,
+    "6": 1.35,
+    "7": 1.35,
+    "8": 1.35,
+    "9": 1.35,
+    "10": 1.35,
+    "11": 1.2,
+    "12": 1.2,
+    "13": 1.2,
+    "14": 1.2,
+    "15": 1.2
+  }
+}

@@ -1,0 +1,42 @@
+flowchart LR
+    start((Start))
+    endRenewed((Renewal recorded))
+    endNoApplication((End))
+    endNoActiveVersion((End))
+    endNoRate((End))
+    endDuplicate((End))
+    subgraph Policyholder
+        request[Submit ContractID and RenewalDate]
+        receive[Receive recorded renewal]
+    end
+    subgraph Renewal_Route[Renewal Route]
+        begin[Begin read committed transaction]
+        contract{Contract has APPLICATION?}
+        duplicate{Renewal already exists for date?}
+        active{Current active RATE_VERSION exists?}
+        rate{Matching active RATE exists?}
+        calculate[Calculate current-rate premium and wellness credit]
+        write[Write POLICY_RENEWAL]
+        commit[Commit transaction and return renewal]
+        rejectApplication[Reject: contract has no APPLICATION]
+        rejectDuplicate[Reject: renewal already exists]
+        rejectActive[Reject: no active RATE_VERSION]
+        rejectRate[Reject: no active RATE]
+    end
+    subgraph Database
+        policy[Read Contract and joined APPLICATION profile and face amount]
+        renewals[Check POLICY_RENEWAL for ContractID and RenewalDate]
+        rateBook[Read current RATE_VERSION, RISK_FACTOR, and RATE]
+        wellness[Read WELLNESS_ENROLLMENT and WELLNESS_CREDIT]
+        renewal[Insert POLICY_RENEWAL with NewRateVersionID and FinalPremium]
+        unchanged[Leave Contract.ModalPremium and IssuedRateVersionID unchanged]
+    end
+    start --> request --> begin --> policy --> contract
+    contract -- No --> rejectApplication --> endNoApplication
+    contract -- Yes --> renewals --> duplicate
+    duplicate -- Yes --> rejectDuplicate --> endDuplicate
+    duplicate -- No --> rateBook --> active
+    active -- No --> rejectActive --> endNoActiveVersion
+    active -- Yes --> rate
+    rate -- No --> rejectRate --> endNoRate
+    rate -- Yes --> wellness --> calculate --> renewal --> write --> unchanged --> commit --> receive --> endRenewed
